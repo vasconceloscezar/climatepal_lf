@@ -10125,7 +10125,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "supabase_key",
-                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZnaHdxa21sd3N2dm9xbXdwaWhyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMzEzODU0NywiZXhwIjoyMDQ4NzE0NTQ3fQ._OGDJxLKHzGyTWljQBir_EdGjTiXrb5Lll9i-ySo5RM",
+                "value": "",
                 "display_name": "Supabase Key",
                 "advanced": false,
                 "input_types": [
