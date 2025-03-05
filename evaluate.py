@@ -12,13 +12,22 @@ from datetime import datetime
 import pandas as pd
 from dotenv import load_dotenv
 from tqdm import tqdm
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import sys
+import traceback
+import signal
+import uuid
 
 # Load environment variables from .env file
 load_dotenv()
 
+# Generate a unique ID for this run
+UNIQUE_RUN_ID = str(uuid.uuid4())
+
 # Get API keys from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-LANGFLOW_URL = os.getenv("LANGFLOW_URL")
+LANGFLOW_URL = os.getenv("LANGFLOW_URL", "https://api.langflow.tech/api/v1/predict")
 LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
 
 if not OPENAI_API_KEY:
@@ -30,6 +39,24 @@ if not LANGFLOW_URL or not LANGFLOW_API_KEY:
     raise ValueError(
         "LANGFLOW_URL or LANGFLOW_API_KEY environment variables are not set. Please set them in a .env file or in your environment."
     )
+
+# Global flag to indicate if the process is being interrupted
+interrupted = False
+
+
+def signal_handler(sig, frame):
+    """Handle keyboard interrupt signal."""
+    global interrupted
+    if not interrupted:
+        print("\nKeyboard interrupt received. Gracefully shutting down...")
+        interrupted = True
+    else:
+        print("\nSecond interrupt received. Forcing exit...")
+        sys.exit(1)
+
+
+# Register the signal handler
+signal.signal(signal.SIGINT, signal_handler)
 
 
 def extract_url_from_text(text):
@@ -107,6 +134,29 @@ UNIQUE_RUN_ID = generate_unique_run_id()
 
 def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
     """Process a single query and return the results."""
+    global interrupted
+
+    # Check if the process has been interrupted
+    if interrupted:
+        return {
+            "query_id": row.get("", index),
+            "query": row["query"],
+            "expected_scenario": row["scenario"],
+            "expected_variable": row["variable"],
+            "expected_year_range": row["year_range"],
+            "expected_file_path": row["file_path"],
+            "predicted_scenario": "INTERRUPTED",
+            "predicted_variable": "",
+            "predicted_year_range": "",
+            "predicted_file_path": "",
+            "scenario_match": False,
+            "variable_match": False,
+            "year_range_match": False,
+            "file_path_match": False,
+            "success": False,
+            "error": "Task interrupted",
+        }
+
     # Prepare the API request payload
     payload = {
         "session_id": str(index) + "-" + UNIQUE_RUN_ID,
@@ -124,6 +174,29 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
 
         while retry_count <= max_retries:
             try:
+                # Check if the current thread has been interrupted
+                if threading.current_thread().daemon or interrupted:
+                    # This is a way to check if the thread should exit
+                    # If the thread is marked as daemon, it means it should terminate
+                    return {
+                        "query_id": row.get("", index),
+                        "query": row["query"],
+                        "expected_scenario": row["scenario"],
+                        "expected_variable": row["variable"],
+                        "expected_year_range": row["year_range"],
+                        "expected_file_path": row["file_path"],
+                        "predicted_scenario": "INTERRUPTED",
+                        "predicted_variable": "",
+                        "predicted_year_range": "",
+                        "predicted_file_path": "",
+                        "scenario_match": False,
+                        "variable_match": False,
+                        "year_range_match": False,
+                        "file_path_match": False,
+                        "success": False,
+                        "error": "Task interrupted",
+                    }
+
                 response = requests.post(
                     LANGFLOW_URL,
                     headers=headers,
@@ -191,6 +264,26 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
             "error": None,
         }
 
+    except KeyboardInterrupt:
+        # Handle keyboard interrupt within the thread
+        return {
+            "query_id": row.get("", index),
+            "query": row["query"],
+            "expected_scenario": row["scenario"],
+            "expected_variable": row["variable"],
+            "expected_year_range": row["year_range"],
+            "expected_file_path": row["file_path"],
+            "predicted_scenario": "INTERRUPTED",
+            "predicted_variable": "",
+            "predicted_year_range": "",
+            "predicted_file_path": "",
+            "scenario_match": False,
+            "variable_match": False,
+            "year_range_match": False,
+            "file_path_match": False,
+            "success": False,
+            "error": "Task interrupted",
+        }
     except Exception as e:
         # Return error information
         return {
@@ -213,125 +306,142 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
         }
 
 
-def run_evaluation(
-    max_samples=0,
-    results_dir="evaluation_results",
-    debug=False,
-    max_retries=3,
-    retry_delay=5,
-    max_workers=4,
-):
-    # Create a directory to store results if it doesn't exist
-    os.makedirs(results_dir, exist_ok=True)
-
-    # Create a timestamp for the results file
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    results_file = os.path.join(results_dir, f"evaluation_results_{timestamp}.csv")
+def run_evaluation(df, debug=False, max_retries=3, retry_delay=5, max_workers=None):
+    """Run the evaluation on the given dataframe."""
+    global interrupted
 
     # Create a debug directory if debug mode is enabled
     debug_dir = None
     if debug:
-        debug_dir = os.path.join(results_dir, "debug")
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        debug_dir = os.path.join("debug", f"evaluation_{timestamp}")
         os.makedirs(debug_dir, exist_ok=True)
+        print(f"Debug information will be saved to: {debug_dir}")
 
-    # Read the evaluation queries
-    df = pd.read_csv("data/evaluation_queries.csv")
+    # Initialize results list
+    results = []
+    futures = []
 
-    # Limit the number of samples if max_samples is set
-    if max_samples > 0:
-        df = df.head(max_samples)
-        print(f"Processing {max_samples} samples out of {len(df)} total samples")
-    else:
-        print(f"Processing all {len(df)} samples")
+    # Create a ThreadPoolExecutor for parallel processing
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        try:
+            # Submit tasks to the executor
+            for index, row in df.iterrows():
+                future = executor.submit(
+                    process_query, row, index, debug_dir, max_retries, retry_delay
+                )
+                futures.append(future)
 
-    # Prepare results dataframe
-    results_df = pd.DataFrame(
-        columns=[
-            "query_id",
-            "query",
-            "expected_scenario",
-            "expected_variable",
-            "expected_year_range",
-            "expected_file_path",
-            "predicted_scenario",
-            "predicted_variable",
-            "predicted_year_range",
-            "predicted_file_path",
-            "scenario_match",
-            "variable_match",
-            "year_range_match",
-            "file_path_match",
-        ]
-    )
+            # Create a progress bar
+            with tqdm(total=len(futures), desc="Processing queries") as pbar:
+                # Process completed tasks as they finish
+                for future in as_completed(futures):
+                    if interrupted:
+                        break
 
-    # Process queries in parallel
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all tasks
-        future_to_index = {
-            executor.submit(
-                process_query, row, index, debug_dir, max_retries, retry_delay
-            ): index
-            for index, row in df.iterrows()
-        }
+                    result = future.result()
+                    results.append(result)
+                    pbar.update(1)
 
-        # Process results as they complete with a progress bar
-        for future in tqdm(
-            concurrent.futures.as_completed(future_to_index),
-            total=len(df),
-            desc="Processing queries",
-        ):
-            index = future_to_index[future]
-            try:
-                result = future.result()
-                # Add to results dataframe
-                results_df = results_df._append(result, ignore_index=True)
+        except KeyboardInterrupt:
+            interrupted = True
+            print("\nKeyboard interrupt detected. Cancelling pending tasks...")
 
-                # Save intermediate results
-                results_df.to_csv(results_file, index=False)
+            # Mark all running threads as daemon to signal they should terminate
+            for thread in threading.enumerate():
+                if thread != threading.current_thread():
+                    thread.daemon = True
 
-                # Print result summary
-                if result["success"]:
-                    print(
-                        f"  Query {index}: Scenario: {'✓' if result['scenario_match'] else '✗'} | "
-                        f"Variable: {'✓' if result['variable_match'] else '✗'} | "
-                        f"Year Range: {'✓' if result['year_range_match'] else '✗'} | "
-                        f"File Path: {'✓' if result['file_path_match'] else '✗'}"
-                    )
-                else:
-                    print(f"  Query {index}: ERROR: {result['error']}")
+            # Cancel all pending futures
+            for future in futures:
+                if not future.done():
+                    future.cancel()
 
-            except Exception as e:
-                print(f"Error processing query {index}: {str(e)}")
+            # Collect results from completed tasks
+            for future in futures:
+                if future.done() and not future.cancelled():
+                    try:
+                        result = future.result()
+                        if result not in results:  # Avoid duplicates
+                            results.append(result)
+                    except Exception as e:
+                        print(f"Error retrieving result: {str(e)}")
 
-    # Calculate and print summary statistics
-    total_queries = len(results_df)
-    scenario_accuracy = results_df["scenario_match"].mean() * 100
-    variable_accuracy = results_df["variable_match"].mean() * 100
-    year_range_accuracy = results_df["year_range_match"].mean() * 100
-    file_path_accuracy = results_df["file_path_match"].mean() * 100
+            print(
+                f"Evaluation interrupted. Processed {len(results)} out of {len(futures)} queries."
+            )
 
-    print("\nEvaluation Summary:")
-    print(f"Total Queries: {total_queries}")
-    print(f"Scenario Accuracy: {scenario_accuracy:.2f}%")
-    print(f"Variable Accuracy: {variable_accuracy:.2f}%")
-    print(f"Year Range Accuracy: {year_range_accuracy:.2f}%")
-    print(f"File Path Accuracy: {file_path_accuracy:.2f}%")
+    # Convert results to a dataframe
+    results_df = pd.DataFrame(results)
 
-    # Save final results
-    results_df.to_csv(results_file, index=False)
-    print(f"\nResults saved to {results_file}")
+    # Calculate accuracy metrics if we have results
+    if not results_df.empty:
+        # Calculate accuracy metrics
+        total_queries = len(results_df)
+        successful_queries = results_df["success"].sum()
+        failed_queries = total_queries - successful_queries
+
+        # Only calculate matches for successful queries
+        if successful_queries > 0:
+            success_mask = results_df["success"] == True
+            scenario_accuracy = (
+                results_df.loc[success_mask, "scenario_match"].mean() * 100
+            )
+            variable_accuracy = (
+                results_df.loc[success_mask, "variable_match"].mean() * 100
+            )
+            year_range_accuracy = (
+                results_df.loc[success_mask, "year_range_match"].mean() * 100
+            )
+            file_path_accuracy = (
+                results_df.loc[success_mask, "file_path_match"].mean() * 100
+            )
+            overall_accuracy = (
+                results_df.loc[
+                    success_mask,
+                    [
+                        "scenario_match",
+                        "variable_match",
+                        "year_range_match",
+                        "file_path_match",
+                    ],
+                ]
+                .all(axis=1)
+                .mean()
+                * 100
+            )
+        else:
+            scenario_accuracy = variable_accuracy = year_range_accuracy = (
+                file_path_accuracy
+            ) = overall_accuracy = 0.0
+
+        # Print summary
+        print("\nEvaluation Summary:")
+        print(f"Total Queries: {total_queries}")
+        print(f"Successful Queries: {successful_queries}")
+        print(f"Failed Queries: {failed_queries}")
+
+        if successful_queries > 0:
+            print("\nAccuracy Metrics (for successful queries):")
+            print(f"Scenario Accuracy: {scenario_accuracy:.2f}%")
+            print(f"Variable Accuracy: {variable_accuracy:.2f}%")
+            print(f"Year Range Accuracy: {year_range_accuracy:.2f}%")
+            print(f"File Path Accuracy: {file_path_accuracy:.2f}%")
+            print(f"Overall Accuracy: {overall_accuracy:.2f}%")
+
+    return results_df
 
 
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser(
-        description="Run evaluation on climate data queries"
+        description="Evaluate queries against expected outcomes"
     )
     parser.add_argument(
         "--samples",
         type=int,
         default=0,
-        help="Number of samples to process (0 for all samples)",
+        help="Number of samples to process (0 for all)",
     )
     parser.add_argument(
         "--output-dir",
@@ -340,36 +450,90 @@ if __name__ == "__main__":
         help="Directory to store evaluation results",
     )
     parser.add_argument(
-        "--debug",
-        action="store_true",
-        help="Enable debug mode to save raw API responses",
+        "--debug", action="store_true", help="Enable debug mode to save API responses"
     )
     parser.add_argument(
         "--max-retries",
         type=int,
         default=3,
-        help="Maximum number of retries for failed API requests",
+        help="Maximum number of API retry attempts",
     )
     parser.add_argument(
         "--retry-delay",
         type=int,
         default=5,
-        help="Delay in seconds between retry attempts",
+        help="Delay between retry attempts in seconds",
     )
     parser.add_argument(
-        "--max-workers",
-        type=int,
-        default=4,
-        help="Maximum number of parallel workers",
+        "--max-workers", type=int, default=4, help="Maximum number of parallel workers"
     )
     args = parser.parse_args()
 
-    # Run evaluation with the specified parameters
-    run_evaluation(
-        max_samples=args.samples,
-        results_dir=args.output_dir,
-        debug=args.debug,
-        max_retries=args.max_retries,
-        retry_delay=args.retry_delay,
-        max_workers=args.max_workers,
-    )
+    # Create output directory if it doesn't exist
+    os.makedirs(args.output_dir, exist_ok=True)
+
+    try:
+        print("Starting evaluation...")
+
+        # Read the evaluation queries
+        try:
+            df = pd.read_csv("data/evaluation_queries.csv")
+        except FileNotFoundError:
+            print(
+                "Error: data/evaluation_queries.csv not found. Please make sure the file exists."
+            )
+            sys.exit(1)
+        except pd.errors.EmptyDataError:
+            print(
+                "Error: data/evaluation_queries.csv is empty. Please add queries to evaluate."
+            )
+            sys.exit(1)
+        except Exception as e:
+            print(f"Error reading evaluation queries: {str(e)}")
+            sys.exit(1)
+
+        # Limit the number of samples if max_samples is set
+        if args.samples > 0:
+            df = df.head(args.samples)
+            print(f"Processing {args.samples} samples out of {len(df)} total samples")
+        else:
+            print(f"Processing all {len(df)} samples")
+
+        # Run evaluation with the specified parameters
+        results_df = run_evaluation(
+            df,
+            debug=args.debug,
+            max_retries=args.max_retries,
+            retry_delay=args.retry_delay,
+            max_workers=args.max_workers,
+        )
+
+        # Save results to file if we have any and haven't been interrupted
+        if not results_df.empty and not interrupted:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            results_file = os.path.join(
+                args.output_dir, f"evaluation_results_{timestamp}.csv"
+            )
+            results_df.to_csv(results_file, index=False)
+            print(f"\nResults saved to {results_file}")
+            print("Evaluation completed successfully.")
+        elif not results_df.empty and interrupted:
+            # Save partial results if interrupted
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            results_file = os.path.join(
+                args.output_dir, f"evaluation_results_partial_{timestamp}.csv"
+            )
+            results_df.to_csv(results_file, index=False)
+            print(f"\nPartial results saved to {results_file}")
+            print("Evaluation was interrupted but partial results were saved.")
+
+    except KeyboardInterrupt:
+        # This should be caught by the signal handler, but just in case
+        if not interrupted:
+            interrupted = True
+            print("\nEvaluation interrupted by user. Exiting...")
+    except Exception as e:
+        print(f"\nError during evaluation: {str(e)}")
+        traceback.print_exc()
+    finally:
+        print("Evaluation script finished.")

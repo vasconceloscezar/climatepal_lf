@@ -53,27 +53,27 @@ With these steps you can open the playground and talk to the Climate Pal agent.
 
 ## Running the Evaluation Script
 
-The evaluation script allows you to test the Climate Pal API with a set of predefined queries and measure its accuracy. The script supports parallel processing to speed up evaluation of multiple queries.
+The evaluation script allows you to test the Climate Pal agent against a set of predefined queries and measure its accuracy in extracting climate data information.
 
 ### Prerequisites
 
 1. Make sure you have Python 3.8+ installed
 2. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-   Or install them individually:
-   ```bash
-   pip install pandas requests tqdm python-dotenv
-   ```
+```bash
+pip install -r requirements.txt
+```
+
+Or install them individually:
+```bash
+pip install pandas requests tqdm python-dotenv
+```
 
 3. Set up your environment variables in a `.env` file:
-   ```
-   OPENAI_API_KEY=your_openai_api_key_here
-   LANGFLOW_URL=https://climate-pal.namastex.ai/api/v1/run/nasa-dataset-selector-02-1-1-1
-   LANGFLOW_API_KEY=your_langflow_api_key_here
-   ```
+```
+OPENAI_API_KEY=your_openai_api_key
+LANGFLOW_API_KEY=your_langflow_api_key
+LANGFLOW_URL=https://api.langflow.tech/api/v1/predict
+```
 
 ### Preparing Evaluation Data
 
@@ -84,86 +84,109 @@ Create a CSV file at `data/evaluation_queries.csv` with the following columns:
 - `year_range`: The expected year range (e.g., "2015-2050")
 - `file_path`: The expected file path URL
 
-You can use the provided sample file `data/evaluation_queries_sample.csv` as a template:
+You can use the provided sample file `data/evaluation_queries_sample.csv` as a template. Example CSV structure:
 
 ```csv
-,query,scenario,variable,year_range,file_path
-0,Show me near-surface air temperature data for a ssp119 CO2 emissions scenario for 201501-205012,ssp119,tas,2015-2050,https://portal.nccs.nasa.gov/datashare/giss_cmip6/CMIP6/ScenarioMIP/NASA-GISS/GISS-E2-1-G/ssp119/r3i1p1f2/Amon/tas/gn/v20200115/tas_Amon_GISS-E2-1-G_ssp119_r3i1p1f2_gn_201501-205012.nc
-...
+query,scenario,variable,year_range,file_path
+"I need near-surface air temperature data for the ssp119 CO2 emissions scenario from January 2015 to December 2050",ssp119,tas,2015-2050,https://example.com/data/tas_Amon_MODEL_ssp119_r1i1p1f1_gn_201501-205012.nc
 ```
 
-### Running the Evaluation
+### Basic Usage
 
-Basic usage:
+To run the evaluation script:
+
 ```bash
 python evaluate.py
 ```
 
-This will process all queries in the CSV file.
+### Command-line Options
 
-### Command Line Options
+The script supports several command-line options:
 
-The script supports several command line options:
-
-- `--samples N`: Process only the first N samples (default: 0, which means all samples)
+- `--samples N`: Process only N samples from the CSV file (default: process all)
 - `--output-dir DIR`: Directory to store evaluation results (default: "evaluation_results")
 - `--debug`: Enable debug mode to save raw API responses
-- `--max-retries N`: Maximum number of retries for failed API requests (default: 3)
-- `--retry-delay N`: Delay in seconds between retry attempts (default: 5)
+- `--max-retries N`: Maximum number of API retry attempts (default: 3)
+- `--retry-delay N`: Delay between retry attempts in seconds (default: 5)
 - `--max-workers N`: Maximum number of parallel workers (default: 4)
 
-Examples:
+### Interrupting the Evaluation
 
+The evaluation script now supports graceful interruption using Ctrl+C. When you press Ctrl+C:
+
+1. The script will stop accepting new queries
+2. It will wait for currently running queries to complete
+3. It will save partial results to a file named `evaluation_results_partial_TIMESTAMP.csv`
+4. A summary of the processed queries will be displayed
+
+If you press Ctrl+C a second time, the script will exit immediately without waiting for running queries to complete.
+
+### Examples
+
+Process all queries with 8 parallel workers:
 ```bash
-# Process only 10 samples
-python evaluate.py --samples 10
-
-# Use 8 parallel workers
 python evaluate.py --max-workers 8
-
-# Enable debug mode to save API responses
-python evaluate.py --debug
-
-# Combine multiple options
-python evaluate.py --samples 5 --debug --max-workers 2 --output-dir custom_results
 ```
 
-### Understanding the Results
+Process only the first 10 queries with debug mode enabled:
+```bash
+python evaluate.py --samples 10 --debug
+```
 
-The script will generate a CSV file with the evaluation results in the specified output directory. The file includes:
+Process all queries with increased retry attempts:
+```bash
+python evaluate.py --max-retries 5 --retry-delay 10
+```
 
-- Expected vs. predicted values for scenario, variable, year range, and file path
-- Match indicators for each field
-- Success/error information
+### Results
 
-The script also calculates and displays summary statistics:
-- Total number of queries processed
-- Accuracy percentages for scenario, variable, year range, and file path
+The script will generate a CSV file with the evaluation results and display a summary of the accuracy metrics:
 
-If debug mode is enabled, the raw API responses will be saved in the `debug` subdirectory of the output directory.
+- Scenario Accuracy: Percentage of correctly identified scenarios
+- Variable Accuracy: Percentage of correctly identified variables
+- Year Range Accuracy: Percentage of correctly identified year ranges
+- File Path Accuracy: Percentage of correctly identified file paths
+- Overall Accuracy: Percentage of queries where all four elements were correctly identified
 
-### Troubleshooting
+In debug mode, the script will also save the raw API responses to the debug directory for further analysis.
 
-Here are some common issues and their solutions:
+## Troubleshooting
 
-1. **API Connection Issues**:
-   - Verify your API keys in the `.env` file
-   - Check that the LangFlow service is running
-   - Increase the `--retry-delay` if you're experiencing rate limiting
+Here are some common issues you might encounter when running the evaluation script:
 
-2. **Missing Dependencies**:
-   - Make sure all required packages are installed: `pip install -r requirements.txt`
-   - If you encounter "Unable to import 'requests'" error, install it separately: `pip install requests`
+### API Connection Issues
 
-3. **Performance Issues**:
-   - Adjust the `--max-workers` parameter based on your system's capabilities
-   - For large datasets, use the `--samples` parameter to test with a smaller subset first
+- **Problem**: The script fails to connect to the API or returns connection errors.
+- **Solution**: 
+  - Verify your API keys in the `.env` file are correct
+  - Check if the LangFlow service is running and accessible
+  - Increase the `--max-retries` and `--retry-delay` parameters
 
-4. **Incorrect Results**:
-   - Enable `--debug` mode to inspect the raw API responses
-   - Check the format of your evaluation_queries.csv file
-   - Verify that the expected values match the format returned by the API
+### Missing Dependencies
 
-5. **File Path Matching Issues**:
-   - Ensure that the file paths in your CSV use the same format as the API responses
-   - Some APIs may return relative paths while others return absolute URLs
+- **Problem**: Import errors or missing module errors.
+- **Solution**:
+  - Ensure all required packages are installed: `pip install -r requirements.txt`
+  - Check for any Python version compatibility issues (Python 3.8+ is recommended)
+
+### Performance Issues
+
+- **Problem**: The script is running too slowly.
+- **Solution**:
+  - Adjust the `--max-workers` parameter to increase parallel processing
+  - For large datasets, use the `--samples` parameter to test with a smaller subset first
+
+### Incorrect Results
+
+- **Problem**: The script is not correctly identifying the expected values.
+- **Solution**:
+  - Enable debug mode with `--debug` to inspect the raw API responses
+  - Check that your CSV file is formatted correctly
+  - Verify that the expected values in your CSV match exactly what the API should return
+
+### File Path Matching Issues
+
+- **Problem**: File paths are not matching even though they seem correct.
+- **Solution**:
+  - Ensure the file paths in your CSV exactly match the format returned by the API
+  - Check for differences in URL encoding, relative vs. absolute paths, or trailing slashes
