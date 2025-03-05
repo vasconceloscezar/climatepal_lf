@@ -1,0 +1,3069 @@
+{
+  "session_id": "4-20250305_131601_57ykn1",
+  "outputs": [
+    {
+      "inputs": {
+        "input_value": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050."
+      },
+      "outputs": [
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T16:16:06",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e026f7b9-d85c-4483-85e0-893cf66853d0",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "sender": "User",
+              "sender_name": "User",
+              "files": [],
+              "session_id": "4-20250305_131601_57ykn1",
+              "timestamp": "2025-03-05T16:16:06Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": null,
+                  "display_name": null,
+                  "source": null
+                },
+                "icon": "",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+            "sender": "User",
+            "sender_name": "User",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:06",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e026f7b9-d85c-4483-85e0-893cf66853d0",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "sender": "User",
+              "sender_name": "User",
+              "session_id": "4-20250305_131601_57ykn1",
+              "component_id": "ChatInput-nXUUg",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "Dataset Description",
+          "component_id": "ChatInput-nXUUg",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "processed_df": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_mips": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_experiments": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "processed_df": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_mips": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_experiments": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Dataset Processor",
+          "component_id": "CMIP6DatasetProcessorComponent-TaOPv",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "variable_info": {
+              "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "variable_info": {
+              "message": {
+                "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Processor (Zip)",
+          "component_id": "CMIP6VariableProcessorFromZip-X8bHD",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "matched_variables": {
+              "repr": "[Data(text_key='text', data={'variable': 'tas', 'long_name': 'Near-Surface Air Temperature', 'comment': 'near-surface (usually, 2 meter) air temperature'}, default_value='')]",
+              "raw": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "variable": "tas",
+                    "long_name": "Near-Surface Air Temperature",
+                    "comment": "near-surface (usually, 2 meter) air temperature"
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "variable": "tas",
+                    "long_name": "Near-Surface Air Temperature",
+                    "comment": "near-surface (usually, 2 meter) air temperature"
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "matched_variables": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Matcher",
+          "component_id": "variable_matcher-S6K64",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "embeddings": {
+              "repr": "None",
+              "raw": {
+                "model": "text-embedding-3-large",
+                "dimensions": null,
+                "deployment": null,
+                "openai_api_version": null,
+                "openai_api_base": null,
+                "openai_api_type": null,
+                "openai_proxy": null,
+                "embedding_ctx_length": 1536,
+                "openai_api_key": "**********",
+                "openai_organization": null,
+                "allowed_special": "all",
+                "disallowed_special": "all",
+                "chunk_size": 1000,
+                "max_retries": 3,
+                "request_timeout": null,
+                "headers": null,
+                "tiktoken_enabled": true,
+                "tiktoken_model_name": null,
+                "show_progress_bar": false,
+                "model_kwargs": {},
+                "skip_empty": false,
+                "default_headers": null,
+                "default_query": null,
+                "retry_min_seconds": 4,
+                "retry_max_seconds": 20,
+                "http_client": null,
+                "http_async_client": null,
+                "check_embedding_ctx_length": true
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "embeddings": {
+              "message": {
+                "repr": "None",
+                "raw": {
+                  "model": "text-embedding-3-large",
+                  "dimensions": null,
+                  "deployment": null,
+                  "openai_api_version": null,
+                  "openai_api_base": null,
+                  "openai_api_type": null,
+                  "openai_proxy": null,
+                  "embedding_ctx_length": 1536,
+                  "openai_api_key": "**********",
+                  "openai_organization": null,
+                  "allowed_special": "all",
+                  "disallowed_special": "all",
+                  "chunk_size": 1000,
+                  "max_retries": 3,
+                  "request_timeout": null,
+                  "headers": null,
+                  "tiktoken_enabled": true,
+                  "tiktoken_model_name": null,
+                  "show_progress_bar": false,
+                  "model_kwargs": {},
+                  "skip_empty": false,
+                  "default_headers": null,
+                  "default_query": null,
+                  "retry_min_seconds": 4,
+                  "retry_max_seconds": 20,
+                  "http_client": null,
+                  "http_async_client": null,
+                  "check_embedding_ctx_length": true
+                },
+                "type": "object"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "OpenAI Embeddings",
+          "component_id": "OpenAIEmbeddings-XsKPV",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered 1132 datasets with mon temporal resolution and matching variables.",
+              "raw": "Filtered 1132 datasets with mon temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered 1132 datasets with mon temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Filter",
+          "component_id": "TemporalResolutionFilterComponent-3pGxq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets within the year range 201501-205012. 0 datasets remain.",
+              "raw": "Filtered datasets within the year range 201501-205012. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets within the year range 201501-205012. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Year Range Filter",
+          "component_id": "YearRangeFilterComponent-VS8WD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "extracted_urls": {
+              "repr": "[]",
+              "raw": [],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "extracted_urls": {
+              "message": [],
+              "type": "array"
+            }
+          },
+          "logs": {
+            "extracted_urls": []
+          },
+          "messages": [],
+          "component_display_name": "URL Extractor",
+          "component_id": "URLExtractorComponent-mEoFP",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 13:16:07 -03",
+              "raw": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 13:16:07 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 13:16:07 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Date Range Prompt",
+          "component_id": "Prompt-LB8oS",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "201501-205012",
+              "raw": "201501-205012",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "201501-205012",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "RangeSelector",
+          "component_id": "OpenAIModel-3HdPb",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n",
+              "raw": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Prompt",
+          "component_id": "Prompt-zA0Up",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "mon",
+              "raw": "mon",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "mon",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "TemporalSelector",
+          "component_id": "OpenAIModel-AXjuD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "raw": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "DPrompt",
+          "component_id": "Prompt-Q27xi",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "",
+              "raw": "",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Parse Data",
+          "component_id": "ParseData-FSrn8",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "raw": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment",
+          "component_id": "ParseData-owi82",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "CMIP\nScenarioMIP",
+              "raw": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "MIP",
+          "component_id": "ParseData-vmr1o",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Prompt",
+          "component_id": "Prompt-qCzNO",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "ScenarioMIP",
+              "raw": "ScenarioMIP",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "ScenarioMIP",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "MIPSelector",
+          "component_id": "OpenAIModel-3ayFc",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Prompt",
+          "component_id": "Prompt-Z36He",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "ssp119",
+              "raw": "ssp119",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "ssp119",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "ExperimentSelector",
+          "component_id": "OpenAIModel-jdoTk",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets by MIP 'ScenarioMIP'. Remaining datasets: 196443",
+              "raw": "Filtered datasets by MIP 'ScenarioMIP'. Remaining datasets: 196443",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets by MIP 'ScenarioMIP'. Remaining datasets: 196443",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Filter",
+          "component_id": "MIPFilterComponent-7xtDm",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets by Experiment 'ssp119'. Remaining datasets: 15451",
+              "raw": "Filtered datasets by Experiment 'ssp119'. Remaining datasets: 15451",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets by Experiment 'ssp119'. Remaining datasets: 15451",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Filter",
+          "component_id": "ExperimentFilterComponent-aWhGL",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_variable_info": {
+              "repr": "Filtered variable info. Remaining variables: 279",
+              "raw": "Filtered variable info. Remaining variables: 279",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_variable_info": {
+              "message": "Filtered variable info. Remaining variables: 279",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_variable_info": []
+          },
+          "messages": [],
+          "component_display_name": "Filtered Variable Info",
+          "component_id": "FilteredVariableInfoComponent-J7SKC",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "tool": {
+              "repr": "None",
+              "raw": {
+                "name": "variable_matcher",
+                "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.",
+                "args_schema": "VariableMatcherSchema",
+                "return_direct": false,
+                "verbose": false,
+                "tags": null,
+                "metadata": null,
+                "handle_tool_error": false,
+                "handle_validation_error": false,
+                "response_format": "content",
+                "func": "_tool_function",
+                "coroutine": null
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": "",
+              "type": "unknown"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "tool": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP Variable Tool Check",
+          "component_id": "variable_matcher-aUJnq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "current_date": {
+              "repr": "Current date and time in America/Sao_Paulo: 2025-03-05 13:16:07 -03",
+              "raw": "Current date and time in America/Sao_Paulo: 2025-03-05 13:16:07 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "current_date": {
+              "message": "Current date and time in America/Sao_Paulo: 2025-03-05 13:16:07 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "current_date": []
+          },
+          "messages": [],
+          "component_display_name": "Current Date",
+          "component_id": "CurrentDateComponent-qbE6Q",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "response": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T16:16:09+00:00\",\n    \"sender\": \"Machine\",\n    \"sender_name\": \"Agent\",\n    \"session_id\": \"4-20250305_131601_57ykn1\",\n    \"text\": \"tas\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": null,\n        \"background_color\": null,\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"Bot\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [\n        {\n            \"title\": \"Agent Steps\",\n            \"contents\": [\n                {\n                    \"type\": \"text\",\n                    \"duration\": 1,\n                    \"header\": {\n                        \"title\": \"Input\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"**HUMAN**: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.  \\n**AI**: mon  \\n**AI**: 201501-205012  \\n**AI**: ScenarioMIP  \\n**AI**: ssp119\"\n                },\n                {\n                    \"type\": \"tool_use\",\n                    \"duration\": 632,\n                    \"header\": {\n                        \"title\": \"Executed **variable_matcher**\",\n                        \"icon\": \"Hammer\"\n                    },\n                    \"name\": \"variable_matcher\",\n                    \"tool_input\": {\n                        \"keywords\": \"near-surface air temperature\",\n                        \"top_n\": 5\n                    },\n                    \"output\": [\n                        {\n                            \"variable\": \"tas\",\n                            \"long_name\": \"Near-Surface Air Temperature\",\n                            \"comment\": \"near-surface (usually, 2 meter) air temperature\",\n                            \"similarity_score\": 0.6949893413545197\n                        },\n                        {\n                            \"variable\": \"tasIs\",\n                            \"long_name\": \"Ice Sheet Near-Surface Air Temperature\",\n                            \"comment\": \"near-surface (usually, 2 meter) air temperature\",\n                            \"similarity_score\": 0.6225838644048631\n                        },\n                        {\n                            \"variable\": \"ts\",\n                            \"long_name\": \"Surface Temperature\",\n                            \"comment\": \"Temperature of the lower boundary of the atmosphere\",\n                            \"similarity_score\": 0.5811882582569584\n                        },\n                        {\n                            \"variable\": \"ta\",\n                            \"long_name\": \"Air Temperature\",\n                            \"comment\": \"Air Temperature\",\n                            \"similarity_score\": 0.5466260784548924\n                        },\n                        {\n                            \"variable\": \"sitemptop\",\n                            \"long_name\": \"Surface Temperature of Sea Ice\",\n                            \"comment\": \"Report surface temperature of snow where snow covers the sea ice.\",\n                            \"similarity_score\": 0.5299343621961786\n                        }\n                    ],\n                    \"error\": null\n                },\n                {\n                    \"type\": \"text\",\n                    \"duration\": 1297,\n                    \"header\": {\n                        \"title\": \"Output\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"tas\"\n                }\n            ],\n            \"allow_markdown\": true,\n            \"media_url\": null\n        }\n    ],\n    \"id\": \"32737aa8-f12a-4b14-abc6-92fc4d8048d9\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T16:16:09",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "tas",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.  \n**AI**: mon  \n**AI**: 201501-205012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 632,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "near-surface air temperature",
+                          "top_n": 5
+                        },
+                        "output": [
+                          {
+                            "variable": "tas",
+                            "long_name": "Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6949893413545197
+                          },
+                          {
+                            "variable": "tasIs",
+                            "long_name": "Ice Sheet Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6225838644048631
+                          },
+                          {
+                            "variable": "ts",
+                            "long_name": "Surface Temperature",
+                            "comment": "Temperature of the lower boundary of the atmosphere",
+                            "similarity_score": 0.5811882582569584
+                          },
+                          {
+                            "variable": "ta",
+                            "long_name": "Air Temperature",
+                            "comment": "Air Temperature",
+                            "similarity_score": 0.5466260784548924
+                          },
+                          {
+                            "variable": "sitemptop",
+                            "long_name": "Surface Temperature of Sea Ice",
+                            "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                            "similarity_score": 0.5299343621961786
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 1297,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "tas"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "32737aa8-f12a-4b14-abc6-92fc4d8048d9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "message"
+            }
+          },
+          "outputs": {
+            "response": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:09",
+                "sender": "Machine",
+                "sender_name": "Agent",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "tas",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.  \n**AI**: mon  \n**AI**: 201501-205012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 632,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "near-surface air temperature",
+                          "top_n": 5
+                        },
+                        "output": [
+                          {
+                            "variable": "tas",
+                            "long_name": "Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6949893413545197
+                          },
+                          {
+                            "variable": "tasIs",
+                            "long_name": "Ice Sheet Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6225838644048631
+                          },
+                          {
+                            "variable": "ts",
+                            "long_name": "Surface Temperature",
+                            "comment": "Temperature of the lower boundary of the atmosphere",
+                            "similarity_score": 0.5811882582569584
+                          },
+                          {
+                            "variable": "ta",
+                            "long_name": "Air Temperature",
+                            "comment": "Air Temperature",
+                            "similarity_score": 0.5466260784548924
+                          },
+                          {
+                            "variable": "sitemptop",
+                            "long_name": "Surface Temperature of Sea Ice",
+                            "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                            "similarity_score": 0.5299343621961786
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 1297,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "tas"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "32737aa8-f12a-4b14-abc6-92fc4d8048d9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "response": [
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "not_implemented",
+                    "id": [
+                      "langchain",
+                      "agents",
+                      "agent",
+                      "AgentExecutor"
+                    ],
+                    "repr": "AgentExecutor(verbose=True, agent=RunnableMultiActionAgent(runnable=RunnableAssign(mapper={\n  agent_scratchpad: RunnableLambda(lambda x: message_formatter(x['intermediate_steps']))\n})\n| ChatPromptTemplate(input_variables=[], optional_variables=['agent_scratchpad', 'chat_history'], input_types={'chat_history': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7ba4234d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]], 'agent_scratchpad': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7ba4234d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]]}, partial_variables={'chat_history': [], 'agent_scratchpad': []}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template='You are a climate scientist and expert on the CMIP6 dataset. Given a colleague\\'s query, find CMIP6 **variables** most likely to help answer the query. \\n\\nTo find these variables: \\n\\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \\nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\\n\\n2. connect your list of summary words into one comma separated string.\\n\\nAdd as much as relevant, don\\'t be shy\\n\\nUse the tool to check the variables, and at the end output the actual needed query. \\n\\nYour output should be only the variable name that you found most accurate for the query. No explanations\\n\\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.'), additional_kwargs={}), MessagesPlaceholder(variable_name='chat_history', optional=True), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template=''), additional_kwargs={}), MessagesPlaceholder(variable_name='agent_scratchpad', optional=True)])\n| RunnableBinding(bound=ChatOpenAI(client=<openai.resources.chat.completions.Completions object at 0x7ba39b293f40>, async_client=<openai.resources.chat.completions.AsyncCompletions object at 0x7ba39b291f90>, root_client=<openai.OpenAI object at 0x7ba39b31fb80>, root_async_client=<openai.AsyncOpenAI object at 0x7ba39b290df0>, model_name='gpt-4o-mini', temperature=0.1, model_kwargs={}, openai_api_base='https://api.openai.com/v1', seed=1), kwargs={'tools': [{'type': 'function', 'function': {'name': 'variable_matcher', 'description': \"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", 'parameters': {'properties': {'keywords': {'description': 'Keywords or description of the variable(s) to search for. Can be a comma-separated list.', 'type': 'string'}, 'top_n': {'default': 5, 'description': 'Number of top matching variables to return.', 'type': 'integer'}}, 'required': ['keywords'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'CurrentDate-get_current_date', 'description': 'get_current_date() - Returns the current date and time in the selected timezone.', 'parameters': {'properties': {'timezone': {'default': 'UTC', 'description': 'Select the timezone for the current date and time.', 'enum': ['UTC', 'US/Eastern', 'US/Central', 'US/Mountain', 'US/Pacific', 'Europe/London', 'Europe/Paris', 'Europe/Berlin', 'Europe/Moscow', 'Asia/Tokyo', 'Asia/Shanghai', 'Asia/Singapore', 'Asia/Dubai', 'Australia/Sydney', 'Australia/Melbourne', 'Pacific/Auckland', 'America/Sao_Paulo', 'America/Mexico_City', 'America/Toronto', 'America/Vancouver', 'Africa/Cairo', 'Africa/Johannesburg', 'Atlantic/Reykjavik', 'Indian/Maldives', 'America/Bogota', 'America/Lima', 'America/Santiago', 'America/Buenos_Aires', 'America/Caracas', 'America/La_Paz', 'America/Montevideo', 'America/Asuncion', 'America/Cuiaba'], 'type': 'string'}}, 'type': 'object'}}}]}, config={}, config_factories=[])\n| ToolsAgentOutputParser(), input_keys_arg=[], return_keys_arg=[], stream_runnable=True), tools=[StructuredTool(name='variable_matcher', description=\"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", args_schema=<class 'langflow.utils.validate.VariableMatcherToolComponent.VariableMatcherSchema'>, func=<bound method VariableMatcherToolComponent._tool_function of <langflow.utils.validate.VariableMatcherToolComponent object at 0x7ba39b5d3100>>), StructuredTool(name='CurrentDate-get_current_date', description='get_current_date() - Returns the current date and time in the selected timezone.', args_schema=<class 'langflow.io.schema.InputSchema'>, callbacks=[], handle_tool_error=True, func=<function _patch_send_message_decorator.<locals>.sync_wrapper at 0x7ba39b288430>)], handle_parsing_errors=True)",
+                    "name": "AgentExecutor"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "mon",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "201501-205012",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ScenarioMIP",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ssp119",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "metadata": {},
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "09c89748-3750-422d-90b9-487aade72225",
+                  "parent_run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "3904ca23-b4f4-4d41-ba5e-b1fd444c32a5",
+                  "parent_run_id": "09c89748-3750-422d-90b9-487aade72225",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "ba599c45-6f5c-4e75-98a4-c64b57c4aa11",
+                  "parent_run_id": "3904ca23-b4f4-4d41-ba5e-b1fd444c32a5",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "640ac401-2784-4eb3-a3c0-fd4001d23834",
+                  "parent_run_id": "ba599c45-6f5c-4e75-98a4-c64b57c4aa11",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "mon",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "201501-205012",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ScenarioMIP",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ssp119",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "near-surface air temperature",
+                            "top_n": 5
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'near-surface air temperature', 'top_n': 5}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-7614a369-da96-4b28-a656-3e7aab7b5185"
+                            }
+                          ],
+                          "tool_call_id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G"
+                        },
+                        [
+                          {
+                            "variable": "tas",
+                            "long_name": "Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6949893413545197
+                          },
+                          {
+                            "variable": "tasIs",
+                            "long_name": "Ice Sheet Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6225838644048631
+                          },
+                          {
+                            "variable": "ts",
+                            "long_name": "Surface Temperature",
+                            "comment": "Temperature of the lower boundary of the atmosphere",
+                            "similarity_score": 0.5811882582569584
+                          },
+                          {
+                            "variable": "ta",
+                            "long_name": "Air Temperature",
+                            "comment": "Air Temperature",
+                            "similarity_score": 0.5466260784548924
+                          },
+                          {
+                            "variable": "sitemptop",
+                            "long_name": "Surface Temperature of Sea Ice",
+                            "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                            "similarity_score": 0.5299343621961786
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": []
+                  },
+                  "run_id": "ab6b674c-9581-47e0-b36d-e0ebf1735e78",
+                  "parent_run_id": "09c89748-3750-422d-90b9-487aade72225",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "",
+                      "additional_kwargs": {
+                        "tool_calls": [
+                          {
+                            "index": 0,
+                            "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                            "function": {
+                              "arguments": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                              "name": "variable_matcher"
+                            },
+                            "type": "function"
+                          }
+                        ]
+                      },
+                      "response_metadata": {
+                        "finish_reason": "tool_calls",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-7614a369-da96-4b28-a656-3e7aab7b5185",
+                      "tool_calls": [
+                        {
+                          "name": "variable_matcher",
+                          "args": {
+                            "keywords": "near-surface air temperature",
+                            "top_n": 5
+                          },
+                          "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                          "type": "tool_call"
+                        }
+                      ],
+                      "tool_call_chunks": [
+                        {
+                          "name": "variable_matcher",
+                          "args": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                          "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                          "index": 0,
+                          "type": "tool_call_chunk"
+                        }
+                      ],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "061c5b99-a2b6-4889-a7fe-dd9a7ebdf5ec",
+                  "parent_run_id": "09c89748-3750-422d-90b9-487aade72225",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Action",
+                "message": {
+                  "type": "agent_action",
+                  "action": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "ToolAgentAction"
+                    ],
+                    "kwargs": {
+                      "tool": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "near-surface air temperature",
+                        "top_n": 5
+                      },
+                      "log": "\nInvoking: `variable_matcher` with `{'keywords': 'near-surface air temperature', 'top_n': 5}`\n\n\n",
+                      "type": "AgentActionMessageLog",
+                      "message_log": [
+                        {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-7614a369-da96-4b28-a656-3e7aab7b5185",
+                          "example": false,
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "near-surface air temperature",
+                                "top_n": 5
+                              },
+                              "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "invalid_tool_calls": [],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                              "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ]
+                        }
+                      ],
+                      "tool_call_id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G"
+                    }
+                  },
+                  "run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "verbose": true,
+                  "color": "green"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool Start",
+                "message": {
+                  "type": "tool_start",
+                  "serialized": {
+                    "name": "variable_matcher",
+                    "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for."
+                  },
+                  "input_str": "{'keywords': 'near-surface air temperature', 'top_n': 5}",
+                  "run_id": "6b1bf34c-c6b8-48ff-a0b9-949c67076098",
+                  "parent_run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "tags": [],
+                  "metadata": {},
+                  "inputs": {
+                    "keywords": "near-surface air temperature",
+                    "top_n": 5
+                  },
+                  "color": "green",
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool End",
+                "message": {
+                  "type": "tool_end",
+                  "output": [
+                    {
+                      "variable": "tas",
+                      "long_name": "Near-Surface Air Temperature",
+                      "comment": "near-surface (usually, 2 meter) air temperature",
+                      "similarity_score": 0.6949893413545197
+                    },
+                    {
+                      "variable": "tasIs",
+                      "long_name": "Ice Sheet Near-Surface Air Temperature",
+                      "comment": "near-surface (usually, 2 meter) air temperature",
+                      "similarity_score": 0.6225838644048631
+                    },
+                    {
+                      "variable": "ts",
+                      "long_name": "Surface Temperature",
+                      "comment": "Temperature of the lower boundary of the atmosphere",
+                      "similarity_score": 0.5811882582569584
+                    },
+                    {
+                      "variable": "ta",
+                      "long_name": "Air Temperature",
+                      "comment": "Air Temperature",
+                      "similarity_score": 0.5466260784548924
+                    },
+                    {
+                      "variable": "sitemptop",
+                      "long_name": "Surface Temperature of Sea Ice",
+                      "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                      "similarity_score": 0.5299343621961786
+                    }
+                  ],
+                  "run_id": "6b1bf34c-c6b8-48ff-a0b9-949c67076098",
+                  "parent_run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "tags": [],
+                  "color": "blue",
+                  "name": "variable_matcher"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "bcd6b972-dc86-47ca-9819-3eecd93355d6",
+                  "parent_run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "5390dffa-f3a4-4751-96db-8a7e5a13dcb4",
+                  "parent_run_id": "bcd6b972-dc86-47ca-9819-3eecd93355d6",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "8007e943-eb80-4a7c-bb64-fc06092e9913",
+                  "parent_run_id": "5390dffa-f3a4-4751-96db-8a7e5a13dcb4",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "155396ad-fbcc-4071-a622-b992922a74fb",
+                  "parent_run_id": "8007e943-eb80-4a7c-bb64-fc06092e9913",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "mon",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "201501-205012",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ScenarioMIP",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ssp119",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "near-surface air temperature",
+                            "top_n": 5
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'near-surface air temperature', 'top_n': 5}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-7614a369-da96-4b28-a656-3e7aab7b5185"
+                            }
+                          ],
+                          "tool_call_id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G"
+                        },
+                        [
+                          {
+                            "variable": "tas",
+                            "long_name": "Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6949893413545197
+                          },
+                          {
+                            "variable": "tasIs",
+                            "long_name": "Ice Sheet Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6225838644048631
+                          },
+                          {
+                            "variable": "ts",
+                            "long_name": "Surface Temperature",
+                            "comment": "Temperature of the lower boundary of the atmosphere",
+                            "similarity_score": 0.5811882582569584
+                          },
+                          {
+                            "variable": "ta",
+                            "long_name": "Air Temperature",
+                            "comment": "Air Temperature",
+                            "similarity_score": 0.5466260784548924
+                          },
+                          {
+                            "variable": "sitemptop",
+                            "long_name": "Surface Temperature of Sea Ice",
+                            "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                            "similarity_score": 0.5299343621961786
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessageChunk"
+                        ],
+                        "kwargs": {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-7614a369-da96-4b28-a656-3e7aab7b5185",
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "near-surface air temperature",
+                                "top_n": 5
+                              },
+                              "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"near-surface air temperature\",\"top_n\":5}",
+                              "id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "ToolMessage"
+                        ],
+                        "kwargs": {
+                          "content": "[{\"variable\": \"tas\", \"long_name\": \"Near-Surface Air Temperature\", \"comment\": \"near-surface (usually, 2 meter) air temperature\", \"similarity_score\": 0.6949893413545197}, {\"variable\": \"tasIs\", \"long_name\": \"Ice Sheet Near-Surface Air Temperature\", \"comment\": \"near-surface (usually, 2 meter) air temperature\", \"similarity_score\": 0.6225838644048631}, {\"variable\": \"ts\", \"long_name\": \"Surface Temperature\", \"comment\": \"Temperature of the lower boundary of the atmosphere\", \"similarity_score\": 0.5811882582569584}, {\"variable\": \"ta\", \"long_name\": \"Air Temperature\", \"comment\": \"Air Temperature\", \"similarity_score\": 0.5466260784548924}, {\"variable\": \"sitemptop\", \"long_name\": \"Surface Temperature of Sea Ice\", \"comment\": \"Report surface temperature of snow where snow covers the sea ice.\", \"similarity_score\": 0.5299343621961786}]",
+                          "additional_kwargs": {
+                            "name": "variable_matcher"
+                          },
+                          "type": "tool",
+                          "tool_call_id": "call_Qb9ezyzhvFcAtNwfnj2Pfh5G",
+                          "status": "success"
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "b5b367eb-b8dc-4d77-97d6-f8acb0bf07b9",
+                  "parent_run_id": "bcd6b972-dc86-47ca-9819-3eecd93355d6",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "tas",
+                      "response_metadata": {
+                        "finish_reason": "stop",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-f440cc4c-a017-414e-9f2b-1e9077db29dc",
+                      "tool_calls": [],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "39601525-b6bb-47ba-a88d-eb24f3356270",
+                  "parent_run_id": "bcd6b972-dc86-47ca-9819-3eecd93355d6",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Finish",
+                "message": {
+                  "type": "agent_finish",
+                  "finish": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "AgentFinish"
+                    ],
+                    "kwargs": {
+                      "return_values": {
+                        "output": "tas",
+                        "messages": [
+                          {
+                            "content": "tas",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "ai",
+                            "example": false,
+                            "tool_calls": [],
+                            "invalid_tool_calls": []
+                          }
+                        ]
+                      },
+                      "log": "tas",
+                      "type": "AgentFinish"
+                    }
+                  },
+                  "run_id": "6c5c130c-80aa-4a74-91a1-1e0d0341db55",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "color": "green",
+                  "verbose": true
+                },
+                "type": "object"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector",
+          "component_id": "Agent-wqazV",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T16:16:08",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "ssp119",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "39123682-4a70-4d52-945f-7d596efe0a7a",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "ssp119",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "files": [],
+              "session_id": "4-20250305_131601_57ykn1",
+              "timestamp": "2025-03-05T16:16:08Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-jdoTk",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "ssp119",
+            "sender": "Machine",
+            "sender_name": "Experiment",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:08",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "ssp119",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "39123682-4a70-4d52-945f-7d596efe0a7a",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "ssp119",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "session_id": "4-20250305_131601_57ykn1",
+              "component_id": "ChatOutput-NLJoQ",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "ExperimentSelector Output",
+          "component_id": "ChatOutput-NLJoQ",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T16:16:08",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "ScenarioMIP",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "bb772ca1-ef8a-47d2-b2c9-bc5f9f862513",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "ScenarioMIP",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "files": [],
+              "session_id": "4-20250305_131601_57ykn1",
+              "timestamp": "2025-03-05T16:16:08Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3ayFc",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "ScenarioMIP",
+            "sender": "Machine",
+            "sender_name": "MIP",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:08",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "ScenarioMIP",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "bb772ca1-ef8a-47d2-b2c9-bc5f9f862513",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "ScenarioMIP",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "session_id": "4-20250305_131601_57ykn1",
+              "component_id": "ChatOutput-XYyZ4",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "MIPSelector Output",
+          "component_id": "ChatOutput-XYyZ4",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "timestamp": "2025-03-05T16:16:09",
+              "sender": "Machine",
+              "sender_name": "Variable",
+              "session_id": "4-20250305_131601_57ykn1",
+              "text": "tas",
+              "files": [],
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "Agent-wqazV",
+                  "display_name": "Agent",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": [
+                {
+                  "title": "Agent Steps",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "duration": 1,
+                      "header": {
+                        "title": "Input",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "**HUMAN**: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.  \n**AI**: mon  \n**AI**: 201501-205012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                    },
+                    {
+                      "type": "tool_use",
+                      "duration": 632,
+                      "header": {
+                        "title": "Executed **variable_matcher**",
+                        "icon": "Hammer"
+                      },
+                      "name": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "near-surface air temperature",
+                        "top_n": 5
+                      },
+                      "output": [
+                        {
+                          "variable": "tas",
+                          "long_name": "Near-Surface Air Temperature",
+                          "comment": "near-surface (usually, 2 meter) air temperature",
+                          "similarity_score": 0.6949893413545197
+                        },
+                        {
+                          "variable": "tasIs",
+                          "long_name": "Ice Sheet Near-Surface Air Temperature",
+                          "comment": "near-surface (usually, 2 meter) air temperature",
+                          "similarity_score": 0.6225838644048631
+                        },
+                        {
+                          "variable": "ts",
+                          "long_name": "Surface Temperature",
+                          "comment": "Temperature of the lower boundary of the atmosphere",
+                          "similarity_score": 0.5811882582569584
+                        },
+                        {
+                          "variable": "ta",
+                          "long_name": "Air Temperature",
+                          "comment": "Air Temperature",
+                          "similarity_score": 0.5466260784548924
+                        },
+                        {
+                          "variable": "sitemptop",
+                          "long_name": "Surface Temperature of Sea Ice",
+                          "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                          "similarity_score": 0.5299343621961786
+                        }
+                      ],
+                      "error": null
+                    },
+                    {
+                      "type": "text",
+                      "duration": 1297,
+                      "header": {
+                        "title": "Output",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "tas"
+                    }
+                  ],
+                  "allow_markdown": true,
+                  "media_url": null
+                }
+              ],
+              "id": "32737aa8-f12a-4b14-abc6-92fc4d8048d9",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+            }
+          },
+          "artifacts": {
+            "message": "tas",
+            "sender": "Machine",
+            "sender_name": "Variable",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05 16:16:09 ",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "tas",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "Agent-wqazV",
+                    "display_name": "Agent",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.  \n**AI**: mon  \n**AI**: 201501-205012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 632,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "near-surface air temperature",
+                          "top_n": 5
+                        },
+                        "output": [
+                          {
+                            "variable": "tas",
+                            "long_name": "Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6949893413545197
+                          },
+                          {
+                            "variable": "tasIs",
+                            "long_name": "Ice Sheet Near-Surface Air Temperature",
+                            "comment": "near-surface (usually, 2 meter) air temperature",
+                            "similarity_score": 0.6225838644048631
+                          },
+                          {
+                            "variable": "ts",
+                            "long_name": "Surface Temperature",
+                            "comment": "Temperature of the lower boundary of the atmosphere",
+                            "similarity_score": 0.5811882582569584
+                          },
+                          {
+                            "variable": "ta",
+                            "long_name": "Air Temperature",
+                            "comment": "Air Temperature",
+                            "similarity_score": 0.5466260784548924
+                          },
+                          {
+                            "variable": "sitemptop",
+                            "long_name": "Surface Temperature of Sea Ice",
+                            "comment": "Report surface temperature of snow where snow covers the sea ice.",
+                            "similarity_score": 0.5299343621961786
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 1297,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "tas"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "32737aa8-f12a-4b14-abc6-92fc4d8048d9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector Output",
+          "component_id": "ChatOutput-gYkvt",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T16:16:07",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "mon",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3830814d-5f26-420f-a184-e376ca3b2bf2",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "mon",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "files": [],
+              "session_id": "4-20250305_131601_57ykn1",
+              "timestamp": "2025-03-05T16:16:07Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-AXjuD",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "mon",
+            "sender": "Machine",
+            "sender_name": "Temporal Resolution",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:07",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "mon",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3830814d-5f26-420f-a184-e376ca3b2bf2",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "mon",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "session_id": "4-20250305_131601_57ykn1",
+              "component_id": "ChatOutput-QNEAa",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "TemporalSelector Output",
+          "component_id": "ChatOutput-QNEAa",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T16:16:08",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "201501-205012",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3dfc6783-6735-48d6-8ee0-2e8881ac7efe",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "201501-205012",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "files": [],
+              "session_id": "4-20250305_131601_57ykn1",
+              "timestamp": "2025-03-05T16:16:08Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3HdPb",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "201501-205012",
+            "sender": "Machine",
+            "sender_name": "Date Range",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:08",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "201501-205012",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3dfc6783-6735-48d6-8ee0-2e8881ac7efe",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "201501-205012",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "session_id": "4-20250305_131601_57ykn1",
+              "component_id": "ChatOutput-CAZzq",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "RangeSelector Output",
+          "component_id": "ChatOutput-CAZzq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "saved_data": {
+              "repr": "{\n    \"url\": \"No Match\",\n    \"temporal_resolution\": \"mon\",\n    \"date_range\": \"201501-205012\",\n    \"mip\": \"ScenarioMIP\",\n    \"experiment\": \"ssp119\",\n    \"variable\": \"tas\",\n    \"user_query\": \"I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\",\n    \"run_id\": \"c4c71ef0-a3c3-4e90-b065-7d8332b5afc3\",\n    \"session_id\": \"4-20250305_131601_57ykn1\"\n}",
+              "raw": {
+                "url": "No Match",
+                "temporal_resolution": "mon",
+                "date_range": "201501-205012",
+                "mip": "ScenarioMIP",
+                "experiment": "ssp119",
+                "variable": "tas",
+                "user_query": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                "run_id": "c4c71ef0-a3c3-4e90-b065-7d8332b5afc3",
+                "session_id": "4-20250305_131601_57ykn1"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "saved_data": {
+              "message": {
+                "url": "No Match",
+                "temporal_resolution": "mon",
+                "date_range": "201501-205012",
+                "mip": "ScenarioMIP",
+                "experiment": "ssp119",
+                "variable": "tas",
+                "user_query": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                "run_id": "c4c71ef0-a3c3-4e90-b065-7d8332b5afc3",
+                "session_id": "4-20250305_131601_57ykn1"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "saved_data": [
+              {
+                "name": "Log 1",
+                "message": "Configuration saved to url_data.json",
+                "type": "text"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "Save Search Configuration",
+          "component_id": "CustomComponent-qg4v7",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "raw": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Search Query",
+          "component_id": "ParseData-ZwaO0",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "data": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T16:16:06+00:00\",\n    \"sender\": \"User\",\n    \"sender_name\": \"User\",\n    \"session_id\": \"4-20250305_131601_57ykn1\",\n    \"text\": \"I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": \"\",\n        \"background_color\": \"\",\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [],\n    \"id\": \"e026f7b9-d85c-4483-85e0-893cf66853d0\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T16:16:06",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e026f7b9-d85c-4483-85e0-893cf66853d0",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "data": {
+              "message": {
+                "timestamp": "2025-03-05T16:16:06",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_131601_57ykn1",
+                "text": "I am interested in examining the near-surface air temperature data associated with the ssp119 CO2 emissions scenario from January 2015 to December 2050.",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e026f7b9-d85c-4483-85e0-893cf66853d0",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "data": []
+          },
+          "messages": [],
+          "component_display_name": "Message to Data",
+          "component_id": "MessagetoData-xan5A",
+          "used_frozen_result": false
+        }
+      ]
+    }
+  ]
+}
