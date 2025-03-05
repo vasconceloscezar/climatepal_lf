@@ -1,6 +1,6 @@
-Live demo at 
+Live demo at
 
-https://climate-pal.namastex.ai/flow/e5a6ccad-1aa6-458b-abcc-ed9b9809b5ff/folder/54aad242-ee9a-4a53-960f-3fe4f6177497
+<https://climate-pal.namastex.ai/flow/e5a6ccad-1aa6-458b-abcc-ed9b9809b5ff/folder/54aad242-ee9a-4a53-960f-3fe4f6177497>
 
 Accounts with:
 
@@ -11,7 +11,7 @@ Supabase (for a database)
 
 1. Install Langflow:
 
-Follow the official installation instructions: https://github.com/langflow-ai/langflow
+Follow the official installation instructions: <https://github.com/langflow-ai/langflow>
 
 Recommended installation: uv pip install langflow
 
@@ -21,7 +21,7 @@ Verify installation: langflow --version
 
 Run: langflow
 
-Access Langflow in your browser (usually http://127.0.0.1:7860).
+Access Langflow in your browser (usually <http://127.0.0.1:7860>).
 
 3. Import the Flow:
 
@@ -41,7 +41,7 @@ Supabase Save Configuration (Supabase URL, Supabase Key, Table Name)
 
 5. Create a Supabase Server:
 
-Sign up at https://supabase.com/ and create a new project.
+Sign up at <https://supabase.com/> and create a new project.
 
 Note your "Project URL" and the "service_role" API key from the Supabase dashboard's API settings.
 
@@ -59,16 +59,19 @@ The evaluation script allows you to test the Climate Pal agent against a set of 
 
 1. Make sure you have Python 3.8+ installed
 2. Install the required packages:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 Or install them individually:
+
 ```bash
 pip install pandas requests tqdm python-dotenv
 ```
 
 3. Set up your environment variables in a `.env` file:
+
 ```
 OPENAI_API_KEY=your_openai_api_key
 LANGFLOW_API_KEY=your_langflow_api_key
@@ -78,6 +81,7 @@ LANGFLOW_URL=https://api.langflow.tech/api/v1/predict
 ### Preparing Evaluation Data
 
 Create a CSV file at `data/evaluation_queries.csv` with the following columns:
+
 - `query`: The query to test
 - `scenario`: The expected scenario/experiment (e.g., "ssp119")
 - `variable`: The expected variable (e.g., "tas")
@@ -124,16 +128,19 @@ If you press Ctrl+C a second time, the script will exit immediately without wait
 ### Examples
 
 Process all queries with 8 parallel workers:
+
 ```bash
 python evaluate.py --max-workers 8
 ```
 
 Process only the first 10 queries with debug mode enabled:
+
 ```bash
 python evaluate.py --samples 10 --debug
 ```
 
 Process all queries with increased retry attempts:
+
 ```bash
 python evaluate.py --max-retries 5 --retry-delay 10
 ```
@@ -157,7 +164,7 @@ Here are some common issues you might encounter when running the evaluation scri
 ### API Connection Issues
 
 - **Problem**: The script fails to connect to the API or returns connection errors.
-- **Solution**: 
+- **Solution**:
   - Verify your API keys in the `.env` file are correct
   - Check if the LangFlow service is running and accessible
   - Increase the `--max-retries` and `--retry-delay` parameters

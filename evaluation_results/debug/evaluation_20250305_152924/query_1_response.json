@@ -1,0 +1,3054 @@
+{
+  "session_id": "1-20250305_152924",
+  "outputs": [
+    {
+      "inputs": {
+        "input_value": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?"
+      },
+      "outputs": [
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "1-20250305_152924",
+                "text": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e5db705d-ecd5-4d0b-9125-7f50f5096106",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "sender": "User",
+              "sender_name": "User",
+              "files": [],
+              "session_id": "1-20250305_152924",
+              "timestamp": "2025-03-05T18:29:25Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": null,
+                  "display_name": null,
+                  "source": null
+                },
+                "icon": "",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+            "sender": "User",
+            "sender_name": "User",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "1-20250305_152924",
+                "text": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e5db705d-ecd5-4d0b-9125-7f50f5096106",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "sender": "User",
+              "sender_name": "User",
+              "session_id": "1-20250305_152924",
+              "component_id": "ChatInput-nXUUg",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "Dataset Description",
+          "component_id": "ChatInput-nXUUg",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "processed_df": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_mips": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_experiments": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "processed_df": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_mips": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_experiments": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Dataset Processor",
+          "component_id": "CMIP6DatasetProcessorComponent-TaOPv",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "variable_info": {
+              "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "variable_info": {
+              "message": {
+                "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Processor (Zip)",
+          "component_id": "CMIP6VariableProcessorFromZip-X8bHD",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "matched_variables": {
+              "repr": "[Data(text_key='text', data={'message': \"No matches found for variable 'pr, prw, tran, prsn, hur'\"}, default_value='')]",
+              "raw": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "message": "No matches found for variable 'pr, prw, tran, prsn, hur'"
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "message": "No matches found for variable 'pr, prw, tran, prsn, hur'"
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "matched_variables": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Matcher",
+          "component_id": "variable_matcher-S6K64",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "embeddings": {
+              "repr": "None",
+              "raw": {
+                "model": "text-embedding-3-large",
+                "dimensions": null,
+                "deployment": null,
+                "openai_api_version": null,
+                "openai_api_base": null,
+                "openai_api_type": null,
+                "openai_proxy": null,
+                "embedding_ctx_length": 1536,
+                "openai_api_key": "**********",
+                "openai_organization": null,
+                "allowed_special": "all",
+                "disallowed_special": "all",
+                "chunk_size": 1000,
+                "max_retries": 3,
+                "request_timeout": null,
+                "headers": null,
+                "tiktoken_enabled": true,
+                "tiktoken_model_name": null,
+                "show_progress_bar": false,
+                "model_kwargs": {},
+                "skip_empty": false,
+                "default_headers": null,
+                "default_query": null,
+                "retry_min_seconds": 4,
+                "retry_max_seconds": 20,
+                "http_client": null,
+                "http_async_client": null,
+                "check_embedding_ctx_length": true
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "embeddings": {
+              "message": {
+                "repr": "None",
+                "raw": {
+                  "model": "text-embedding-3-large",
+                  "dimensions": null,
+                  "deployment": null,
+                  "openai_api_version": null,
+                  "openai_api_base": null,
+                  "openai_api_type": null,
+                  "openai_proxy": null,
+                  "embedding_ctx_length": 1536,
+                  "openai_api_key": "**********",
+                  "openai_organization": null,
+                  "allowed_special": "all",
+                  "disallowed_special": "all",
+                  "chunk_size": 1000,
+                  "max_retries": 3,
+                  "request_timeout": null,
+                  "headers": null,
+                  "tiktoken_enabled": true,
+                  "tiktoken_model_name": null,
+                  "show_progress_bar": false,
+                  "model_kwargs": {},
+                  "skip_empty": false,
+                  "default_headers": null,
+                  "default_query": null,
+                  "retry_min_seconds": 4,
+                  "retry_max_seconds": 20,
+                  "http_client": null,
+                  "http_async_client": null,
+                  "check_embedding_ctx_length": true
+                },
+                "type": "object"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "OpenAI Embeddings",
+          "component_id": "OpenAIEmbeddings-XsKPV",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "raw": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Filter",
+          "component_id": "TemporalResolutionFilterComponent-3pGxq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets within the year range NA-210012. 0 datasets remain.",
+              "raw": "Filtered datasets within the year range NA-210012. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets within the year range NA-210012. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Year Range Filter",
+          "component_id": "YearRangeFilterComponent-VS8WD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "extracted_urls": {
+              "repr": "[]",
+              "raw": [],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "extracted_urls": {
+              "message": [],
+              "type": "array"
+            }
+          },
+          "logs": {
+            "extracted_urls": []
+          },
+          "messages": [],
+          "component_display_name": "URL Extractor",
+          "component_id": "URLExtractorComponent-mEoFP",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "raw": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Date Range Prompt",
+          "component_id": "Prompt-LB8oS",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "NA-210012",
+              "raw": "NA-210012",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "NA-210012",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "RangeSelector",
+          "component_id": "OpenAIModel-3HdPb",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\n",
+              "raw": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Prompt",
+          "component_id": "Prompt-zA0Up",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "NA",
+              "raw": "NA",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "NA",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "TemporalSelector",
+          "component_id": "OpenAIModel-AXjuD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "raw": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "DPrompt",
+          "component_id": "Prompt-Q27xi",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "",
+              "raw": "",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Parse Data",
+          "component_id": "ParseData-FSrn8",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "raw": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment",
+          "component_id": "ParseData-owi82",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "CMIP\nScenarioMIP",
+              "raw": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "MIP",
+          "component_id": "ParseData-vmr1o",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Prompt",
+          "component_id": "Prompt-qCzNO",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "ScenarioMIP",
+              "raw": "ScenarioMIP",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "ScenarioMIP",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "MIPSelector",
+          "component_id": "OpenAIModel-3ayFc",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Prompt",
+          "component_id": "Prompt-Z36He",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "ssp119",
+              "raw": "ssp119",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "ssp119",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "ExperimentSelector",
+          "component_id": "OpenAIModel-jdoTk",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets by MIP 'ScenarioMIP'. Remaining datasets: 196443",
+              "raw": "Filtered datasets by MIP 'ScenarioMIP'. Remaining datasets: 196443",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets by MIP 'ScenarioMIP'. Remaining datasets: 196443",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Filter",
+          "component_id": "MIPFilterComponent-7xtDm",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets by Experiment 'ssp119'. Remaining datasets: 15451",
+              "raw": "Filtered datasets by Experiment 'ssp119'. Remaining datasets: 15451",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets by Experiment 'ssp119'. Remaining datasets: 15451",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Filter",
+          "component_id": "ExperimentFilterComponent-aWhGL",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_variable_info": {
+              "repr": "Filtered variable info. Remaining variables: 279",
+              "raw": "Filtered variable info. Remaining variables: 279",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_variable_info": {
+              "message": "Filtered variable info. Remaining variables: 279",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_variable_info": []
+          },
+          "messages": [],
+          "component_display_name": "Filtered Variable Info",
+          "component_id": "FilteredVariableInfoComponent-J7SKC",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "tool": {
+              "repr": "None",
+              "raw": {
+                "name": "variable_matcher",
+                "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.",
+                "args_schema": "VariableMatcherSchema",
+                "return_direct": false,
+                "verbose": false,
+                "tags": null,
+                "metadata": null,
+                "handle_tool_error": false,
+                "handle_validation_error": false,
+                "response_format": "content",
+                "func": "_tool_function",
+                "coroutine": null
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": "",
+              "type": "unknown"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "tool": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP Variable Tool Check",
+          "component_id": "variable_matcher-aUJnq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "current_date": {
+              "repr": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "raw": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "current_date": {
+              "message": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "current_date": []
+          },
+          "messages": [],
+          "component_display_name": "Current Date",
+          "component_id": "CurrentDateComponent-qbE6Q",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "response": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T18:29:28+00:00\",\n    \"sender\": \"Machine\",\n    \"sender_name\": \"Agent\",\n    \"session_id\": \"1-20250305_152924\",\n    \"text\": \"pr, prw, tran, prsn, hur\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": null,\n        \"background_color\": null,\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"Bot\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [\n        {\n            \"title\": \"Agent Steps\",\n            \"contents\": [\n                {\n                    \"type\": \"text\",\n                    \"duration\": 1,\n                    \"header\": {\n                        \"title\": \"Input\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"**HUMAN**: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?  \\n**AI**: NA  \\n**AI**: NA-210012  \\n**AI**: ScenarioMIP  \\n**AI**: ssp119\"\n                },\n                {\n                    \"type\": \"tool_use\",\n                    \"duration\": 5616,\n                    \"header\": {\n                        \"title\": \"Executed **variable_matcher**\",\n                        \"icon\": \"Hammer\"\n                    },\n                    \"name\": \"variable_matcher\",\n                    \"tool_input\": {\n                        \"keywords\": \"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"\n                    },\n                    \"output\": [\n                        {\n                            \"variable\": \"pr\",\n                            \"long_name\": \"Precipitation\",\n                            \"comment\": \"includes both liquid and solid phases\",\n                            \"similarity_score\": 0.47035745839517856\n                        },\n                        {\n                            \"variable\": \"prw\",\n                            \"long_name\": \"Water Vapor Path\",\n                            \"comment\": \"vertically integrated through the atmospheric column\",\n                            \"similarity_score\": 0.4606030602240786\n                        },\n                        {\n                            \"variable\": \"tran\",\n                            \"long_name\": \"Transpiration\",\n                            \"comment\": \"Transpiration (may include dew formation as a negative flux).\",\n                            \"similarity_score\": 0.45624008388298487\n                        },\n                        {\n                            \"variable\": \"prsn\",\n                            \"long_name\": \"Snowfall Flux\",\n                            \"comment\": \"At surface; includes precipitation of all forms of water in the solid phase\",\n                            \"similarity_score\": 0.4453814988652505\n                        },\n                        {\n                            \"variable\": \"hur\",\n                            \"long_name\": \"Relative Humidity\",\n                            \"comment\": \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\",\n                            \"similarity_score\": 0.4321534275153253\n                        }\n                    ],\n                    \"error\": null\n                },\n                {\n                    \"type\": \"text\",\n                    \"duration\": 975,\n                    \"header\": {\n                        \"title\": \"Output\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"pr, prw, tran, prsn, hur\"\n                }\n            ],\n            \"allow_markdown\": true,\n            \"media_url\": null\n        }\n    ],\n    \"id\": \"e5616497-c182-40f5-95cd-fff5079488cb\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "1-20250305_152924",
+                "text": "pr, prw, tran, prsn, hur",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?  \n**AI**: NA  \n**AI**: NA-210012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 5616,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                        },
+                        "output": [
+                          {
+                            "variable": "pr",
+                            "long_name": "Precipitation",
+                            "comment": "includes both liquid and solid phases",
+                            "similarity_score": 0.47035745839517856
+                          },
+                          {
+                            "variable": "prw",
+                            "long_name": "Water Vapor Path",
+                            "comment": "vertically integrated through the atmospheric column",
+                            "similarity_score": 0.4606030602240786
+                          },
+                          {
+                            "variable": "tran",
+                            "long_name": "Transpiration",
+                            "comment": "Transpiration (may include dew formation as a negative flux).",
+                            "similarity_score": 0.45624008388298487
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4453814988652505
+                          },
+                          {
+                            "variable": "hur",
+                            "long_name": "Relative Humidity",
+                            "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                            "similarity_score": 0.4321534275153253
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 975,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "pr, prw, tran, prsn, hur"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "e5616497-c182-40f5-95cd-fff5079488cb",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "message"
+            }
+          },
+          "outputs": {
+            "response": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Agent",
+                "session_id": "1-20250305_152924",
+                "text": "pr, prw, tran, prsn, hur",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?  \n**AI**: NA  \n**AI**: NA-210012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 5616,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                        },
+                        "output": [
+                          {
+                            "variable": "pr",
+                            "long_name": "Precipitation",
+                            "comment": "includes both liquid and solid phases",
+                            "similarity_score": 0.47035745839517856
+                          },
+                          {
+                            "variable": "prw",
+                            "long_name": "Water Vapor Path",
+                            "comment": "vertically integrated through the atmospheric column",
+                            "similarity_score": 0.4606030602240786
+                          },
+                          {
+                            "variable": "tran",
+                            "long_name": "Transpiration",
+                            "comment": "Transpiration (may include dew formation as a negative flux).",
+                            "similarity_score": 0.45624008388298487
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4453814988652505
+                          },
+                          {
+                            "variable": "hur",
+                            "long_name": "Relative Humidity",
+                            "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                            "similarity_score": 0.4321534275153253
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 975,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "pr, prw, tran, prsn, hur"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "e5616497-c182-40f5-95cd-fff5079488cb",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "response": [
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "not_implemented",
+                    "id": [
+                      "langchain",
+                      "agents",
+                      "agent",
+                      "AgentExecutor"
+                    ],
+                    "repr": "AgentExecutor(verbose=True, agent=RunnableMultiActionAgent(runnable=RunnableAssign(mapper={\n  agent_scratchpad: RunnableLambda(lambda x: message_formatter(x['intermediate_steps']))\n})\n| ChatPromptTemplate(input_variables=[], optional_variables=['agent_scratchpad', 'chat_history'], input_types={'chat_history': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7d15912d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]], 'agent_scratchpad': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7d15912d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]]}, partial_variables={'chat_history': [], 'agent_scratchpad': []}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template='You are a climate scientist and expert on the CMIP6 dataset. Given a colleague\\'s query, find CMIP6 **variables** most likely to help answer the query. \\n\\nTo find these variables: \\n\\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \\nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\\n\\n2. connect your list of summary words into one comma separated string.\\n\\nAdd as much as relevant, don\\'t be shy\\n\\nUse the tool to check the variables, and at the end output the actual needed query. \\n\\nYour output should be only the variable name that you found most accurate for the query. No explanations\\n\\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?'), additional_kwargs={}), MessagesPlaceholder(variable_name='chat_history', optional=True), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template=''), additional_kwargs={}), MessagesPlaceholder(variable_name='agent_scratchpad', optional=True)])\n| RunnableBinding(bound=ChatOpenAI(client=<openai.resources.chat.completions.Completions object at 0x7d1502595cf0>, async_client=<openai.resources.chat.completions.AsyncCompletions object at 0x7d150258ca00>, root_client=<openai.OpenAI object at 0x7d1502597040>, root_async_client=<openai.AsyncOpenAI object at 0x7d1502595810>, model_name='gpt-4o-mini', temperature=0.1, model_kwargs={}, openai_api_base='https://api.openai.com/v1', seed=1), kwargs={'tools': [{'type': 'function', 'function': {'name': 'variable_matcher', 'description': \"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", 'parameters': {'properties': {'keywords': {'description': 'Keywords or description of the variable(s) to search for. Can be a comma-separated list.', 'type': 'string'}, 'top_n': {'default': 5, 'description': 'Number of top matching variables to return.', 'type': 'integer'}}, 'required': ['keywords'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'CurrentDate-get_current_date', 'description': 'get_current_date() - Returns the current date and time in the selected timezone.', 'parameters': {'properties': {'timezone': {'default': 'UTC', 'description': 'Select the timezone for the current date and time.', 'enum': ['UTC', 'US/Eastern', 'US/Central', 'US/Mountain', 'US/Pacific', 'Europe/London', 'Europe/Paris', 'Europe/Berlin', 'Europe/Moscow', 'Asia/Tokyo', 'Asia/Shanghai', 'Asia/Singapore', 'Asia/Dubai', 'Australia/Sydney', 'Australia/Melbourne', 'Pacific/Auckland', 'America/Sao_Paulo', 'America/Mexico_City', 'America/Toronto', 'America/Vancouver', 'Africa/Cairo', 'Africa/Johannesburg', 'Atlantic/Reykjavik', 'Indian/Maldives', 'America/Bogota', 'America/Lima', 'America/Santiago', 'America/Buenos_Aires', 'America/Caracas', 'America/La_Paz', 'America/Montevideo', 'America/Asuncion', 'America/Cuiaba'], 'type': 'string'}}, 'type': 'object'}}}]}, config={}, config_factories=[])\n| ToolsAgentOutputParser(), input_keys_arg=[], return_keys_arg=[], stream_runnable=True), tools=[StructuredTool(name='variable_matcher', description=\"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", args_schema=<class 'langflow.utils.validate.VariableMatcherToolComponent.VariableMatcherSchema'>, func=<bound method VariableMatcherToolComponent._tool_function of <langflow.utils.validate.VariableMatcherToolComponent object at 0x7d14fe5edd50>>), StructuredTool(name='CurrentDate-get_current_date', description='get_current_date() - Returns the current date and time in the selected timezone.', args_schema=<class 'langflow.io.schema.InputSchema'>, callbacks=[], handle_tool_error=True, func=<function _patch_send_message_decorator.<locals>.sync_wrapper at 0x7d15025991b0>)], handle_parsing_errors=True)",
+                    "name": "AgentExecutor"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-210012",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ScenarioMIP",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ssp119",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "metadata": {},
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "5979843e-adc1-4956-a440-0a6da28ed58d",
+                  "parent_run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "eb052102-df67-44eb-b68a-4c536bb50eae",
+                  "parent_run_id": "5979843e-adc1-4956-a440-0a6da28ed58d",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "e2ebe745-b66f-4812-83f9-2edf5d0c3ac5",
+                  "parent_run_id": "eb052102-df67-44eb-b68a-4c536bb50eae",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "cf11f878-cfab-4baa-8b94-c4a5fe3f53dc",
+                  "parent_run_id": "e2ebe745-b66f-4812-83f9-2edf5d0c3ac5",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-210012",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ScenarioMIP",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ssp119",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness'}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-32d57b2a-d853-421d-8ed3-c0fad00d171f"
+                            }
+                          ],
+                          "tool_call_id": "call_FBNDppFpTHyuvR3P8ZJne3bF"
+                        },
+                        [
+                          {
+                            "variable": "pr",
+                            "long_name": "Precipitation",
+                            "comment": "includes both liquid and solid phases",
+                            "similarity_score": 0.47035745839517856
+                          },
+                          {
+                            "variable": "prw",
+                            "long_name": "Water Vapor Path",
+                            "comment": "vertically integrated through the atmospheric column",
+                            "similarity_score": 0.4606030602240786
+                          },
+                          {
+                            "variable": "tran",
+                            "long_name": "Transpiration",
+                            "comment": "Transpiration (may include dew formation as a negative flux).",
+                            "similarity_score": 0.45624008388298487
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4453814988652505
+                          },
+                          {
+                            "variable": "hur",
+                            "long_name": "Relative Humidity",
+                            "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                            "similarity_score": 0.4321534275153253
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": []
+                  },
+                  "run_id": "4254473b-4687-41a5-990a-b23802251600",
+                  "parent_run_id": "5979843e-adc1-4956-a440-0a6da28ed58d",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "",
+                      "additional_kwargs": {
+                        "tool_calls": [
+                          {
+                            "index": 0,
+                            "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                            "function": {
+                              "arguments": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                              "name": "variable_matcher"
+                            },
+                            "type": "function"
+                          }
+                        ]
+                      },
+                      "response_metadata": {
+                        "finish_reason": "tool_calls",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-32d57b2a-d853-421d-8ed3-c0fad00d171f",
+                      "tool_calls": [
+                        {
+                          "name": "variable_matcher",
+                          "args": {
+                            "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                          },
+                          "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                          "type": "tool_call"
+                        }
+                      ],
+                      "tool_call_chunks": [
+                        {
+                          "name": "variable_matcher",
+                          "args": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                          "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                          "index": 0,
+                          "type": "tool_call_chunk"
+                        }
+                      ],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "81a6e7f8-bc0e-47ac-83fa-ed3fda55ba53",
+                  "parent_run_id": "5979843e-adc1-4956-a440-0a6da28ed58d",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Action",
+                "message": {
+                  "type": "agent_action",
+                  "action": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "ToolAgentAction"
+                    ],
+                    "kwargs": {
+                      "tool": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                      },
+                      "log": "\nInvoking: `variable_matcher` with `{'keywords': 'fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness'}`\n\n\n",
+                      "type": "AgentActionMessageLog",
+                      "message_log": [
+                        {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-32d57b2a-d853-421d-8ed3-c0fad00d171f",
+                          "example": false,
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                              },
+                              "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "invalid_tool_calls": [],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                              "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ]
+                        }
+                      ],
+                      "tool_call_id": "call_FBNDppFpTHyuvR3P8ZJne3bF"
+                    }
+                  },
+                  "run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "verbose": true,
+                  "color": "green"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool Start",
+                "message": {
+                  "type": "tool_start",
+                  "serialized": {
+                    "name": "variable_matcher",
+                    "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for."
+                  },
+                  "input_str": "{'keywords': 'fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness'}",
+                  "run_id": "9dacb330-d4b2-4b74-943f-2c6743e3da30",
+                  "parent_run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "tags": [],
+                  "metadata": {},
+                  "inputs": {
+                    "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                  },
+                  "color": "green",
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool End",
+                "message": {
+                  "type": "tool_end",
+                  "output": [
+                    {
+                      "variable": "pr",
+                      "long_name": "Precipitation",
+                      "comment": "includes both liquid and solid phases",
+                      "similarity_score": 0.47035745839517856
+                    },
+                    {
+                      "variable": "prw",
+                      "long_name": "Water Vapor Path",
+                      "comment": "vertically integrated through the atmospheric column",
+                      "similarity_score": 0.4606030602240786
+                    },
+                    {
+                      "variable": "tran",
+                      "long_name": "Transpiration",
+                      "comment": "Transpiration (may include dew formation as a negative flux).",
+                      "similarity_score": 0.45624008388298487
+                    },
+                    {
+                      "variable": "prsn",
+                      "long_name": "Snowfall Flux",
+                      "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                      "similarity_score": 0.4453814988652505
+                    },
+                    {
+                      "variable": "hur",
+                      "long_name": "Relative Humidity",
+                      "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                      "similarity_score": 0.4321534275153253
+                    }
+                  ],
+                  "run_id": "9dacb330-d4b2-4b74-943f-2c6743e3da30",
+                  "parent_run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "tags": [],
+                  "color": "blue",
+                  "name": "variable_matcher"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "34194be8-0cad-49c7-ab4d-2245c9f4d8e8",
+                  "parent_run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "a2516d02-c2f1-4b72-96de-bd5acf382338",
+                  "parent_run_id": "34194be8-0cad-49c7-ab4d-2245c9f4d8e8",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "627c5eba-3d13-4767-aaa5-bbfaaa82623f",
+                  "parent_run_id": "a2516d02-c2f1-4b72-96de-bd5acf382338",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "b0e70503-29e4-4f7e-976f-527c94b09699",
+                  "parent_run_id": "627c5eba-3d13-4767-aaa5-bbfaaa82623f",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-210012",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ScenarioMIP",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "ssp119",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness'}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-32d57b2a-d853-421d-8ed3-c0fad00d171f"
+                            }
+                          ],
+                          "tool_call_id": "call_FBNDppFpTHyuvR3P8ZJne3bF"
+                        },
+                        [
+                          {
+                            "variable": "pr",
+                            "long_name": "Precipitation",
+                            "comment": "includes both liquid and solid phases",
+                            "similarity_score": 0.47035745839517856
+                          },
+                          {
+                            "variable": "prw",
+                            "long_name": "Water Vapor Path",
+                            "comment": "vertically integrated through the atmospheric column",
+                            "similarity_score": 0.4606030602240786
+                          },
+                          {
+                            "variable": "tran",
+                            "long_name": "Transpiration",
+                            "comment": "Transpiration (may include dew formation as a negative flux).",
+                            "similarity_score": 0.45624008388298487
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4453814988652505
+                          },
+                          {
+                            "variable": "hur",
+                            "long_name": "Relative Humidity",
+                            "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                            "similarity_score": 0.4321534275153253
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessageChunk"
+                        ],
+                        "kwargs": {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-32d57b2a-d853-421d-8ed3-c0fad00d171f",
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                              },
+                              "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness\"}",
+                              "id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "ToolMessage"
+                        ],
+                        "kwargs": {
+                          "content": "[{\"variable\": \"pr\", \"long_name\": \"Precipitation\", \"comment\": \"includes both liquid and solid phases\", \"similarity_score\": 0.47035745839517856}, {\"variable\": \"prw\", \"long_name\": \"Water Vapor Path\", \"comment\": \"vertically integrated through the atmospheric column\", \"similarity_score\": 0.4606030602240786}, {\"variable\": \"tran\", \"long_name\": \"Transpiration\", \"comment\": \"Transpiration (may include dew formation as a negative flux).\", \"similarity_score\": 0.45624008388298487}, {\"variable\": \"prsn\", \"long_name\": \"Snowfall Flux\", \"comment\": \"At surface; includes precipitation of all forms of water in the solid phase\", \"similarity_score\": 0.4453814988652505}, {\"variable\": \"hur\", \"long_name\": \"Relative Humidity\", \"comment\": \"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\", \"similarity_score\": 0.4321534275153253}]",
+                          "additional_kwargs": {
+                            "name": "variable_matcher"
+                          },
+                          "type": "tool",
+                          "tool_call_id": "call_FBNDppFpTHyuvR3P8ZJne3bF",
+                          "status": "success"
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "2d440b24-ed2b-4d8b-a967-0d5f1635ac8d",
+                  "parent_run_id": "34194be8-0cad-49c7-ab4d-2245c9f4d8e8",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "pr, prw, tran, prsn, hur",
+                      "response_metadata": {
+                        "finish_reason": "stop",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-b52b4eba-e4a6-4fa6-a731-bf3fafdb13bc",
+                      "tool_calls": [],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "44e1b7cd-fdd1-4c2f-a0cd-086961320c28",
+                  "parent_run_id": "34194be8-0cad-49c7-ab4d-2245c9f4d8e8",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Finish",
+                "message": {
+                  "type": "agent_finish",
+                  "finish": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "AgentFinish"
+                    ],
+                    "kwargs": {
+                      "return_values": {
+                        "output": "pr, prw, tran, prsn, hur",
+                        "messages": [
+                          {
+                            "content": "pr, prw, tran, prsn, hur",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "ai",
+                            "example": false,
+                            "tool_calls": [],
+                            "invalid_tool_calls": []
+                          }
+                        ]
+                      },
+                      "log": "pr, prw, tran, prsn, hur",
+                      "type": "AgentFinish"
+                    }
+                  },
+                  "run_id": "76ff3c97-bcf2-4c49-8efe-7753be2adf6a",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "color": "green",
+                  "verbose": true
+                },
+                "type": "object"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector",
+          "component_id": "Agent-wqazV",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "1-20250305_152924",
+                "text": "ssp119",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "1a58f810-5272-44dd-b352-deb83136669e",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "ssp119",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "files": [],
+              "session_id": "1-20250305_152924",
+              "timestamp": "2025-03-05T18:29:28Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-jdoTk",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "ssp119",
+            "sender": "Machine",
+            "sender_name": "Experiment",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "1-20250305_152924",
+                "text": "ssp119",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "1a58f810-5272-44dd-b352-deb83136669e",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "ssp119",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "session_id": "1-20250305_152924",
+              "component_id": "ChatOutput-NLJoQ",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "ExperimentSelector Output",
+          "component_id": "ChatOutput-NLJoQ",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "1-20250305_152924",
+                "text": "ScenarioMIP",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "839e2ccb-7b15-42cd-a4e5-73cf020eea9f",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "ScenarioMIP",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "files": [],
+              "session_id": "1-20250305_152924",
+              "timestamp": "2025-03-05T18:29:28Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3ayFc",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "ScenarioMIP",
+            "sender": "Machine",
+            "sender_name": "MIP",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "1-20250305_152924",
+                "text": "ScenarioMIP",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "839e2ccb-7b15-42cd-a4e5-73cf020eea9f",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "ScenarioMIP",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "session_id": "1-20250305_152924",
+              "component_id": "ChatOutput-XYyZ4",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "MIPSelector Output",
+          "component_id": "ChatOutput-XYyZ4",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "timestamp": "2025-03-05T18:29:28",
+              "sender": "Machine",
+              "sender_name": "Variable",
+              "session_id": "1-20250305_152924",
+              "text": "pr, prw, tran, prsn, hur",
+              "files": [],
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "Agent-wqazV",
+                  "display_name": "Agent",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": [
+                {
+                  "title": "Agent Steps",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "duration": 1,
+                      "header": {
+                        "title": "Input",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "**HUMAN**: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?  \n**AI**: NA  \n**AI**: NA-210012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                    },
+                    {
+                      "type": "tool_use",
+                      "duration": 5616,
+                      "header": {
+                        "title": "Executed **variable_matcher**",
+                        "icon": "Hammer"
+                      },
+                      "name": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                      },
+                      "output": [
+                        {
+                          "variable": "pr",
+                          "long_name": "Precipitation",
+                          "comment": "includes both liquid and solid phases",
+                          "similarity_score": 0.47035745839517856
+                        },
+                        {
+                          "variable": "prw",
+                          "long_name": "Water Vapor Path",
+                          "comment": "vertically integrated through the atmospheric column",
+                          "similarity_score": 0.4606030602240786
+                        },
+                        {
+                          "variable": "tran",
+                          "long_name": "Transpiration",
+                          "comment": "Transpiration (may include dew formation as a negative flux).",
+                          "similarity_score": 0.45624008388298487
+                        },
+                        {
+                          "variable": "prsn",
+                          "long_name": "Snowfall Flux",
+                          "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                          "similarity_score": 0.4453814988652505
+                        },
+                        {
+                          "variable": "hur",
+                          "long_name": "Relative Humidity",
+                          "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                          "similarity_score": 0.4321534275153253
+                        }
+                      ],
+                      "error": null
+                    },
+                    {
+                      "type": "text",
+                      "duration": 975,
+                      "header": {
+                        "title": "Output",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "pr, prw, tran, prsn, hur"
+                    }
+                  ],
+                  "allow_markdown": true,
+                  "media_url": null
+                }
+              ],
+              "id": "e5616497-c182-40f5-95cd-fff5079488cb",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+            }
+          },
+          "artifacts": {
+            "message": "pr, prw, tran, prsn, hur",
+            "sender": "Machine",
+            "sender_name": "Variable",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05 18:29:28 ",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "1-20250305_152924",
+                "text": "pr, prw, tran, prsn, hur",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "Agent-wqazV",
+                    "display_name": "Agent",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?  \n**AI**: NA  \n**AI**: NA-210012  \n**AI**: ScenarioMIP  \n**AI**: ssp119"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 5616,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "fire weather indices, temperature, precipitation, humidity, wind, drought, evapotranspiration, soil moisture, heat, dryness"
+                        },
+                        "output": [
+                          {
+                            "variable": "pr",
+                            "long_name": "Precipitation",
+                            "comment": "includes both liquid and solid phases",
+                            "similarity_score": 0.47035745839517856
+                          },
+                          {
+                            "variable": "prw",
+                            "long_name": "Water Vapor Path",
+                            "comment": "vertically integrated through the atmospheric column",
+                            "similarity_score": 0.4606030602240786
+                          },
+                          {
+                            "variable": "tran",
+                            "long_name": "Transpiration",
+                            "comment": "Transpiration (may include dew formation as a negative flux).",
+                            "similarity_score": 0.45624008388298487
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4453814988652505
+                          },
+                          {
+                            "variable": "hur",
+                            "long_name": "Relative Humidity",
+                            "comment": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
+                            "similarity_score": 0.4321534275153253
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 975,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "pr, prw, tran, prsn, hur"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "e5616497-c182-40f5-95cd-fff5079488cb",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector Output",
+          "component_id": "ChatOutput-gYkvt",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:26",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "1-20250305_152924",
+                "text": "NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "d0d85150-83a9-4fd0-ba23-a34f4a146796",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "NA",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "files": [],
+              "session_id": "1-20250305_152924",
+              "timestamp": "2025-03-05T18:29:26Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-AXjuD",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "NA",
+            "sender": "Machine",
+            "sender_name": "Temporal Resolution",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:26",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "1-20250305_152924",
+                "text": "NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "d0d85150-83a9-4fd0-ba23-a34f4a146796",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "NA",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "session_id": "1-20250305_152924",
+              "component_id": "ChatOutput-QNEAa",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "TemporalSelector Output",
+          "component_id": "ChatOutput-QNEAa",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:27",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "1-20250305_152924",
+                "text": "NA-210012",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "6b2adb72-0dd8-462e-b3e5-792d8d58ab5e",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "NA-210012",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "files": [],
+              "session_id": "1-20250305_152924",
+              "timestamp": "2025-03-05T18:29:27Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3HdPb",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "NA-210012",
+            "sender": "Machine",
+            "sender_name": "Date Range",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:27",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "1-20250305_152924",
+                "text": "NA-210012",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "6b2adb72-0dd8-462e-b3e5-792d8d58ab5e",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "NA-210012",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "session_id": "1-20250305_152924",
+              "component_id": "ChatOutput-CAZzq",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "RangeSelector Output",
+          "component_id": "ChatOutput-CAZzq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "saved_data": {
+              "repr": "{\n    \"url\": \"No Match\",\n    \"temporal_resolution\": \"NA\",\n    \"date_range\": \"NA-210012\",\n    \"mip\": \"ScenarioMIP\",\n    \"experiment\": \"ssp119\",\n    \"variable\": \"pr, prw, tran, prsn, hur\",\n    \"user_query\": \"Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\",\n    \"run_id\": \"89f9e651-4afc-446f-9c59-052fa43603a7\",\n    \"session_id\": \"1-20250305_152924\"\n}",
+              "raw": {
+                "url": "No Match",
+                "temporal_resolution": "NA",
+                "date_range": "NA-210012",
+                "mip": "ScenarioMIP",
+                "experiment": "ssp119",
+                "variable": "pr, prw, tran, prsn, hur",
+                "user_query": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                "run_id": "89f9e651-4afc-446f-9c59-052fa43603a7",
+                "session_id": "1-20250305_152924"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "saved_data": {
+              "message": {
+                "url": "No Match",
+                "temporal_resolution": "NA",
+                "date_range": "NA-210012",
+                "mip": "ScenarioMIP",
+                "experiment": "ssp119",
+                "variable": "pr, prw, tran, prsn, hur",
+                "user_query": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                "run_id": "89f9e651-4afc-446f-9c59-052fa43603a7",
+                "session_id": "1-20250305_152924"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "saved_data": [
+              {
+                "name": "Log 1",
+                "message": "Configuration saved to url_data.json",
+                "type": "text"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "Save Search Configuration",
+          "component_id": "CustomComponent-qg4v7",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "raw": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Search Query",
+          "component_id": "ParseData-ZwaO0",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "data": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T18:29:25+00:00\",\n    \"sender\": \"User\",\n    \"sender_name\": \"User\",\n    \"session_id\": \"1-20250305_152924\",\n    \"text\": \"Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": \"\",\n        \"background_color\": \"\",\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [],\n    \"id\": \"e5db705d-ecd5-4d0b-9125-7f50f5096106\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "1-20250305_152924",
+                "text": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e5db705d-ecd5-4d0b-9125-7f50f5096106",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "data": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "1-20250305_152924",
+                "text": "Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "e5db705d-ecd5-4d0b-9125-7f50f5096106",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "data": []
+          },
+          "messages": [],
+          "component_display_name": "Message to Data",
+          "component_id": "MessagetoData-xan5A",
+          "used_frozen_result": false
+        }
+      ]
+    }
+  ]
+}

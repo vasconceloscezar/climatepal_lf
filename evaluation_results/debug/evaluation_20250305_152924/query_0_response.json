@@ -1,0 +1,3058 @@
+{
+  "session_id": "0-20250305_152924",
+  "outputs": [
+    {
+      "inputs": {
+        "input_value": "What variable is needed for the dry deposition of ozone?"
+      },
+      "outputs": [
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "0-20250305_152924",
+                "text": "What variable is needed for the dry deposition of ozone?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "72dbbedf-7122-4026-97e2-e3866d0189cf",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "What variable is needed for the dry deposition of ozone?",
+              "sender": "User",
+              "sender_name": "User",
+              "files": [],
+              "session_id": "0-20250305_152924",
+              "timestamp": "2025-03-05T18:29:25Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": null,
+                  "display_name": null,
+                  "source": null
+                },
+                "icon": "",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "What variable is needed for the dry deposition of ozone?",
+            "sender": "User",
+            "sender_name": "User",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "0-20250305_152924",
+                "text": "What variable is needed for the dry deposition of ozone?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "72dbbedf-7122-4026-97e2-e3866d0189cf",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "What variable is needed for the dry deposition of ozone?",
+              "sender": "User",
+              "sender_name": "User",
+              "session_id": "0-20250305_152924",
+              "component_id": "ChatInput-nXUUg",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "Dataset Description",
+          "component_id": "ChatInput-nXUUg",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "processed_df": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_mips": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_experiments": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "processed_df": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_mips": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_experiments": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Dataset Processor",
+          "component_id": "CMIP6DatasetProcessorComponent-TaOPv",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "variable_info": {
+              "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "variable_info": {
+              "message": {
+                "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Processor (Zip)",
+          "component_id": "CMIP6VariableProcessorFromZip-X8bHD",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "matched_variables": {
+              "repr": "[Data(text_key='text', data={'variable': 'dryo3', 'long_name': 'Dry Deposition Rate of O3', 'comment': 'Dry Deposition includes gravitational settling and turbulent deposition.'}, default_value='')]",
+              "raw": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "variable": "dryo3",
+                    "long_name": "Dry Deposition Rate of O3",
+                    "comment": "Dry Deposition includes gravitational settling and turbulent deposition."
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "variable": "dryo3",
+                    "long_name": "Dry Deposition Rate of O3",
+                    "comment": "Dry Deposition includes gravitational settling and turbulent deposition."
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "matched_variables": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Matcher",
+          "component_id": "variable_matcher-S6K64",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "embeddings": {
+              "repr": "None",
+              "raw": {
+                "model": "text-embedding-3-large",
+                "dimensions": null,
+                "deployment": null,
+                "openai_api_version": null,
+                "openai_api_base": null,
+                "openai_api_type": null,
+                "openai_proxy": null,
+                "embedding_ctx_length": 1536,
+                "openai_api_key": "**********",
+                "openai_organization": null,
+                "allowed_special": "all",
+                "disallowed_special": "all",
+                "chunk_size": 1000,
+                "max_retries": 3,
+                "request_timeout": null,
+                "headers": null,
+                "tiktoken_enabled": true,
+                "tiktoken_model_name": null,
+                "show_progress_bar": false,
+                "model_kwargs": {},
+                "skip_empty": false,
+                "default_headers": null,
+                "default_query": null,
+                "retry_min_seconds": 4,
+                "retry_max_seconds": 20,
+                "http_client": null,
+                "http_async_client": null,
+                "check_embedding_ctx_length": true
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "embeddings": {
+              "message": {
+                "repr": "None",
+                "raw": {
+                  "model": "text-embedding-3-large",
+                  "dimensions": null,
+                  "deployment": null,
+                  "openai_api_version": null,
+                  "openai_api_base": null,
+                  "openai_api_type": null,
+                  "openai_proxy": null,
+                  "embedding_ctx_length": 1536,
+                  "openai_api_key": "**********",
+                  "openai_organization": null,
+                  "allowed_special": "all",
+                  "disallowed_special": "all",
+                  "chunk_size": 1000,
+                  "max_retries": 3,
+                  "request_timeout": null,
+                  "headers": null,
+                  "tiktoken_enabled": true,
+                  "tiktoken_model_name": null,
+                  "show_progress_bar": false,
+                  "model_kwargs": {},
+                  "skip_empty": false,
+                  "default_headers": null,
+                  "default_query": null,
+                  "retry_min_seconds": 4,
+                  "retry_max_seconds": 20,
+                  "http_client": null,
+                  "http_async_client": null,
+                  "check_embedding_ctx_length": true
+                },
+                "type": "object"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "OpenAI Embeddings",
+          "component_id": "OpenAIEmbeddings-XsKPV",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "raw": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Filter",
+          "component_id": "TemporalResolutionFilterComponent-3pGxq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets within the year range NA-NA. 0 datasets remain.",
+              "raw": "Filtered datasets within the year range NA-NA. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets within the year range NA-NA. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Year Range Filter",
+          "component_id": "YearRangeFilterComponent-VS8WD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "extracted_urls": {
+              "repr": "[]",
+              "raw": [],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "extracted_urls": {
+              "message": [],
+              "type": "array"
+            }
+          },
+          "logs": {
+            "extracted_urls": []
+          },
+          "messages": [],
+          "component_display_name": "URL Extractor",
+          "component_id": "URLExtractorComponent-mEoFP",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: What variable is needed for the dry deposition of ozone?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "raw": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: What variable is needed for the dry deposition of ozone?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: What variable is needed for the dry deposition of ozone?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Date Range Prompt",
+          "component_id": "Prompt-LB8oS",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "NA-NA",
+              "raw": "NA-NA",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "NA-NA",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "RangeSelector",
+          "component_id": "OpenAIModel-3HdPb",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: What variable is needed for the dry deposition of ozone?\n",
+              "raw": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: What variable is needed for the dry deposition of ozone?\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: What variable is needed for the dry deposition of ozone?\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Prompt",
+          "component_id": "Prompt-zA0Up",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "NA",
+              "raw": "NA",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "NA",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "TemporalSelector",
+          "component_id": "OpenAIModel-AXjuD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What variable is needed for the dry deposition of ozone?",
+              "raw": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What variable is needed for the dry deposition of ozone?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What variable is needed for the dry deposition of ozone?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "DPrompt",
+          "component_id": "Prompt-Q27xi",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "",
+              "raw": "",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Parse Data",
+          "component_id": "ParseData-FSrn8",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "raw": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment",
+          "component_id": "ParseData-owi82",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "CMIP\nScenarioMIP",
+              "raw": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "MIP",
+          "component_id": "ParseData-vmr1o",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Prompt",
+          "component_id": "Prompt-qCzNO",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "None",
+              "raw": "None",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "None",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "MIPSelector",
+          "component_id": "OpenAIModel-3ayFc",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: What variable is needed for the dry deposition of ozone?",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: What variable is needed for the dry deposition of ozone?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: What variable is needed for the dry deposition of ozone?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Prompt",
+          "component_id": "Prompt-Z36He",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "None",
+              "raw": "None",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "None",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "ExperimentSelector",
+          "component_id": "OpenAIModel-jdoTk",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "No MIP filtering applied.",
+              "raw": "No MIP filtering applied.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "No MIP filtering applied.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Filter",
+          "component_id": "MIPFilterComponent-7xtDm",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "No Experiment filtering applied.",
+              "raw": "No Experiment filtering applied.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "No Experiment filtering applied.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Filter",
+          "component_id": "ExperimentFilterComponent-aWhGL",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_variable_info": {
+              "repr": "Filtered variable info. Remaining variables: 419",
+              "raw": "Filtered variable info. Remaining variables: 419",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_variable_info": {
+              "message": "Filtered variable info. Remaining variables: 419",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_variable_info": []
+          },
+          "messages": [],
+          "component_display_name": "Filtered Variable Info",
+          "component_id": "FilteredVariableInfoComponent-J7SKC",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "tool": {
+              "repr": "None",
+              "raw": {
+                "name": "variable_matcher",
+                "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.",
+                "args_schema": "VariableMatcherSchema",
+                "return_direct": false,
+                "verbose": false,
+                "tags": null,
+                "metadata": null,
+                "handle_tool_error": false,
+                "handle_validation_error": false,
+                "response_format": "content",
+                "func": "_tool_function",
+                "coroutine": null
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": "",
+              "type": "unknown"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "tool": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP Variable Tool Check",
+          "component_id": "variable_matcher-aUJnq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "current_date": {
+              "repr": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "raw": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "current_date": {
+              "message": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:25 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "current_date": []
+          },
+          "messages": [],
+          "component_display_name": "Current Date",
+          "component_id": "CurrentDateComponent-qbE6Q",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "response": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T18:29:28+00:00\",\n    \"sender\": \"Machine\",\n    \"sender_name\": \"Agent\",\n    \"session_id\": \"0-20250305_152924\",\n    \"text\": \"dryo3\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": null,\n        \"background_color\": null,\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"Bot\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [\n        {\n            \"title\": \"Agent Steps\",\n            \"contents\": [\n                {\n                    \"type\": \"text\",\n                    \"duration\": 1,\n                    \"header\": {\n                        \"title\": \"Input\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"**HUMAN**: What variable is needed for the dry deposition of ozone?  \\n**AI**: NA  \\n**AI**: NA-NA  \\n**AI**: None  \\n**AI**: None\"\n                },\n                {\n                    \"type\": \"tool_use\",\n                    \"duration\": 1342,\n                    \"header\": {\n                        \"title\": \"Executed **variable_matcher**\",\n                        \"icon\": \"Hammer\"\n                    },\n                    \"name\": \"variable_matcher\",\n                    \"tool_input\": {\n                        \"keywords\": \"dry deposition, ozone\"\n                    },\n                    \"output\": [\n                        {\n                            \"variable\": \"dryo3\",\n                            \"long_name\": \"Dry Deposition Rate of O3\",\n                            \"comment\": \"Dry Deposition includes gravitational settling and turbulent deposition.\",\n                            \"similarity_score\": 0.6058588095655143\n                        },\n                        {\n                            \"variable\": \"dryoa\",\n                            \"long_name\": \"Dry Deposition Rate of Dry Aerosol Total Organic Matter\",\n                            \"comment\": \"Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.\",\n                            \"similarity_score\": 0.529153946420267\n                        },\n                        {\n                            \"variable\": \"drynoy\",\n                            \"long_name\": \"Dry Deposition Rate of NOy\",\n                            \"comment\": \"NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.\",\n                            \"similarity_score\": 0.5101242645035685\n                        },\n                        {\n                            \"variable\": \"dryso2\",\n                            \"long_name\": \"Dry Deposition Rate of SO2\",\n                            \"comment\": \"Dry Deposition includes gravitational settling and turbulent deposition\",\n                            \"similarity_score\": 0.5056720154574389\n                        },\n                        {\n                            \"variable\": \"dryso4\",\n                            \"long_name\": \"Dry Deposition Rate of SO4\",\n                            \"comment\": \"Dry Deposition includes gravitational settling and turbulent deposition\",\n                            \"similarity_score\": 0.4963892352633298\n                        }\n                    ],\n                    \"error\": null\n                },\n                {\n                    \"type\": \"text\",\n                    \"duration\": 1016,\n                    \"header\": {\n                        \"title\": \"Output\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"dryo3\"\n                }\n            ],\n            \"allow_markdown\": true,\n            \"media_url\": null\n        }\n    ],\n    \"id\": \"a5695ca3-3765-4383-bede-b758fa429757\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "0-20250305_152924",
+                "text": "dryo3",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: What variable is needed for the dry deposition of ozone?  \n**AI**: NA  \n**AI**: NA-NA  \n**AI**: None  \n**AI**: None"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 1342,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "dry deposition, ozone"
+                        },
+                        "output": [
+                          {
+                            "variable": "dryo3",
+                            "long_name": "Dry Deposition Rate of O3",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.6058588095655143
+                          },
+                          {
+                            "variable": "dryoa",
+                            "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                            "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.529153946420267
+                          },
+                          {
+                            "variable": "drynoy",
+                            "long_name": "Dry Deposition Rate of NOy",
+                            "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.5101242645035685
+                          },
+                          {
+                            "variable": "dryso2",
+                            "long_name": "Dry Deposition Rate of SO2",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.5056720154574389
+                          },
+                          {
+                            "variable": "dryso4",
+                            "long_name": "Dry Deposition Rate of SO4",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.4963892352633298
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 1016,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "dryo3"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "a5695ca3-3765-4383-bede-b758fa429757",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "message"
+            }
+          },
+          "outputs": {
+            "response": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Agent",
+                "session_id": "0-20250305_152924",
+                "text": "dryo3",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: What variable is needed for the dry deposition of ozone?  \n**AI**: NA  \n**AI**: NA-NA  \n**AI**: None  \n**AI**: None"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 1342,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "dry deposition, ozone"
+                        },
+                        "output": [
+                          {
+                            "variable": "dryo3",
+                            "long_name": "Dry Deposition Rate of O3",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.6058588095655143
+                          },
+                          {
+                            "variable": "dryoa",
+                            "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                            "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.529153946420267
+                          },
+                          {
+                            "variable": "drynoy",
+                            "long_name": "Dry Deposition Rate of NOy",
+                            "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.5101242645035685
+                          },
+                          {
+                            "variable": "dryso2",
+                            "long_name": "Dry Deposition Rate of SO2",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.5056720154574389
+                          },
+                          {
+                            "variable": "dryso4",
+                            "long_name": "Dry Deposition Rate of SO4",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.4963892352633298
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 1016,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "dryo3"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "a5695ca3-3765-4383-bede-b758fa429757",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "response": [
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "not_implemented",
+                    "id": [
+                      "langchain",
+                      "agents",
+                      "agent",
+                      "AgentExecutor"
+                    ],
+                    "repr": "AgentExecutor(verbose=True, agent=RunnableMultiActionAgent(runnable=RunnableAssign(mapper={\n  agent_scratchpad: RunnableLambda(lambda x: message_formatter(x['intermediate_steps']))\n})\n| ChatPromptTemplate(input_variables=[], optional_variables=['agent_scratchpad', 'chat_history'], input_types={'chat_history': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7d15912d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]], 'agent_scratchpad': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7d15912d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]]}, partial_variables={'chat_history': [], 'agent_scratchpad': []}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template='You are a climate scientist and expert on the CMIP6 dataset. Given a colleague\\'s query, find CMIP6 **variables** most likely to help answer the query. \\n\\nTo find these variables: \\n\\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \\nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\\n\\n2. connect your list of summary words into one comma separated string.\\n\\nAdd as much as relevant, don\\'t be shy\\n\\nUse the tool to check the variables, and at the end output the actual needed query. \\n\\nYour output should be only the variable name that you found most accurate for the query. No explanations\\n\\nQuery: What variable is needed for the dry deposition of ozone?'), additional_kwargs={}), MessagesPlaceholder(variable_name='chat_history', optional=True), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template=''), additional_kwargs={}), MessagesPlaceholder(variable_name='agent_scratchpad', optional=True)])\n| RunnableBinding(bound=ChatOpenAI(client=<openai.resources.chat.completions.Completions object at 0x7d14e70e9750>, async_client=<openai.resources.chat.completions.AsyncCompletions object at 0x7d14e7419ea0>, root_client=<openai.OpenAI object at 0x7d14f03b9780>, root_async_client=<openai.AsyncOpenAI object at 0x7d14e70e9420>, model_name='gpt-4o-mini', temperature=0.1, model_kwargs={}, openai_api_base='https://api.openai.com/v1', seed=1), kwargs={'tools': [{'type': 'function', 'function': {'name': 'variable_matcher', 'description': \"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", 'parameters': {'properties': {'keywords': {'description': 'Keywords or description of the variable(s) to search for. Can be a comma-separated list.', 'type': 'string'}, 'top_n': {'default': 5, 'description': 'Number of top matching variables to return.', 'type': 'integer'}}, 'required': ['keywords'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'CurrentDate-get_current_date', 'description': 'get_current_date() - Returns the current date and time in the selected timezone.', 'parameters': {'properties': {'timezone': {'default': 'UTC', 'description': 'Select the timezone for the current date and time.', 'enum': ['UTC', 'US/Eastern', 'US/Central', 'US/Mountain', 'US/Pacific', 'Europe/London', 'Europe/Paris', 'Europe/Berlin', 'Europe/Moscow', 'Asia/Tokyo', 'Asia/Shanghai', 'Asia/Singapore', 'Asia/Dubai', 'Australia/Sydney', 'Australia/Melbourne', 'Pacific/Auckland', 'America/Sao_Paulo', 'America/Mexico_City', 'America/Toronto', 'America/Vancouver', 'Africa/Cairo', 'Africa/Johannesburg', 'Atlantic/Reykjavik', 'Indian/Maldives', 'America/Bogota', 'America/Lima', 'America/Santiago', 'America/Buenos_Aires', 'America/Caracas', 'America/La_Paz', 'America/Montevideo', 'America/Asuncion', 'America/Cuiaba'], 'type': 'string'}}, 'type': 'object'}}}]}, config={}, config_factories=[])\n| ToolsAgentOutputParser(), input_keys_arg=[], return_keys_arg=[], stream_runnable=True), tools=[StructuredTool(name='variable_matcher', description=\"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", args_schema=<class 'langflow.utils.validate.VariableMatcherToolComponent.VariableMatcherSchema'>, func=<bound method VariableMatcherToolComponent._tool_function of <langflow.utils.validate.VariableMatcherToolComponent object at 0x7d14e7fdc8e0>>), StructuredTool(name='CurrentDate-get_current_date', description='get_current_date() - Returns the current date and time in the selected timezone.', args_schema=<class 'langflow.io.schema.InputSchema'>, callbacks=[], handle_tool_error=True, func=<function _patch_send_message_decorator.<locals>.sync_wrapper at 0x7d14e726bb50>)], handle_parsing_errors=True)",
+                    "name": "AgentExecutor"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "What variable is needed for the dry deposition of ozone?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "metadata": {},
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "9509f042-26da-4b6f-9dcf-0c4a0abded42",
+                  "parent_run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "de598a55-8263-4bbf-bdcf-4f6c447293c4",
+                  "parent_run_id": "9509f042-26da-4b6f-9dcf-0c4a0abded42",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "dd52f4a0-b731-43ca-811d-f93c1a986d56",
+                  "parent_run_id": "de598a55-8263-4bbf-bdcf-4f6c447293c4",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "cee6a261-52f2-4873-ac8c-a25c7f10e560",
+                  "parent_run_id": "dd52f4a0-b731-43ca-811d-f93c1a986d56",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What variable is needed for the dry deposition of ozone?",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "What variable is needed for the dry deposition of ozone?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "dry deposition, ozone"
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'dry deposition, ozone'}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"dry deposition, ozone\"}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-4538f7ad-b327-4cea-a5e4-d1a3b75900f0"
+                            }
+                          ],
+                          "tool_call_id": "call_ctEVUoDjn2UEvWNhGXD0NPFB"
+                        },
+                        [
+                          {
+                            "variable": "dryo3",
+                            "long_name": "Dry Deposition Rate of O3",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.6058588095655143
+                          },
+                          {
+                            "variable": "dryoa",
+                            "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                            "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.529153946420267
+                          },
+                          {
+                            "variable": "drynoy",
+                            "long_name": "Dry Deposition Rate of NOy",
+                            "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.5101242645035685
+                          },
+                          {
+                            "variable": "dryso2",
+                            "long_name": "Dry Deposition Rate of SO2",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.5056720154574389
+                          },
+                          {
+                            "variable": "dryso4",
+                            "long_name": "Dry Deposition Rate of SO4",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.4963892352633298
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": []
+                  },
+                  "run_id": "0c0cada3-1203-40e2-98b3-ded4174856f9",
+                  "parent_run_id": "9509f042-26da-4b6f-9dcf-0c4a0abded42",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "",
+                      "additional_kwargs": {
+                        "tool_calls": [
+                          {
+                            "index": 0,
+                            "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                            "function": {
+                              "arguments": "{\"keywords\":\"dry deposition, ozone\"}",
+                              "name": "variable_matcher"
+                            },
+                            "type": "function"
+                          }
+                        ]
+                      },
+                      "response_metadata": {
+                        "finish_reason": "tool_calls",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-4538f7ad-b327-4cea-a5e4-d1a3b75900f0",
+                      "tool_calls": [
+                        {
+                          "name": "variable_matcher",
+                          "args": {
+                            "keywords": "dry deposition, ozone"
+                          },
+                          "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                          "type": "tool_call"
+                        }
+                      ],
+                      "tool_call_chunks": [
+                        {
+                          "name": "variable_matcher",
+                          "args": "{\"keywords\":\"dry deposition, ozone\"}",
+                          "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                          "index": 0,
+                          "type": "tool_call_chunk"
+                        }
+                      ],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "13e0a39f-b82e-4864-ba4c-7e5498dccabf",
+                  "parent_run_id": "9509f042-26da-4b6f-9dcf-0c4a0abded42",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Action",
+                "message": {
+                  "type": "agent_action",
+                  "action": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "ToolAgentAction"
+                    ],
+                    "kwargs": {
+                      "tool": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "dry deposition, ozone"
+                      },
+                      "log": "\nInvoking: `variable_matcher` with `{'keywords': 'dry deposition, ozone'}`\n\n\n",
+                      "type": "AgentActionMessageLog",
+                      "message_log": [
+                        {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"dry deposition, ozone\"}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-4538f7ad-b327-4cea-a5e4-d1a3b75900f0",
+                          "example": false,
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "dry deposition, ozone"
+                              },
+                              "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "invalid_tool_calls": [],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"dry deposition, ozone\"}",
+                              "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ]
+                        }
+                      ],
+                      "tool_call_id": "call_ctEVUoDjn2UEvWNhGXD0NPFB"
+                    }
+                  },
+                  "run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "verbose": true,
+                  "color": "green"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool Start",
+                "message": {
+                  "type": "tool_start",
+                  "serialized": {
+                    "name": "variable_matcher",
+                    "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for."
+                  },
+                  "input_str": "{'keywords': 'dry deposition, ozone'}",
+                  "run_id": "ae1a0e09-9344-4e7b-acd2-500d2c56d04c",
+                  "parent_run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "tags": [],
+                  "metadata": {},
+                  "inputs": {
+                    "keywords": "dry deposition, ozone"
+                  },
+                  "color": "green",
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool End",
+                "message": {
+                  "type": "tool_end",
+                  "output": [
+                    {
+                      "variable": "dryo3",
+                      "long_name": "Dry Deposition Rate of O3",
+                      "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                      "similarity_score": 0.6058588095655143
+                    },
+                    {
+                      "variable": "dryoa",
+                      "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                      "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                      "similarity_score": 0.529153946420267
+                    },
+                    {
+                      "variable": "drynoy",
+                      "long_name": "Dry Deposition Rate of NOy",
+                      "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                      "similarity_score": 0.5101242645035685
+                    },
+                    {
+                      "variable": "dryso2",
+                      "long_name": "Dry Deposition Rate of SO2",
+                      "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                      "similarity_score": 0.5056720154574389
+                    },
+                    {
+                      "variable": "dryso4",
+                      "long_name": "Dry Deposition Rate of SO4",
+                      "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                      "similarity_score": 0.4963892352633298
+                    }
+                  ],
+                  "run_id": "ae1a0e09-9344-4e7b-acd2-500d2c56d04c",
+                  "parent_run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "tags": [],
+                  "color": "blue",
+                  "name": "variable_matcher"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "ed56d523-59e1-4152-bdc9-6304e77e9f24",
+                  "parent_run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "340f0f2a-e22b-45ba-917b-942f1f0d4506",
+                  "parent_run_id": "ed56d523-59e1-4152-bdc9-6304e77e9f24",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "4547bbc0-d1b9-45cd-a054-3432e366b9e5",
+                  "parent_run_id": "340f0f2a-e22b-45ba-917b-942f1f0d4506",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "3ee7697a-0b9b-475f-9d4e-0a8ec4a46e8b",
+                  "parent_run_id": "4547bbc0-d1b9-45cd-a054-3432e366b9e5",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What variable is needed for the dry deposition of ozone?",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "What variable is needed for the dry deposition of ozone?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "dry deposition, ozone"
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'dry deposition, ozone'}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"dry deposition, ozone\"}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-4538f7ad-b327-4cea-a5e4-d1a3b75900f0"
+                            }
+                          ],
+                          "tool_call_id": "call_ctEVUoDjn2UEvWNhGXD0NPFB"
+                        },
+                        [
+                          {
+                            "variable": "dryo3",
+                            "long_name": "Dry Deposition Rate of O3",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.6058588095655143
+                          },
+                          {
+                            "variable": "dryoa",
+                            "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                            "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.529153946420267
+                          },
+                          {
+                            "variable": "drynoy",
+                            "long_name": "Dry Deposition Rate of NOy",
+                            "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.5101242645035685
+                          },
+                          {
+                            "variable": "dryso2",
+                            "long_name": "Dry Deposition Rate of SO2",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.5056720154574389
+                          },
+                          {
+                            "variable": "dryso4",
+                            "long_name": "Dry Deposition Rate of SO4",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.4963892352633298
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessageChunk"
+                        ],
+                        "kwargs": {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"dry deposition, ozone\"}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-4538f7ad-b327-4cea-a5e4-d1a3b75900f0",
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "dry deposition, ozone"
+                              },
+                              "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"dry deposition, ozone\"}",
+                              "id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "ToolMessage"
+                        ],
+                        "kwargs": {
+                          "content": "[{\"variable\": \"dryo3\", \"long_name\": \"Dry Deposition Rate of O3\", \"comment\": \"Dry Deposition includes gravitational settling and turbulent deposition.\", \"similarity_score\": 0.6058588095655143}, {\"variable\": \"dryoa\", \"long_name\": \"Dry Deposition Rate of Dry Aerosol Total Organic Matter\", \"comment\": \"Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.\", \"similarity_score\": 0.529153946420267}, {\"variable\": \"drynoy\", \"long_name\": \"Dry Deposition Rate of NOy\", \"comment\": \"NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.\", \"similarity_score\": 0.5101242645035685}, {\"variable\": \"dryso2\", \"long_name\": \"Dry Deposition Rate of SO2\", \"comment\": \"Dry Deposition includes gravitational settling and turbulent deposition\", \"similarity_score\": 0.5056720154574389}, {\"variable\": \"dryso4\", \"long_name\": \"Dry Deposition Rate of SO4\", \"comment\": \"Dry Deposition includes gravitational settling and turbulent deposition\", \"similarity_score\": 0.4963892352633298}]",
+                          "additional_kwargs": {
+                            "name": "variable_matcher"
+                          },
+                          "type": "tool",
+                          "tool_call_id": "call_ctEVUoDjn2UEvWNhGXD0NPFB",
+                          "status": "success"
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "dd601a39-3679-4a6d-aab0-955bc6225a6b",
+                  "parent_run_id": "ed56d523-59e1-4152-bdc9-6304e77e9f24",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "dryo3",
+                      "response_metadata": {
+                        "finish_reason": "stop",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-863567e0-dfa1-4141-a220-55f248db0057",
+                      "tool_calls": [],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "5c401004-f0d8-4cd1-a079-aed0d89aeb96",
+                  "parent_run_id": "ed56d523-59e1-4152-bdc9-6304e77e9f24",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Finish",
+                "message": {
+                  "type": "agent_finish",
+                  "finish": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "AgentFinish"
+                    ],
+                    "kwargs": {
+                      "return_values": {
+                        "output": "dryo3",
+                        "messages": [
+                          {
+                            "content": "dryo3",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "ai",
+                            "example": false,
+                            "tool_calls": [],
+                            "invalid_tool_calls": []
+                          }
+                        ]
+                      },
+                      "log": "dryo3",
+                      "type": "AgentFinish"
+                    }
+                  },
+                  "run_id": "c108fb75-503f-4ddc-a834-d3497c693b6c",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "color": "green",
+                  "verbose": true
+                },
+                "type": "object"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector",
+          "component_id": "Agent-wqazV",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "0-20250305_152924",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "a057a979-8d3d-4f83-9604-9d4c5d544dc0",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "None",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "files": [],
+              "session_id": "0-20250305_152924",
+              "timestamp": "2025-03-05T18:29:28Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-jdoTk",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "None",
+            "sender": "Machine",
+            "sender_name": "Experiment",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "0-20250305_152924",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "a057a979-8d3d-4f83-9604-9d4c5d544dc0",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "None",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "session_id": "0-20250305_152924",
+              "component_id": "ChatOutput-NLJoQ",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "ExperimentSelector Output",
+          "component_id": "ChatOutput-NLJoQ",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "0-20250305_152924",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "5bbcc2da-da45-4fc5-9bb6-56313cbe89f1",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "None",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "files": [],
+              "session_id": "0-20250305_152924",
+              "timestamp": "2025-03-05T18:29:28Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3ayFc",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "None",
+            "sender": "Machine",
+            "sender_name": "MIP",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:28",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "0-20250305_152924",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "5bbcc2da-da45-4fc5-9bb6-56313cbe89f1",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "None",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "session_id": "0-20250305_152924",
+              "component_id": "ChatOutput-XYyZ4",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "MIPSelector Output",
+          "component_id": "ChatOutput-XYyZ4",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "timestamp": "2025-03-05T18:29:28",
+              "sender": "Machine",
+              "sender_name": "Variable",
+              "session_id": "0-20250305_152924",
+              "text": "dryo3",
+              "files": [],
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "Agent-wqazV",
+                  "display_name": "Agent",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": [
+                {
+                  "title": "Agent Steps",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "duration": 1,
+                      "header": {
+                        "title": "Input",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "**HUMAN**: What variable is needed for the dry deposition of ozone?  \n**AI**: NA  \n**AI**: NA-NA  \n**AI**: None  \n**AI**: None"
+                    },
+                    {
+                      "type": "tool_use",
+                      "duration": 1342,
+                      "header": {
+                        "title": "Executed **variable_matcher**",
+                        "icon": "Hammer"
+                      },
+                      "name": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "dry deposition, ozone"
+                      },
+                      "output": [
+                        {
+                          "variable": "dryo3",
+                          "long_name": "Dry Deposition Rate of O3",
+                          "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                          "similarity_score": 0.6058588095655143
+                        },
+                        {
+                          "variable": "dryoa",
+                          "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                          "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                          "similarity_score": 0.529153946420267
+                        },
+                        {
+                          "variable": "drynoy",
+                          "long_name": "Dry Deposition Rate of NOy",
+                          "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                          "similarity_score": 0.5101242645035685
+                        },
+                        {
+                          "variable": "dryso2",
+                          "long_name": "Dry Deposition Rate of SO2",
+                          "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                          "similarity_score": 0.5056720154574389
+                        },
+                        {
+                          "variable": "dryso4",
+                          "long_name": "Dry Deposition Rate of SO4",
+                          "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                          "similarity_score": 0.4963892352633298
+                        }
+                      ],
+                      "error": null
+                    },
+                    {
+                      "type": "text",
+                      "duration": 1016,
+                      "header": {
+                        "title": "Output",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "dryo3"
+                    }
+                  ],
+                  "allow_markdown": true,
+                  "media_url": null
+                }
+              ],
+              "id": "a5695ca3-3765-4383-bede-b758fa429757",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+            }
+          },
+          "artifacts": {
+            "message": "dryo3",
+            "sender": "Machine",
+            "sender_name": "Variable",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05 18:29:28 ",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "0-20250305_152924",
+                "text": "dryo3",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "Agent-wqazV",
+                    "display_name": "Agent",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: What variable is needed for the dry deposition of ozone?  \n**AI**: NA  \n**AI**: NA-NA  \n**AI**: None  \n**AI**: None"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 1342,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "dry deposition, ozone"
+                        },
+                        "output": [
+                          {
+                            "variable": "dryo3",
+                            "long_name": "Dry Deposition Rate of O3",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.6058588095655143
+                          },
+                          {
+                            "variable": "dryoa",
+                            "long_name": "Dry Deposition Rate of Dry Aerosol Total Organic Matter",
+                            "comment": "Tendency of atmosphere mass content of organic dry aerosol due to dry deposition: This is the sum of dry deposition of primary organic aerosol (POA) and dry deposition of secondary organic aerosol (SOA). Here, mass refers to the mass of organic matter, not mass of organic carbon alone.  We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available. Was called dry_pom in old ACCMIP Excel table. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.529153946420267
+                          },
+                          {
+                            "variable": "drynoy",
+                            "long_name": "Dry Deposition Rate of NOy",
+                            "comment": "NOy is the sum of all simulated oxidized nitrogen species out of NO, NO2, HNO3, HNO4, NO3 aerosol, NO3(radical), N2O5, PAN, other organic nitrates. Dry deposition includes gravitational settling and turbulent deposition.",
+                            "similarity_score": 0.5101242645035685
+                          },
+                          {
+                            "variable": "dryso2",
+                            "long_name": "Dry Deposition Rate of SO2",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.5056720154574389
+                          },
+                          {
+                            "variable": "dryso4",
+                            "long_name": "Dry Deposition Rate of SO4",
+                            "comment": "Dry Deposition includes gravitational settling and turbulent deposition",
+                            "similarity_score": 0.4963892352633298
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 1016,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "dryo3"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "a5695ca3-3765-4383-bede-b758fa429757",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector Output",
+          "component_id": "ChatOutput-gYkvt",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:26",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "0-20250305_152924",
+                "text": "NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "0d641b95-f80c-4c0c-8a56-a51e9fe0d42b",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "NA",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "files": [],
+              "session_id": "0-20250305_152924",
+              "timestamp": "2025-03-05T18:29:26Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-AXjuD",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "NA",
+            "sender": "Machine",
+            "sender_name": "Temporal Resolution",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:26",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "0-20250305_152924",
+                "text": "NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "0d641b95-f80c-4c0c-8a56-a51e9fe0d42b",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "NA",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "session_id": "0-20250305_152924",
+              "component_id": "ChatOutput-QNEAa",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "TemporalSelector Output",
+          "component_id": "ChatOutput-QNEAa",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:27",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "0-20250305_152924",
+                "text": "NA-NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "78d9c8a2-2cf1-419c-b705-27c9786ce2e7",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "NA-NA",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "files": [],
+              "session_id": "0-20250305_152924",
+              "timestamp": "2025-03-05T18:29:27Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3HdPb",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "NA-NA",
+            "sender": "Machine",
+            "sender_name": "Date Range",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:27",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "0-20250305_152924",
+                "text": "NA-NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "78d9c8a2-2cf1-419c-b705-27c9786ce2e7",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "NA-NA",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "session_id": "0-20250305_152924",
+              "component_id": "ChatOutput-CAZzq",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "RangeSelector Output",
+          "component_id": "ChatOutput-CAZzq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "saved_data": {
+              "repr": "{\n    \"url\": \"No Match\",\n    \"temporal_resolution\": \"NA\",\n    \"date_range\": \"NA-NA\",\n    \"mip\": \"None\",\n    \"experiment\": \"None\",\n    \"variable\": \"dryo3\",\n    \"user_query\": \"What variable is needed for the dry deposition of ozone?\",\n    \"run_id\": \"c0cea9fa-c90f-4f29-9b3a-b25daa1fcc41\",\n    \"session_id\": \"0-20250305_152924\"\n}",
+              "raw": {
+                "url": "No Match",
+                "temporal_resolution": "NA",
+                "date_range": "NA-NA",
+                "mip": "None",
+                "experiment": "None",
+                "variable": "dryo3",
+                "user_query": "What variable is needed for the dry deposition of ozone?",
+                "run_id": "c0cea9fa-c90f-4f29-9b3a-b25daa1fcc41",
+                "session_id": "0-20250305_152924"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "saved_data": {
+              "message": {
+                "url": "No Match",
+                "temporal_resolution": "NA",
+                "date_range": "NA-NA",
+                "mip": "None",
+                "experiment": "None",
+                "variable": "dryo3",
+                "user_query": "What variable is needed for the dry deposition of ozone?",
+                "run_id": "c0cea9fa-c90f-4f29-9b3a-b25daa1fcc41",
+                "session_id": "0-20250305_152924"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "saved_data": [
+              {
+                "name": "Log 1",
+                "message": "Configuration saved to url_data.json",
+                "type": "text"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "Save Search Configuration",
+          "component_id": "CustomComponent-qg4v7",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "What variable is needed for the dry deposition of ozone?",
+              "raw": "What variable is needed for the dry deposition of ozone?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "What variable is needed for the dry deposition of ozone?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Search Query",
+          "component_id": "ParseData-ZwaO0",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "data": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T18:29:25+00:00\",\n    \"sender\": \"User\",\n    \"sender_name\": \"User\",\n    \"session_id\": \"0-20250305_152924\",\n    \"text\": \"What variable is needed for the dry deposition of ozone?\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": \"\",\n        \"background_color\": \"\",\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [],\n    \"id\": \"72dbbedf-7122-4026-97e2-e3866d0189cf\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "0-20250305_152924",
+                "text": "What variable is needed for the dry deposition of ozone?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "72dbbedf-7122-4026-97e2-e3866d0189cf",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "data": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:25",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "0-20250305_152924",
+                "text": "What variable is needed for the dry deposition of ozone?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "72dbbedf-7122-4026-97e2-e3866d0189cf",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "data": []
+          },
+          "messages": [],
+          "component_display_name": "Message to Data",
+          "component_id": "MessagetoData-xan5A",
+          "used_frozen_result": false
+        }
+      ]
+    }
+  ]
+}

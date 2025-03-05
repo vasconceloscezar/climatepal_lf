@@ -1,0 +1,6 @@
+query_id,query,expected_variable,expected_temporal_resolution,expected_start_year,expected_end_year,expected_mip,expected_experiment,predicted_variable,predicted_temporal_resolution,predicted_start_year,predicted_end_year,predicted_mip,predicted_experiment,variable_match,temporal_resolution_match,start_year_match,end_year_match,mip_match,experiment_match,success,error
+3,What is the average global temperature recorded from 1850 to 1900?,tas,mon,1850,1900,CMIP,historical,ta,mon,1850,1900,CMIP,piControl,False,True,True,True,True,False,True,
+0,What variable is needed for the dry deposition of ozone?,dryo3,,,,,,,,1960,1970,,,False,True,False,False,True,True,False,
+2,Illustrate the fluctuations in ocean pH levels from 1950 to 2100 using SSP370 data.,ph,mon,1950,2100,ScenarioMIP,ssp370,,mon,1950,2100,ScenarioMIP,ssp370,False,True,True,True,True,True,False,
+1,Which fire weather indices can be computed using CMIP6 data? How will they appear in 2100?,"tas, hur, sfcWind, sfcWindmax",mon/day,2100,2100,ScenarioMIP,,pr,,1960,1970,ScenarioMIP,ssp119,False,False,False,False,True,False,True,
+4,What are the variables involved in global warming?,tas,,,,,,,,1960,1970,,,False,True,False,False,True,True,False,

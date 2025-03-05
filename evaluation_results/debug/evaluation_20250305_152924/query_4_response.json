@@ -1,0 +1,3069 @@
+{
+  "session_id": "4-20250305_152930",
+  "outputs": [
+    {
+      "inputs": {
+        "input_value": "What are the variables involved in global warming?"
+      },
+      "outputs": [
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:31",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_152930",
+                "text": "What are the variables involved in global warming?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3a771303-2e1f-493c-85be-8b72749fd4f9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "What are the variables involved in global warming?",
+              "sender": "User",
+              "sender_name": "User",
+              "files": [],
+              "session_id": "4-20250305_152930",
+              "timestamp": "2025-03-05T18:29:31Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": null,
+                  "display_name": null,
+                  "source": null
+                },
+                "icon": "",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "What are the variables involved in global warming?",
+            "sender": "User",
+            "sender_name": "User",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:31",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_152930",
+                "text": "What are the variables involved in global warming?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3a771303-2e1f-493c-85be-8b72749fd4f9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "What are the variables involved in global warming?",
+              "sender": "User",
+              "sender_name": "User",
+              "session_id": "4-20250305_152930",
+              "component_id": "ChatInput-nXUUg",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "Dataset Description",
+          "component_id": "ChatInput-nXUUg",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "processed_df": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_mips": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            },
+            "unique_experiments": {
+              "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+              "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "processed_df": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_mips": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            },
+            "unique_experiments": {
+              "message": {
+                "repr": "DataFrame processed successfully. Shape: (296962, 14)",
+                "raw": "DataFrame processed successfully. Shape: (296962, 14)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Dataset Processor",
+          "component_id": "CMIP6DatasetProcessorComponent-TaOPv",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "variable_info": {
+              "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "variable_info": {
+              "message": {
+                "repr": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "raw": "Variable info processed and embeddings generated successfully. Shape: (419, 5)",
+                "type": "text"
+              },
+              "type": "text"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Processor (Zip)",
+          "component_id": "CMIP6VariableProcessorFromZip-X8bHD",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "matched_variables": {
+              "repr": "[Data(text_key='text', data={'variable': 'co23D', 'long_name': '3D-Field of Transported CO2', 'comment': 'report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels'}, default_value='')]",
+              "raw": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "variable": "co23D",
+                    "long_name": "3D-Field of Transported CO2",
+                    "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels"
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": [
+                {
+                  "text_key": "text",
+                  "data": {
+                    "variable": "co23D",
+                    "long_name": "3D-Field of Transported CO2",
+                    "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels"
+                  },
+                  "default_value": ""
+                }
+              ],
+              "type": "array"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "matched_variables": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP6 Variable Matcher",
+          "component_id": "variable_matcher-S6K64",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "embeddings": {
+              "repr": "None",
+              "raw": {
+                "model": "text-embedding-3-large",
+                "dimensions": null,
+                "deployment": null,
+                "openai_api_version": null,
+                "openai_api_base": null,
+                "openai_api_type": null,
+                "openai_proxy": null,
+                "embedding_ctx_length": 1536,
+                "openai_api_key": "**********",
+                "openai_organization": null,
+                "allowed_special": "all",
+                "disallowed_special": "all",
+                "chunk_size": 1000,
+                "max_retries": 3,
+                "request_timeout": null,
+                "headers": null,
+                "tiktoken_enabled": true,
+                "tiktoken_model_name": null,
+                "show_progress_bar": false,
+                "model_kwargs": {},
+                "skip_empty": false,
+                "default_headers": null,
+                "default_query": null,
+                "retry_min_seconds": 4,
+                "retry_max_seconds": 20,
+                "http_client": null,
+                "http_async_client": null,
+                "check_embedding_ctx_length": true
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "embeddings": {
+              "message": {
+                "repr": "None",
+                "raw": {
+                  "model": "text-embedding-3-large",
+                  "dimensions": null,
+                  "deployment": null,
+                  "openai_api_version": null,
+                  "openai_api_base": null,
+                  "openai_api_type": null,
+                  "openai_proxy": null,
+                  "embedding_ctx_length": 1536,
+                  "openai_api_key": "**********",
+                  "openai_organization": null,
+                  "allowed_special": "all",
+                  "disallowed_special": "all",
+                  "chunk_size": 1000,
+                  "max_retries": 3,
+                  "request_timeout": null,
+                  "headers": null,
+                  "tiktoken_enabled": true,
+                  "tiktoken_model_name": null,
+                  "show_progress_bar": false,
+                  "model_kwargs": {},
+                  "skip_empty": false,
+                  "default_headers": null,
+                  "default_query": null,
+                  "retry_min_seconds": 4,
+                  "retry_max_seconds": 20,
+                  "http_client": null,
+                  "http_async_client": null,
+                  "check_embedding_ctx_length": true
+                },
+                "type": "object"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {},
+          "messages": [],
+          "component_display_name": "OpenAI Embeddings",
+          "component_id": "OpenAIEmbeddings-XsKPV",
+          "used_frozen_result": true
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "raw": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered 0 datasets with na temporal resolution and matching variables.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Filter",
+          "component_id": "TemporalResolutionFilterComponent-3pGxq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "Filtered datasets within the year range NA-NA. 0 datasets remain.",
+              "raw": "Filtered datasets within the year range NA-NA. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "Filtered datasets within the year range NA-NA. 0 datasets remain.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Year Range Filter",
+          "component_id": "YearRangeFilterComponent-VS8WD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "extracted_urls": {
+              "repr": "[]",
+              "raw": [],
+              "type": "array"
+            }
+          },
+          "outputs": {
+            "extracted_urls": {
+              "message": [],
+              "type": "array"
+            }
+          },
+          "logs": {
+            "extracted_urls": []
+          },
+          "messages": [],
+          "component_display_name": "URL Extractor",
+          "component_id": "URLExtractorComponent-mEoFP",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: What are the variables involved in global warming?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:31 -03",
+              "raw": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: What are the variables involved in global warming?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:31 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. \n\nDoes the following CMIP6 query require or specify a year range for the data required to answer.\n\nQuery: What are the variables involved in global warming?\n\nIf yes, provide the year range in format START-END, for instance 196001-197012 or 201501-205012 If no, respond NA-NA. \n\nIf only the start or end is specified, provide just that year in format START-NA (eg 210001-NA) or NA-END (eg NA-190012).\n\nProvide only the year range in this format and nothing else.\n\nToday is: Current date and time in America/Sao_Paulo: 2025-03-05 15:29:31 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Date Range Prompt",
+          "component_id": "Prompt-LB8oS",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "NA-NA",
+              "raw": "NA-NA",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "NA-NA",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "RangeSelector",
+          "component_id": "OpenAIModel-3HdPb",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: What are the variables involved in global warming?\n",
+              "raw": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: What are the variables involved in global warming?\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist. Is the following CMIP6-related query best answered using data gathered at which of the following resolutions: \n\n- 'hr': hour\n- 'day': day\n- 'mon': month\n- 'NA': not applicable, none of the above, or unclear\n\n\nRespond with only the short term of one following corresponding to your choice and nothing else. \n\nIf a query does not specify any given temporal resolution, like the query \"plot average temperature\", then choose \noption NA\n\n\nQuery: What are the variables involved in global warming?\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Temporal Resolution Prompt",
+          "component_id": "Prompt-zA0Up",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "NA",
+              "raw": "NA",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "NA",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "TemporalSelector",
+          "component_id": "OpenAIModel-AXjuD",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What are the variables involved in global warming?",
+              "raw": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What are the variables involved in global warming?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What are the variables involved in global warming?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "DPrompt",
+          "component_id": "Prompt-Q27xi",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "",
+              "raw": "",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Parse Data",
+          "component_id": "ParseData-FSrn8",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "raw": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment",
+          "component_id": "ParseData-owi82",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "CMIP\nScenarioMIP",
+              "raw": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "CMIP\nScenarioMIP",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "MIP",
+          "component_id": "ParseData-vmr1o",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the MIPs you work with:\n<MIP_LIST>\nCMIP\nScenarioMIP\n</MIP_LIST>\n\nBased on the following query, which of the above MIPs would you use? Return ONLY the name of the MIP and nothing else. If the choice of MIP does not matter, return 'None'.\n\nQuery:\n",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Prompt",
+          "component_id": "Prompt-qCzNO",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "None",
+              "raw": "None",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "None",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "MIPSelector",
+          "component_id": "OpenAIModel-3ayFc",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "prompt": {
+              "repr": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: What are the variables involved in global warming?",
+              "raw": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: What are the variables involved in global warming?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "prompt": {
+              "message": "You are an expert climate scientist working with CMIP6.\n\nHere is a list of the experiments you work with:\n<EXPERIMENT_LIST>\n1pctCO2\nabrupt-4xCO2\namip\nhistorical\nhistorical_flat_BB\npiControl\nssp119\nssp126\nssp245\nssp370\nssp434\nssp460\nssp534-over\nssp585\n</EXPERIMENT_LIST>\nBased on the following query, which of the above experiments would you use? Return ONLY the name of the experiment and nothing else. If the choice of experiment does not matter, return 'None'.\n\nQuery: What are the variables involved in global warming?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "prompt": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Prompt",
+          "component_id": "Prompt-Z36He",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text_output": {
+              "repr": "None",
+              "raw": "None",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text_output": {
+              "message": "None",
+              "type": "text"
+            },
+            "model_output": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "text_output": []
+          },
+          "messages": [],
+          "component_display_name": "ExperimentSelector",
+          "component_id": "OpenAIModel-jdoTk",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "No MIP filtering applied.",
+              "raw": "No MIP filtering applied.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "No MIP filtering applied.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "MIP Filter",
+          "component_id": "MIPFilterComponent-7xtDm",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_datasets": {
+              "repr": "No Experiment filtering applied.",
+              "raw": "No Experiment filtering applied.",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_datasets": {
+              "message": "No Experiment filtering applied.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_datasets": []
+          },
+          "messages": [],
+          "component_display_name": "Experiment Filter",
+          "component_id": "ExperimentFilterComponent-aWhGL",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "filtered_variable_info": {
+              "repr": "Filtered variable info. Remaining variables: 419",
+              "raw": "Filtered variable info. Remaining variables: 419",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "filtered_variable_info": {
+              "message": "Filtered variable info. Remaining variables: 419",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "filtered_variable_info": []
+          },
+          "messages": [],
+          "component_display_name": "Filtered Variable Info",
+          "component_id": "FilteredVariableInfoComponent-J7SKC",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "tool": {
+              "repr": "None",
+              "raw": {
+                "name": "variable_matcher",
+                "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.",
+                "args_schema": "VariableMatcherSchema",
+                "return_direct": false,
+                "verbose": false,
+                "tags": null,
+                "metadata": null,
+                "handle_tool_error": false,
+                "handle_validation_error": false,
+                "response_format": "content",
+                "func": "_tool_function",
+                "coroutine": null
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "matched_variables": {
+              "message": "",
+              "type": "unknown"
+            },
+            "tool": {
+              "message": "",
+              "type": "unknown"
+            }
+          },
+          "logs": {
+            "tool": []
+          },
+          "messages": [],
+          "component_display_name": "CMIP Variable Tool Check",
+          "component_id": "variable_matcher-aUJnq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "current_date": {
+              "repr": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:31 -03",
+              "raw": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:31 -03",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "current_date": {
+              "message": "Current date and time in America/Sao_Paulo: 2025-03-05 15:29:31 -03",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "current_date": []
+          },
+          "messages": [],
+          "component_display_name": "Current Date",
+          "component_id": "CurrentDateComponent-qbE6Q",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "response": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T18:29:34+00:00\",\n    \"sender\": \"Machine\",\n    \"sender_name\": \"Agent\",\n    \"session_id\": \"4-20250305_152930\",\n    \"text\": \"co23D\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": null,\n        \"background_color\": null,\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"Bot\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [\n        {\n            \"title\": \"Agent Steps\",\n            \"contents\": [\n                {\n                    \"type\": \"text\",\n                    \"duration\": 1,\n                    \"header\": {\n                        \"title\": \"Input\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"**HUMAN**: What are the variables involved in global warming?  \\n**AI**: NA-NA  \\n**AI**: NA  \\n**AI**: None  \\n**AI**: None\"\n                },\n                {\n                    \"type\": \"tool_use\",\n                    \"duration\": 4533,\n                    \"header\": {\n                        \"title\": \"Executed **variable_matcher**\",\n                        \"icon\": \"Hammer\"\n                    },\n                    \"name\": \"variable_matcher\",\n                    \"tool_input\": {\n                        \"keywords\": \"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\n                        \"top_n\": 5\n                    },\n                    \"output\": [\n                        {\n                            \"variable\": \"siflsenstop\",\n                            \"long_name\": \"Net Upward Sensible Heat Flux over Sea Ice\",\n                            \"comment\": \"the net sensible heat flux over sea ice\",\n                            \"similarity_score\": 0.47946463657197486\n                        },\n                        {\n                            \"variable\": \"prsn\",\n                            \"long_name\": \"Snowfall Flux where Ice Free Ocean over Sea\",\n                            \"comment\": \"At surface; includes precipitation of all forms of water in the solid phase\",\n                            \"similarity_score\": 0.4793995330691348\n                        },\n                        {\n                            \"variable\": \"prsn\",\n                            \"long_name\": \"Snowfall Flux\",\n                            \"comment\": \"At surface; includes precipitation of all forms of water in the solid phase\",\n                            \"similarity_score\": 0.4481977157480708\n                        },\n                        {\n                            \"variable\": \"prra\",\n                            \"long_name\": \"Rainfall Flux where Ice Free Ocean over Sea\",\n                            \"comment\": \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\",\n                            \"similarity_score\": 0.4441324498948179\n                        },\n                        {\n                            \"variable\": \"co23D\",\n                            \"long_name\": \"3D-Field of Transported CO2\",\n                            \"comment\": \"report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels\",\n                            \"similarity_score\": 0.4432246398022289\n                        }\n                    ],\n                    \"error\": null\n                },\n                {\n                    \"type\": \"text\",\n                    \"duration\": 936,\n                    \"header\": {\n                        \"title\": \"Output\",\n                        \"icon\": \"MessageSquare\"\n                    },\n                    \"text\": \"co23D\"\n                }\n            ],\n            \"allow_markdown\": true,\n            \"media_url\": null\n        }\n    ],\n    \"id\": \"532ea6fe-04f7-467e-b778-8e4ab66705ba\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T18:29:34",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "4-20250305_152930",
+                "text": "co23D",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: What are the variables involved in global warming?  \n**AI**: NA-NA  \n**AI**: NA  \n**AI**: None  \n**AI**: None"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 4533,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                          "top_n": 5
+                        },
+                        "output": [
+                          {
+                            "variable": "siflsenstop",
+                            "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                            "comment": "the net sensible heat flux over sea ice",
+                            "similarity_score": 0.47946463657197486
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4793995330691348
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4481977157480708
+                          },
+                          {
+                            "variable": "prra",
+                            "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                            "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                            "similarity_score": 0.4441324498948179
+                          },
+                          {
+                            "variable": "co23D",
+                            "long_name": "3D-Field of Transported CO2",
+                            "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                            "similarity_score": 0.4432246398022289
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 936,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "co23D"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "532ea6fe-04f7-467e-b778-8e4ab66705ba",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "message"
+            }
+          },
+          "outputs": {
+            "response": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:34",
+                "sender": "Machine",
+                "sender_name": "Agent",
+                "session_id": "4-20250305_152930",
+                "text": "co23D",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: What are the variables involved in global warming?  \n**AI**: NA-NA  \n**AI**: NA  \n**AI**: None  \n**AI**: None"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 4533,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                          "top_n": 5
+                        },
+                        "output": [
+                          {
+                            "variable": "siflsenstop",
+                            "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                            "comment": "the net sensible heat flux over sea ice",
+                            "similarity_score": 0.47946463657197486
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4793995330691348
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4481977157480708
+                          },
+                          {
+                            "variable": "prra",
+                            "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                            "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                            "similarity_score": 0.4441324498948179
+                          },
+                          {
+                            "variable": "co23D",
+                            "long_name": "3D-Field of Transported CO2",
+                            "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                            "similarity_score": 0.4432246398022289
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 936,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "co23D"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "532ea6fe-04f7-467e-b778-8e4ab66705ba",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "response": [
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "not_implemented",
+                    "id": [
+                      "langchain",
+                      "agents",
+                      "agent",
+                      "AgentExecutor"
+                    ],
+                    "repr": "AgentExecutor(verbose=True, agent=RunnableMultiActionAgent(runnable=RunnableAssign(mapper={\n  agent_scratchpad: RunnableLambda(lambda x: message_formatter(x['intermediate_steps']))\n})\n| ChatPromptTemplate(input_variables=[], optional_variables=['agent_scratchpad', 'chat_history'], input_types={'chat_history': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7d15912d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]], 'agent_scratchpad': list[typing.Annotated[typing.Union[typing.Annotated[langchain_core.messages.ai.AIMessage, Tag(tag='ai')], typing.Annotated[langchain_core.messages.human.HumanMessage, Tag(tag='human')], typing.Annotated[langchain_core.messages.chat.ChatMessage, Tag(tag='chat')], typing.Annotated[langchain_core.messages.system.SystemMessage, Tag(tag='system')], typing.Annotated[langchain_core.messages.function.FunctionMessage, Tag(tag='function')], typing.Annotated[langchain_core.messages.tool.ToolMessage, Tag(tag='tool')], typing.Annotated[langchain_core.messages.ai.AIMessageChunk, Tag(tag='AIMessageChunk')], typing.Annotated[langchain_core.messages.human.HumanMessageChunk, Tag(tag='HumanMessageChunk')], typing.Annotated[langchain_core.messages.chat.ChatMessageChunk, Tag(tag='ChatMessageChunk')], typing.Annotated[langchain_core.messages.system.SystemMessageChunk, Tag(tag='SystemMessageChunk')], typing.Annotated[langchain_core.messages.function.FunctionMessageChunk, Tag(tag='FunctionMessageChunk')], typing.Annotated[langchain_core.messages.tool.ToolMessageChunk, Tag(tag='ToolMessageChunk')]], FieldInfo(annotation=NoneType, required=True, discriminator=Discriminator(discriminator=<function _get_type at 0x7d15912d40d0>, custom_error_type=None, custom_error_message=None, custom_error_context=None))]]}, partial_variables={'chat_history': [], 'agent_scratchpad': []}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template='You are a climate scientist and expert on the CMIP6 dataset. Given a colleague\\'s query, find CMIP6 **variables** most likely to help answer the query. \\n\\nTo find these variables: \\n\\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \\nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\\n\\n2. connect your list of summary words into one comma separated string.\\n\\nAdd as much as relevant, don\\'t be shy\\n\\nUse the tool to check the variables, and at the end output the actual needed query. \\n\\nYour output should be only the variable name that you found most accurate for the query. No explanations\\n\\nQuery: What are the variables involved in global warming?'), additional_kwargs={}), MessagesPlaceholder(variable_name='chat_history', optional=True), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template=''), additional_kwargs={}), MessagesPlaceholder(variable_name='agent_scratchpad', optional=True)])\n| RunnableBinding(bound=ChatOpenAI(client=<openai.resources.chat.completions.Completions object at 0x7d15069771f0>, async_client=<openai.resources.chat.completions.AsyncCompletions object at 0x7d1506b61000>, root_client=<openai.OpenAI object at 0x7d1506a287c0>, root_async_client=<openai.AsyncOpenAI object at 0x7d1506975e40>, model_name='gpt-4o-mini', temperature=0.1, model_kwargs={}, openai_api_base='https://api.openai.com/v1', seed=1), kwargs={'tools': [{'type': 'function', 'function': {'name': 'variable_matcher', 'description': \"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", 'parameters': {'properties': {'keywords': {'description': 'Keywords or description of the variable(s) to search for. Can be a comma-separated list.', 'type': 'string'}, 'top_n': {'default': 5, 'description': 'Number of top matching variables to return.', 'type': 'integer'}}, 'required': ['keywords'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'CurrentDate-get_current_date', 'description': 'get_current_date() - Returns the current date and time in the selected timezone.', 'parameters': {'properties': {'timezone': {'default': 'UTC', 'description': 'Select the timezone for the current date and time.', 'enum': ['UTC', 'US/Eastern', 'US/Central', 'US/Mountain', 'US/Pacific', 'Europe/London', 'Europe/Paris', 'Europe/Berlin', 'Europe/Moscow', 'Asia/Tokyo', 'Asia/Shanghai', 'Asia/Singapore', 'Asia/Dubai', 'Australia/Sydney', 'Australia/Melbourne', 'Pacific/Auckland', 'America/Sao_Paulo', 'America/Mexico_City', 'America/Toronto', 'America/Vancouver', 'Africa/Cairo', 'Africa/Johannesburg', 'Atlantic/Reykjavik', 'Indian/Maldives', 'America/Bogota', 'America/Lima', 'America/Santiago', 'America/Buenos_Aires', 'America/Caracas', 'America/La_Paz', 'America/Montevideo', 'America/Asuncion', 'America/Cuiaba'], 'type': 'string'}}, 'type': 'object'}}}]}, config={}, config_factories=[])\n| ToolsAgentOutputParser(), input_keys_arg=[], return_keys_arg=[], stream_runnable=True), tools=[StructuredTool(name='variable_matcher', description=\"Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for.\", args_schema=<class 'langflow.utils.validate.VariableMatcherToolComponent.VariableMatcherSchema'>, func=<bound method VariableMatcherToolComponent._tool_function of <langflow.utils.validate.VariableMatcherToolComponent object at 0x7d1506a36b00>>), StructuredTool(name='CurrentDate-get_current_date', description='get_current_date() - Returns the current date and time in the selected timezone.', args_schema=<class 'langflow.io.schema.InputSchema'>, callbacks=[], handle_tool_error=True, func=<function _patch_send_message_decorator.<locals>.sync_wrapper at 0x7d150698df30>)], handle_parsing_errors=True)",
+                    "name": "AgentExecutor"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "What are the variables involved in global warming?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "metadata": {},
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "eb8b39c0-561d-480d-ba41-e21623da4426",
+                  "parent_run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "ad443225-8dd5-4dd9-964f-a5476dfab63a",
+                  "parent_run_id": "eb8b39c0-561d-480d-ba41-e21623da4426",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "0f40fe14-13a3-4287-80be-1edf0cacf8f7",
+                  "parent_run_id": "ad443225-8dd5-4dd9-964f-a5476dfab63a",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "62d39f39-84b6-448f-9ca3-3cda852d49c3",
+                  "parent_run_id": "0f40fe14-13a3-4287-80be-1edf0cacf8f7",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What are the variables involved in global warming?",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "What are the variables involved in global warming?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                            "top_n": 5
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo', 'top_n': 5}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_6X9a61diqGca6krO8Uer8od1",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-efb1e243-ad83-4263-a952-ad45402483ae"
+                            }
+                          ],
+                          "tool_call_id": "call_6X9a61diqGca6krO8Uer8od1"
+                        },
+                        [
+                          {
+                            "variable": "siflsenstop",
+                            "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                            "comment": "the net sensible heat flux over sea ice",
+                            "similarity_score": 0.47946463657197486
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4793995330691348
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4481977157480708
+                          },
+                          {
+                            "variable": "prra",
+                            "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                            "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                            "similarity_score": 0.4441324498948179
+                          },
+                          {
+                            "variable": "co23D",
+                            "long_name": "3D-Field of Transported CO2",
+                            "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                            "similarity_score": 0.4432246398022289
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": []
+                  },
+                  "run_id": "c509f76a-823f-4189-b50f-7830057363d8",
+                  "parent_run_id": "eb8b39c0-561d-480d-ba41-e21623da4426",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "",
+                      "additional_kwargs": {
+                        "tool_calls": [
+                          {
+                            "index": 0,
+                            "id": "call_6X9a61diqGca6krO8Uer8od1",
+                            "function": {
+                              "arguments": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                              "name": "variable_matcher"
+                            },
+                            "type": "function"
+                          }
+                        ]
+                      },
+                      "response_metadata": {
+                        "finish_reason": "tool_calls",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-efb1e243-ad83-4263-a952-ad45402483ae",
+                      "tool_calls": [
+                        {
+                          "name": "variable_matcher",
+                          "args": {
+                            "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                            "top_n": 5
+                          },
+                          "id": "call_6X9a61diqGca6krO8Uer8od1",
+                          "type": "tool_call"
+                        }
+                      ],
+                      "tool_call_chunks": [
+                        {
+                          "name": "variable_matcher",
+                          "args": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                          "id": "call_6X9a61diqGca6krO8Uer8od1",
+                          "index": 0,
+                          "type": "tool_call_chunk"
+                        }
+                      ],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "2e3f37b0-60d7-492f-9876-9d594330bf43",
+                  "parent_run_id": "eb8b39c0-561d-480d-ba41-e21623da4426",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Action",
+                "message": {
+                  "type": "agent_action",
+                  "action": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "ToolAgentAction"
+                    ],
+                    "kwargs": {
+                      "tool": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                        "top_n": 5
+                      },
+                      "log": "\nInvoking: `variable_matcher` with `{'keywords': 'temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo', 'top_n': 5}`\n\n\n",
+                      "type": "AgentActionMessageLog",
+                      "message_log": [
+                        {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_6X9a61diqGca6krO8Uer8od1",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-efb1e243-ad83-4263-a952-ad45402483ae",
+                          "example": false,
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                                "top_n": 5
+                              },
+                              "id": "call_6X9a61diqGca6krO8Uer8od1",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "invalid_tool_calls": [],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                              "id": "call_6X9a61diqGca6krO8Uer8od1",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ]
+                        }
+                      ],
+                      "tool_call_id": "call_6X9a61diqGca6krO8Uer8od1"
+                    }
+                  },
+                  "run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "verbose": true,
+                  "color": "green"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool Start",
+                "message": {
+                  "type": "tool_start",
+                  "serialized": {
+                    "name": "variable_matcher",
+                    "description": "Match CMIP6 variables based on keywords using semantic similarity. Input should be keywords or descriptions of the variables you're looking for."
+                  },
+                  "input_str": "{'keywords': 'temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo', 'top_n': 5}",
+                  "run_id": "b8474c17-4602-4356-aa54-582d892b3861",
+                  "parent_run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "tags": [],
+                  "metadata": {},
+                  "inputs": {
+                    "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                    "top_n": 5
+                  },
+                  "color": "green",
+                  "name": null
+                },
+                "type": "object"
+              },
+              {
+                "name": "Tool End",
+                "message": {
+                  "type": "tool_end",
+                  "output": [
+                    {
+                      "variable": "siflsenstop",
+                      "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                      "comment": "the net sensible heat flux over sea ice",
+                      "similarity_score": 0.47946463657197486
+                    },
+                    {
+                      "variable": "prsn",
+                      "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                      "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                      "similarity_score": 0.4793995330691348
+                    },
+                    {
+                      "variable": "prsn",
+                      "long_name": "Snowfall Flux",
+                      "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                      "similarity_score": 0.4481977157480708
+                    },
+                    {
+                      "variable": "prra",
+                      "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                      "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                      "similarity_score": 0.4441324498948179
+                    },
+                    {
+                      "variable": "co23D",
+                      "long_name": "3D-Field of Transported CO2",
+                      "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                      "similarity_score": 0.4432246398022289
+                    }
+                  ],
+                  "run_id": "b8474c17-4602-4356-aa54-582d892b3861",
+                  "parent_run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "tags": [],
+                  "color": "blue",
+                  "name": "variable_matcher"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "0aebef97-3ae1-4988-a4e1-1cc93fe3d9b9",
+                  "parent_run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableSequence"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "2713fca9-e945-42c9-9ee5-5033920734bd",
+                  "parent_run_id": "0aebef97-3ae1-4988-a4e1-1cc93fe3d9b9",
+                  "tags": [
+                    "seq:step:1"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableAssign<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "4201d74b-4797-4bb4-b555-3468686f47ba",
+                  "parent_run_id": "2713fca9-e945-42c9-9ee5-5033920734bd",
+                  "tags": [],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableParallel<agent_scratchpad>"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "input": ""
+                  },
+                  "run_id": "1837c8c6-bd34-4af1-9ded-0587efa74b73",
+                  "parent_run_id": "4201d74b-4797-4bb4-b555-3468686f47ba",
+                  "tags": [
+                    "map:key:agent_scratchpad"
+                  ],
+                  "metadata": {},
+                  "run_type": null,
+                  "name": "RunnableLambda"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "prompts",
+                      "chat",
+                      "ChatPromptTemplate"
+                    ],
+                    "kwargs": {
+                      "input_variables": [],
+                      "optional_variables": [
+                        "agent_scratchpad",
+                        "chat_history"
+                      ],
+                      "partial_variables": {
+                        "chat_history": [],
+                        "agent_scratchpad": []
+                      },
+                      "messages": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "You are a climate scientist and expert on the CMIP6 dataset. Given a colleague's query, find CMIP6 **variables** most likely to help answer the query. \n\nTo find these variables: \n\n1. summarize the variable-related keywords in the query (e.g. \"rain\", not analysis words like \"plot\") using words that are useful for describing the CMIP 6 datasets. For instance, instead of \"weather month\", say temperature precipitation wind\", because \"month\" is not relevant to the variable choice and temperature precipitation wind\" is more specific than \"weather\". \nIf the query relates to whether a variable surpasses some threshold, you may wish to search for the \"min\" or \"max\" versions of variables.\n\n2. connect your list of summary words into one comma separated string.\n\nAdd as much as relevant, don't be shy\n\nUse the tool to check the variables, and at the end output the actual needed query. \n\nYour output should be only the variable name that you found most accurate for the query. No explanations\n\nQuery: What are the variables involved in global warming?",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "chat_history",
+                            "optional": true
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                          ],
+                          "kwargs": {
+                            "prompt": {
+                              "lc": 1,
+                              "type": "constructor",
+                              "id": [
+                                "langchain",
+                                "prompts",
+                                "prompt",
+                                "PromptTemplate"
+                              ],
+                              "kwargs": {
+                                "input_variables": [],
+                                "template": "",
+                                "template_format": "f-string"
+                              },
+                              "name": "PromptTemplate"
+                            }
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "MessagesPlaceholder"
+                          ],
+                          "kwargs": {
+                            "variable_name": "agent_scratchpad",
+                            "optional": true
+                          }
+                        }
+                      ]
+                    },
+                    "name": "ChatPromptTemplate"
+                  },
+                  "inputs": {
+                    "input": "",
+                    "chat_history": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "HumanMessage"
+                        ],
+                        "kwargs": {
+                          "content": "What are the variables involved in global warming?",
+                          "type": "human"
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA-NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "NA",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessage"
+                        ],
+                        "kwargs": {
+                          "content": "None",
+                          "type": "ai",
+                          "tool_calls": [],
+                          "invalid_tool_calls": []
+                        }
+                      }
+                    ],
+                    "intermediate_steps": [
+                      [
+                        {
+                          "tool": "variable_matcher",
+                          "tool_input": {
+                            "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                            "top_n": 5
+                          },
+                          "log": "\nInvoking: `variable_matcher` with `{'keywords': 'temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo', 'top_n': 5}`\n\n\n",
+                          "type": "AgentActionMessageLog",
+                          "message_log": [
+                            {
+                              "content": "",
+                              "additional_kwargs": {
+                                "tool_calls": [
+                                  {
+                                    "index": 0,
+                                    "id": "call_6X9a61diqGca6krO8Uer8od1",
+                                    "function": {
+                                      "arguments": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                                      "name": "variable_matcher"
+                                    },
+                                    "type": "function"
+                                  }
+                                ]
+                              },
+                              "response_metadata": {
+                                "finish_reason": "tool_calls",
+                                "model_name": "gpt-4o-mini-2024-07-18",
+                                "system_fingerprint": "fp_06737a9306"
+                              },
+                              "type": "AIMessageChunk",
+                              "id": "run-efb1e243-ad83-4263-a952-ad45402483ae"
+                            }
+                          ],
+                          "tool_call_id": "call_6X9a61diqGca6krO8Uer8od1"
+                        },
+                        [
+                          {
+                            "variable": "siflsenstop",
+                            "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                            "comment": "the net sensible heat flux over sea ice",
+                            "similarity_score": 0.47946463657197486
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4793995330691348
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4481977157480708
+                          },
+                          {
+                            "variable": "prra",
+                            "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                            "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                            "similarity_score": 0.4441324498948179
+                          },
+                          {
+                            "variable": "co23D",
+                            "long_name": "3D-Field of Transported CO2",
+                            "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                            "similarity_score": 0.4432246398022289
+                          }
+                        ]
+                      ]
+                    ],
+                    "agent_scratchpad": [
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "AIMessageChunk"
+                        ],
+                        "kwargs": {
+                          "content": "",
+                          "additional_kwargs": {
+                            "tool_calls": [
+                              {
+                                "index": 0,
+                                "id": "call_6X9a61diqGca6krO8Uer8od1",
+                                "function": {
+                                  "arguments": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                                  "name": "variable_matcher"
+                                },
+                                "type": "function"
+                              }
+                            ]
+                          },
+                          "response_metadata": {
+                            "finish_reason": "tool_calls",
+                            "model_name": "gpt-4o-mini-2024-07-18",
+                            "system_fingerprint": "fp_06737a9306"
+                          },
+                          "type": "AIMessageChunk",
+                          "id": "run-efb1e243-ad83-4263-a952-ad45402483ae",
+                          "tool_calls": [
+                            {
+                              "name": "variable_matcher",
+                              "args": {
+                                "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                                "top_n": 5
+                              },
+                              "id": "call_6X9a61diqGca6krO8Uer8od1",
+                              "type": "tool_call"
+                            }
+                          ],
+                          "tool_call_chunks": [
+                            {
+                              "name": "variable_matcher",
+                              "args": "{\"keywords\":\"temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo\",\"top_n\":5}",
+                              "id": "call_6X9a61diqGca6krO8Uer8od1",
+                              "index": 0,
+                              "type": "tool_call_chunk"
+                            }
+                          ],
+                          "invalid_tool_calls": []
+                        }
+                      },
+                      {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                          "langchain",
+                          "schema",
+                          "messages",
+                          "ToolMessage"
+                        ],
+                        "kwargs": {
+                          "content": "[{\"variable\": \"siflsenstop\", \"long_name\": \"Net Upward Sensible Heat Flux over Sea Ice\", \"comment\": \"the net sensible heat flux over sea ice\", \"similarity_score\": 0.47946463657197486}, {\"variable\": \"prsn\", \"long_name\": \"Snowfall Flux where Ice Free Ocean over Sea\", \"comment\": \"At surface; includes precipitation of all forms of water in the solid phase\", \"similarity_score\": 0.4793995330691348}, {\"variable\": \"prsn\", \"long_name\": \"Snowfall Flux\", \"comment\": \"At surface; includes precipitation of all forms of water in the solid phase\", \"similarity_score\": 0.4481977157480708}, {\"variable\": \"prra\", \"long_name\": \"Rainfall Flux where Ice Free Ocean over Sea\", \"comment\": \"In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.\", \"similarity_score\": 0.4441324498948179}, {\"variable\": \"co23D\", \"long_name\": \"3D-Field of Transported CO2\", \"comment\": \"report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels\", \"similarity_score\": 0.4432246398022289}]",
+                          "additional_kwargs": {
+                            "name": "variable_matcher"
+                          },
+                          "type": "tool",
+                          "tool_call_id": "call_6X9a61diqGca6krO8Uer8od1",
+                          "status": "success"
+                        }
+                      }
+                    ]
+                  },
+                  "run_id": "c94cfeb8-9750-403f-89a8-bdce9f0a99f0",
+                  "parent_run_id": "0aebef97-3ae1-4988-a4e1-1cc93fe3d9b9",
+                  "tags": [
+                    "seq:step:2"
+                  ],
+                  "metadata": {},
+                  "run_type": "prompt",
+                  "name": "ChatPromptTemplate"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Chain Start",
+                "message": {
+                  "type": "chain_start",
+                  "serialized": null,
+                  "inputs": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "messages",
+                      "AIMessageChunk"
+                    ],
+                    "kwargs": {
+                      "content": "co23D",
+                      "response_metadata": {
+                        "finish_reason": "stop",
+                        "model_name": "gpt-4o-mini-2024-07-18",
+                        "system_fingerprint": "fp_06737a9306"
+                      },
+                      "type": "AIMessageChunk",
+                      "id": "run-27c6f724-e5bc-4c7b-91ac-ca0a8057abe9",
+                      "tool_calls": [],
+                      "invalid_tool_calls": []
+                    }
+                  },
+                  "run_id": "da5d3c78-0d29-4f72-8f0e-e87c5c119b53",
+                  "parent_run_id": "0aebef97-3ae1-4988-a4e1-1cc93fe3d9b9",
+                  "tags": [
+                    "seq:step:4"
+                  ],
+                  "metadata": {},
+                  "run_type": "parser",
+                  "name": "ToolsAgentOutputParser"
+                },
+                "type": "object"
+              },
+              {
+                "name": "Agent Finish",
+                "message": {
+                  "type": "agent_finish",
+                  "finish": {
+                    "lc": 1,
+                    "type": "constructor",
+                    "id": [
+                      "langchain",
+                      "schema",
+                      "agent",
+                      "AgentFinish"
+                    ],
+                    "kwargs": {
+                      "return_values": {
+                        "output": "co23D",
+                        "messages": [
+                          {
+                            "content": "co23D",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "ai",
+                            "example": false,
+                            "tool_calls": [],
+                            "invalid_tool_calls": []
+                          }
+                        ]
+                      },
+                      "log": "co23D",
+                      "type": "AgentFinish"
+                    }
+                  },
+                  "run_id": "365f75ed-121e-4022-be57-2f4505b16c44",
+                  "parent_run_id": null,
+                  "tags": [],
+                  "color": "green",
+                  "verbose": true
+                },
+                "type": "object"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector",
+          "component_id": "Agent-wqazV",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:33",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "4-20250305_152930",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "12786dd6-ea8f-4b8d-b651-292d7a83c720",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "None",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "files": [],
+              "session_id": "4-20250305_152930",
+              "timestamp": "2025-03-05T18:29:33Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-jdoTk",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "None",
+            "sender": "Machine",
+            "sender_name": "Experiment",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:33",
+                "sender": "Machine",
+                "sender_name": "Experiment",
+                "session_id": "4-20250305_152930",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-jdoTk",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "12786dd6-ea8f-4b8d-b651-292d7a83c720",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "None",
+              "sender": "Machine",
+              "sender_name": "Experiment",
+              "session_id": "4-20250305_152930",
+              "component_id": "ChatOutput-NLJoQ",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "ExperimentSelector Output",
+          "component_id": "ChatOutput-NLJoQ",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:33",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "4-20250305_152930",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "956dba9b-c302-41af-a897-7cea48836075",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "None",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "files": [],
+              "session_id": "4-20250305_152930",
+              "timestamp": "2025-03-05T18:29:33Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3ayFc",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "None",
+            "sender": "Machine",
+            "sender_name": "MIP",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:33",
+                "sender": "Machine",
+                "sender_name": "MIP",
+                "session_id": "4-20250305_152930",
+                "text": "None",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3ayFc",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "956dba9b-c302-41af-a897-7cea48836075",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "None",
+              "sender": "Machine",
+              "sender_name": "MIP",
+              "session_id": "4-20250305_152930",
+              "component_id": "ChatOutput-XYyZ4",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "MIPSelector Output",
+          "component_id": "ChatOutput-XYyZ4",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "timestamp": "2025-03-05T18:29:34",
+              "sender": "Machine",
+              "sender_name": "Variable",
+              "session_id": "4-20250305_152930",
+              "text": "co23D",
+              "files": [],
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "Agent-wqazV",
+                  "display_name": "Agent",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": [
+                {
+                  "title": "Agent Steps",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "duration": 1,
+                      "header": {
+                        "title": "Input",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "**HUMAN**: What are the variables involved in global warming?  \n**AI**: NA-NA  \n**AI**: NA  \n**AI**: None  \n**AI**: None"
+                    },
+                    {
+                      "type": "tool_use",
+                      "duration": 4533,
+                      "header": {
+                        "title": "Executed **variable_matcher**",
+                        "icon": "Hammer"
+                      },
+                      "name": "variable_matcher",
+                      "tool_input": {
+                        "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                        "top_n": 5
+                      },
+                      "output": [
+                        {
+                          "variable": "siflsenstop",
+                          "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                          "comment": "the net sensible heat flux over sea ice",
+                          "similarity_score": 0.47946463657197486
+                        },
+                        {
+                          "variable": "prsn",
+                          "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                          "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                          "similarity_score": 0.4793995330691348
+                        },
+                        {
+                          "variable": "prsn",
+                          "long_name": "Snowfall Flux",
+                          "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                          "similarity_score": 0.4481977157480708
+                        },
+                        {
+                          "variable": "prra",
+                          "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                          "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                          "similarity_score": 0.4441324498948179
+                        },
+                        {
+                          "variable": "co23D",
+                          "long_name": "3D-Field of Transported CO2",
+                          "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                          "similarity_score": 0.4432246398022289
+                        }
+                      ],
+                      "error": null
+                    },
+                    {
+                      "type": "text",
+                      "duration": 936,
+                      "header": {
+                        "title": "Output",
+                        "icon": "MessageSquare"
+                      },
+                      "text": "co23D"
+                    }
+                  ],
+                  "allow_markdown": true,
+                  "media_url": null
+                }
+              ],
+              "id": "532ea6fe-04f7-467e-b778-8e4ab66705ba",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+            }
+          },
+          "artifacts": {
+            "message": "co23D",
+            "sender": "Machine",
+            "sender_name": "Variable",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05 18:29:34 ",
+                "sender": "Machine",
+                "sender_name": "Variable",
+                "session_id": "4-20250305_152930",
+                "text": "co23D",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "Agent-wqazV",
+                    "display_name": "Agent",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [
+                  {
+                    "title": "Agent Steps",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "duration": 1,
+                        "header": {
+                          "title": "Input",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "**HUMAN**: What are the variables involved in global warming?  \n**AI**: NA-NA  \n**AI**: NA  \n**AI**: None  \n**AI**: None"
+                      },
+                      {
+                        "type": "tool_use",
+                        "duration": 4533,
+                        "header": {
+                          "title": "Executed **variable_matcher**",
+                          "icon": "Hammer"
+                        },
+                        "name": "variable_matcher",
+                        "tool_input": {
+                          "keywords": "temperature, carbon dioxide, greenhouse gases, sea level, precipitation, ice melt, ocean heat, radiative forcing, albedo",
+                          "top_n": 5
+                        },
+                        "output": [
+                          {
+                            "variable": "siflsenstop",
+                            "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+                            "comment": "the net sensible heat flux over sea ice",
+                            "similarity_score": 0.47946463657197486
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux where Ice Free Ocean over Sea",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4793995330691348
+                          },
+                          {
+                            "variable": "prsn",
+                            "long_name": "Snowfall Flux",
+                            "comment": "At surface; includes precipitation of all forms of water in the solid phase",
+                            "similarity_score": 0.4481977157480708
+                          },
+                          {
+                            "variable": "prra",
+                            "long_name": "Rainfall Flux where Ice Free Ocean over Sea",
+                            "comment": "In accordance with common usage in geophysical disciplines, 'flux' implies per unit area, called 'flux density' in physics.",
+                            "similarity_score": 0.4441324498948179
+                          },
+                          {
+                            "variable": "co23D",
+                            "long_name": "3D-Field of Transported CO2",
+                            "comment": "report 3D field of model simulated atmospheric CO2 mass mixing ration on model levels",
+                            "similarity_score": 0.4432246398022289
+                          }
+                        ],
+                        "error": null
+                      },
+                      {
+                        "type": "text",
+                        "duration": 936,
+                        "header": {
+                          "title": "Output",
+                          "icon": "MessageSquare"
+                        },
+                        "text": "co23D"
+                      }
+                    ],
+                    "allow_markdown": true,
+                    "media_url": null
+                  }
+                ],
+                "id": "532ea6fe-04f7-467e-b778-8e4ab66705ba",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [],
+          "component_display_name": "VariableSelector Output",
+          "component_id": "ChatOutput-gYkvt",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:32",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "4-20250305_152930",
+                "text": "NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "cd16e045-54be-4b9e-a0a0-54e1c4bb593f",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "NA",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "files": [],
+              "session_id": "4-20250305_152930",
+              "timestamp": "2025-03-05T18:29:32Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-AXjuD",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o-mini"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "NA",
+            "sender": "Machine",
+            "sender_name": "Temporal Resolution",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:32",
+                "sender": "Machine",
+                "sender_name": "Temporal Resolution",
+                "session_id": "4-20250305_152930",
+                "text": "NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-AXjuD",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o-mini"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "cd16e045-54be-4b9e-a0a0-54e1c4bb593f",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "NA",
+              "sender": "Machine",
+              "sender_name": "Temporal Resolution",
+              "session_id": "4-20250305_152930",
+              "component_id": "ChatOutput-QNEAa",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "TemporalSelector Output",
+          "component_id": "ChatOutput-QNEAa",
+          "used_frozen_result": false
+        },
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2025-03-05T18:29:32",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "4-20250305_152930",
+                "text": "NA-NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "dbde18b6-07ae-408c-a994-09d43cc41337",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "default_value": "",
+              "text": "NA-NA",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "files": [],
+              "session_id": "4-20250305_152930",
+              "timestamp": "2025-03-05T18:29:32Z",
+              "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": "",
+                "background_color": "",
+                "edited": false,
+                "source": {
+                  "id": "OpenAIModel-3HdPb",
+                  "display_name": "OpenAI",
+                  "source": "gpt-4o"
+                },
+                "icon": "\ud83e\uddea",
+                "allow_markdown": false,
+                "state": "complete",
+                "targets": []
+              },
+              "category": "message",
+              "content_blocks": []
+            }
+          },
+          "artifacts": {
+            "message": "NA-NA",
+            "sender": "Machine",
+            "sender_name": "Date Range",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:32",
+                "sender": "Machine",
+                "sender_name": "Date Range",
+                "session_id": "4-20250305_152930",
+                "text": "NA-NA",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": "OpenAIModel-3HdPb",
+                    "display_name": "OpenAI",
+                    "source": "gpt-4o"
+                  },
+                  "icon": "\ud83e\uddea",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "dbde18b6-07ae-408c-a994-09d43cc41337",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "NA-NA",
+              "sender": "Machine",
+              "sender_name": "Date Range",
+              "session_id": "4-20250305_152930",
+              "component_id": "ChatOutput-CAZzq",
+              "files": [],
+              "type": "message"
+            }
+          ],
+          "component_display_name": "RangeSelector Output",
+          "component_id": "ChatOutput-CAZzq",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "saved_data": {
+              "repr": "{\n    \"url\": \"No Match\",\n    \"temporal_resolution\": \"NA\",\n    \"date_range\": \"NA-NA\",\n    \"mip\": \"None\",\n    \"experiment\": \"None\",\n    \"variable\": \"co23D\",\n    \"user_query\": \"What are the variables involved in global warming?\",\n    \"run_id\": \"9c92775d-5ed1-41aa-9813-1a9799fdd08d\",\n    \"session_id\": \"4-20250305_152930\"\n}",
+              "raw": {
+                "url": "No Match",
+                "temporal_resolution": "NA",
+                "date_range": "NA-NA",
+                "mip": "None",
+                "experiment": "None",
+                "variable": "co23D",
+                "user_query": "What are the variables involved in global warming?",
+                "run_id": "9c92775d-5ed1-41aa-9813-1a9799fdd08d",
+                "session_id": "4-20250305_152930"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "saved_data": {
+              "message": {
+                "url": "No Match",
+                "temporal_resolution": "NA",
+                "date_range": "NA-NA",
+                "mip": "None",
+                "experiment": "None",
+                "variable": "co23D",
+                "user_query": "What are the variables involved in global warming?",
+                "run_id": "9c92775d-5ed1-41aa-9813-1a9799fdd08d",
+                "session_id": "4-20250305_152930"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "saved_data": [
+              {
+                "name": "Log 1",
+                "message": "Configuration saved to url_data.json",
+                "type": "text"
+              }
+            ]
+          },
+          "messages": [],
+          "component_display_name": "Save Search Configuration",
+          "component_id": "CustomComponent-qg4v7",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "text": {
+              "repr": "What are the variables involved in global warming?",
+              "raw": "What are the variables involved in global warming?",
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "text": {
+              "message": "What are the variables involved in global warming?",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "text": []
+          },
+          "messages": [],
+          "component_display_name": "Search Query",
+          "component_id": "ParseData-ZwaO0",
+          "used_frozen_result": false
+        },
+        {
+          "results": {},
+          "artifacts": {
+            "data": {
+              "repr": "{\n    \"timestamp\": \"2025-03-05T18:29:31+00:00\",\n    \"sender\": \"User\",\n    \"sender_name\": \"User\",\n    \"session_id\": \"4-20250305_152930\",\n    \"text\": \"What are the variables involved in global warming?\",\n    \"files\": [],\n    \"error\": false,\n    \"edit\": false,\n    \"properties\": {\n        \"text_color\": \"\",\n        \"background_color\": \"\",\n        \"edited\": false,\n        \"source\": {\n            \"id\": null,\n            \"display_name\": null,\n            \"source\": null\n        },\n        \"icon\": \"\",\n        \"allow_markdown\": false,\n        \"state\": \"complete\",\n        \"targets\": []\n    },\n    \"category\": \"message\",\n    \"content_blocks\": [],\n    \"id\": \"3a771303-2e1f-493c-85be-8b72749fd4f9\",\n    \"flow_id\": \"b28b3af9-2779-4d13-a86a-e7235ce95b00\"\n}",
+              "raw": {
+                "timestamp": "2025-03-05T18:29:31",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_152930",
+                "text": "What are the variables involved in global warming?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3a771303-2e1f-493c-85be-8b72749fd4f9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "object"
+            }
+          },
+          "outputs": {
+            "data": {
+              "message": {
+                "timestamp": "2025-03-05T18:29:31",
+                "sender": "User",
+                "sender_name": "User",
+                "session_id": "4-20250305_152930",
+                "text": "What are the variables involved in global warming?",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": "",
+                  "background_color": "",
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "",
+                  "allow_markdown": false,
+                  "state": "complete",
+                  "targets": []
+                },
+                "category": "message",
+                "content_blocks": [],
+                "id": "3a771303-2e1f-493c-85be-8b72749fd4f9",
+                "flow_id": "b28b3af9-2779-4d13-a86a-e7235ce95b00"
+              },
+              "type": "data"
+            }
+          },
+          "logs": {
+            "data": []
+          },
+          "messages": [],
+          "component_display_name": "Message to Data",
+          "component_id": "MessagetoData-xan5A",
+          "used_frozen_result": false
+        }
+      ]
+    }
+  ]
+}
