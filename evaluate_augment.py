@@ -290,35 +290,11 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
             "query_id": row.get("", index),
             "query": row["query"],
             "expected_variable": row["variable"],
-            "expected_temporal_resolution": (
-                ""
-                if pd.isna(row.get("temporal resolution", ""))
-                else row.get("temporal resolution", "")
-            ),
-            "expected_start_year": (
-                ""
-                if pd.isna(row.get("start year", 0))
-                else (
-                    str(int(row.get("start year", 0)))
-                    if isinstance(row.get("start year", 0), (int, float))
-                    and not pd.isna(row.get("start year", 0))
-                    else row.get("start year", 0)
-                )
-            ),
-            "expected_end_year": (
-                ""
-                if pd.isna(row.get("end year", 0))
-                else (
-                    str(int(row.get("end year", 0)))
-                    if isinstance(row.get("end year", 0), (int, float))
-                    and not pd.isna(row.get("end year", 0))
-                    else row.get("end year", 0)
-                )
-            ),
-            "expected_mip": "" if pd.isna(row.get("MIP", "")) else row.get("MIP", ""),
-            "expected_experiment": (
-                "" if pd.isna(row.get("experiment", "")) else row.get("experiment", "")
-            ),
+            "expected_temporal_resolution": row.get("temporal resolution", ""),
+            "expected_start_year": row.get("start year", 0),
+            "expected_end_year": row.get("end year", 0),
+            "expected_mip": row.get("MIP", ""),
+            "expected_experiment": row.get("experiment", ""),
             "predicted_variable": "",
             "predicted_temporal_resolution": "",
             "predicted_start_year": "",
@@ -360,39 +336,13 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
                         "query_id": row.get("", index),
                         "query": row["query"],
                         "expected_variable": row["variable"],
-                        "expected_temporal_resolution": (
-                            ""
-                            if pd.isna(row.get("temporal resolution", ""))
-                            else row.get("temporal resolution", "")
+                        "expected_temporal_resolution": row.get(
+                            "temporal resolution", ""
                         ),
-                        "expected_start_year": (
-                            ""
-                            if pd.isna(row.get("start year", 0))
-                            else (
-                                str(int(row.get("start year", 0)))
-                                if isinstance(row.get("start year", 0), (int, float))
-                                and not pd.isna(row.get("start year", 0))
-                                else row.get("start year", 0)
-                            )
-                        ),
-                        "expected_end_year": (
-                            ""
-                            if pd.isna(row.get("end year", 0))
-                            else (
-                                str(int(row.get("end year", 0)))
-                                if isinstance(row.get("end year", 0), (int, float))
-                                and not pd.isna(row.get("end year", 0))
-                                else row.get("end year", 0)
-                            )
-                        ),
-                        "expected_mip": (
-                            "" if pd.isna(row.get("MIP", "")) else row.get("MIP", "")
-                        ),
-                        "expected_experiment": (
-                            ""
-                            if pd.isna(row.get("experiment", ""))
-                            else row.get("experiment", "")
-                        ),
+                        "expected_start_year": row.get("start year", 0),
+                        "expected_end_year": row.get("end year", 0),
+                        "expected_mip": row.get("MIP", ""),
+                        "expected_experiment": row.get("experiment", ""),
                         "predicted_variable": "INTERRUPTED",
                         "predicted_temporal_resolution": "",
                         "predicted_start_year": "",
@@ -424,9 +374,11 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
                         "query_id": row.get("", index),
                         "query": row["query"],
                         "expected_variable": row["variable"],
-                        "expected_temporal_resolution": "",
-                        "expected_start_year": "",
-                        "expected_end_year": "",
+                        "expected_temporal_resolution": row.get(
+                            "temporal resolution", ""
+                        ),
+                        "expected_start_year": row.get("start year", 0),
+                        "expected_end_year": row.get("end year", 0),
                         "expected_mip": row.get("MIP", ""),
                         "expected_experiment": row.get("experiment", ""),
                         "predicted_variable": "",
@@ -461,20 +413,11 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
         expected_start_year = row.get("start year", 0)
         expected_end_year = row.get("end year", 0)
 
-        # Handle NaN values and convert to string for comparison
+        # Convert to string for comparison if they're numbers
         if isinstance(expected_start_year, (int, float)):
-            # Check if it's NaN before converting to int
-            if pd.isna(expected_start_year):
-                expected_start_year = ""
-            else:
-                expected_start_year = str(int(expected_start_year))
-
+            expected_start_year = str(int(expected_start_year))
         if isinstance(expected_end_year, (int, float)):
-            # Check if it's NaN before converting to int
-            if pd.isna(expected_end_year):
-                expected_end_year = ""
-            else:
-                expected_end_year = str(int(expected_end_year))
+            expected_end_year = str(int(expected_end_year))
 
         # Normalize predicted years if not empty
         predicted_start_year = extracted_data["start_year"]
@@ -489,9 +432,6 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
 
         # For temporal resolution, MIP, and experiment, check if empty strings match
         expected_temporal_resolution = row.get("temporal resolution", "")
-        if pd.isna(expected_temporal_resolution):
-            expected_temporal_resolution = ""
-
         temporal_resolution_match = (
             extracted_data["temporal_resolution"].lower()
             == expected_temporal_resolution.lower()
@@ -518,9 +458,6 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
 
         # For MIP and experiment
         expected_mip = row.get("MIP", "")
-        if pd.isna(expected_mip):
-            expected_mip = ""
-
         mip_match = (
             extracted_data["mip"].lower() == expected_mip.lower()
             if extracted_data["mip"] or expected_mip
@@ -528,9 +465,6 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
         )
 
         expected_experiment = row.get("experiment", "")
-        if pd.isna(expected_experiment):
-            expected_experiment = ""
-
         experiment_match = (
             extracted_data["experiment"].lower() == expected_experiment.lower()
             if extracted_data["experiment"] or expected_experiment
@@ -574,35 +508,11 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
             "query_id": row.get("", index),
             "query": row["query"],
             "expected_variable": row["variable"],
-            "expected_temporal_resolution": (
-                ""
-                if pd.isna(row.get("temporal resolution", ""))
-                else row.get("temporal resolution", "")
-            ),
-            "expected_start_year": (
-                ""
-                if pd.isna(row.get("start year", 0))
-                else (
-                    str(int(row.get("start year", 0)))
-                    if isinstance(row.get("start year", 0), (int, float))
-                    and not pd.isna(row.get("start year", 0))
-                    else row.get("start year", 0)
-                )
-            ),
-            "expected_end_year": (
-                ""
-                if pd.isna(row.get("end year", 0))
-                else (
-                    str(int(row.get("end year", 0)))
-                    if isinstance(row.get("end year", 0), (int, float))
-                    and not pd.isna(row.get("end year", 0))
-                    else row.get("end year", 0)
-                )
-            ),
-            "expected_mip": "" if pd.isna(row.get("MIP", "")) else row.get("MIP", ""),
-            "expected_experiment": (
-                "" if pd.isna(row.get("experiment", "")) else row.get("experiment", "")
-            ),
+            "expected_temporal_resolution": row.get("temporal resolution", ""),
+            "expected_start_year": row.get("start year", 0),
+            "expected_end_year": row.get("end year", 0),
+            "expected_mip": row.get("MIP", ""),
+            "expected_experiment": row.get("experiment", ""),
             "predicted_variable": "",
             "predicted_temporal_resolution": "",
             "predicted_start_year": "",
@@ -628,7 +538,6 @@ def run_evaluation(
     max_workers=None,
     output_dir="evaluation_results",
     samples=0,
-    continue_from=None,
 ):
     """Run the evaluation on the DataFrame."""
     # Access the global interrupted flag
@@ -657,22 +566,6 @@ def run_evaluation(
 
     # Initialize results list
     results = []
-
-    # Track indices to skip if continuing from previous run
-    indices_to_skip = set()
-
-    # If continuing from a previous run, load the results and determine which indices to skip
-    if continue_from and os.path.exists(continue_from):
-        try:
-            previous_results = pd.read_csv(continue_from)
-            # Get the query_id values that have already been processed
-            processed_ids = previous_results["query_id"].tolist()
-            indices_to_skip = set(processed_ids)
-            print(f"Continuing from previous run: {continue_from}")
-            print(f"Skipping {len(indices_to_skip)} already processed queries")
-        except Exception as e:
-            print(f"Error reading previous results file: {str(e)}")
-            print("Will start evaluation from the beginning")
 
     # Limit the number of samples if requested
     if samples > 0:
@@ -735,34 +628,22 @@ def run_evaluation(
                     print("Skipping remaining queries due to interrupt...")
                     break
 
-                # Skip if this index was already processed
-                if i in indices_to_skip:
-                    progress_bar.update(1)
-                    continue
-
                 # Submit the task
                 future = executor.submit(
                     process_query, row, i, debug_dir, max_retries, retry_delay
                 )
-                futures.append((i, future))
+                futures.append(future)
 
             # Process completed tasks and update progress
             try:
-                # Create a dictionary to map futures to their indices
-                future_to_index = {future: idx for idx, future in futures}
-
-                # Process futures as they complete
-                for future in as_completed([f for _, f in futures]):
+                for future in as_completed(futures):
                     if interrupted:
                         # Mark remaining futures as cancelled if interrupted
-                        for _, f in futures:
+                        for f in futures:
                             if not f.done():
                                 f.cancel()
                         print("Cancelling pending tasks...")
                         break
-
-                    # Get the index associated with this future
-                    idx = future_to_index[future]
 
                     result = future.result()
                     results.append(result)
@@ -775,7 +656,7 @@ def run_evaluation(
                     progress_bar.update(1)
             except KeyboardInterrupt:
                 print("\nKeyboard interrupt received. Cancelling remaining tasks...")
-                for _, f in futures:
+                for f in futures:
                     if not f.done():
                         f.cancel()
                 interrupted = True
@@ -785,28 +666,9 @@ def run_evaluation(
         # Convert results to DataFrame
         results_df = pd.DataFrame(results)
 
-        # If we need to merge with previous results
-        if continue_from and os.path.exists(continue_from):
-            try:
-                previous_results = pd.read_csv(continue_from)
-                # Combine previous and new results
-                combined_df = pd.concat(
-                    [previous_results, results_df], ignore_index=True
-                )
-                # Save combined results
-                combined_df.to_csv(output_file, index=False)
-                print(f"Combined results saved to {output_file}")
-
-                # Update results_df to the combined one for metrics calculation
-                results_df = combined_df
-            except Exception as e:
-                print(f"Error merging with previous results: {str(e)}")
-                results_df.to_csv(output_file, index=False)
-                print(f"New results only saved to {output_file}")
-        else:
-            # Save final results
-            results_df.to_csv(output_file, index=False)
-            print(f"Evaluation results saved to {output_file}")
+        # Save final results (will be the same as incremental results)
+        results_df.to_csv(output_file, index=False)
+        print(f"Evaluation results saved to {output_file}")
 
         # Calculate and print metrics
         print("\nEvaluation Metrics:")
@@ -948,12 +810,6 @@ def main():
         default="data/augment_aug21.xlsx",
         help="Path to the Excel data file containing evaluation queries",
     )
-    parser.add_argument(
-        "--continue-from",
-        type=str,
-        default=None,
-        help="Path to a previous results file to continue from",
-    )
     args = parser.parse_args()
 
     try:
@@ -980,7 +836,6 @@ def main():
             max_workers=args.max_workers,
             output_dir=args.output_dir,
             samples=args.samples,
-            continue_from=args.continue_from,
         )
 
         print(f"Evaluation completed. Results saved to {results_file}")
