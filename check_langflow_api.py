@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API configuration
-LANGFLOW_URL = "http://192.168.112.128:7860/api/v1/run/nasa-dataset-selector-02-1-1"
-LANGFLOW_API_KEY = "sk-HCJT-1SVbp5BvqI4EL27OK3CpVzeWpmXhBI-CkjlQ9k"
+LANGFLOW_URL = os.getenv("LANGFLOW_URL")
+LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
 
 # Test query
 test_query = "I need data for precipitation in RCP8.5 scenario from 2040 to 2060"

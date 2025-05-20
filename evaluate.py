@@ -25,12 +25,8 @@ load_dotenv()
 # Generate a unique ID for this run
 UNIQUE_RUN_ID = str(uuid.uuid4())
 
-# Get API keys from environment
-LANGFLOW_URL = "http://192.168.112.130/api/v1/run/b28b3af9-2779-4d13-a86a-e7235ce95b00"
-
-# LANGFLOW_URL = os.getenv("LANGFLOW_URL")
-LANGFLOW_API_KEY = "sk-on42NLb8OBdonaKWIy6me2NMjyWX3Z23YGuHST07rB0"
-# LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
+LANGFLOW_URL = os.getenv("LANGFLOW_URL")
+LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
 
 if not LANGFLOW_URL or not LANGFLOW_API_KEY:
     raise ValueError(

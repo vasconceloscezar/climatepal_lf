@@ -25,10 +25,7 @@ UNIQUE_RUN_ID = str(uuid.uuid4())
 # Get API keys from environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
-LANGFLOW_URL = os.getenv(
-    "LANGFLOW_URL",
-    "https://climate-pal.namastex.ai/api/v1/run/nasa-dataset-selector-02-1-1-1",
-)
+LANGFLOW_URL = os.getenv("LANGFLOW_URL")
 
 # Global flag to indicate if the process is being interrupted
 interrupted = False
