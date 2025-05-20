@@ -1,0 +1,11 @@
+Evaluation Summary:
+Total Queries: 36
+Successful Queries: 36
+Failed Queries: 0
+
+Accuracy Metrics (for successful queries):
+Scenario Accuracy: 100.00%
+Variable Accuracy: 100.00%
+Year Range Accuracy: 100.00%
+File Path Accuracy: 0.00%
+Overall Accuracy: 0.00%

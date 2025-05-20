@@ -26,14 +26,11 @@ load_dotenv()
 UNIQUE_RUN_ID = str(uuid.uuid4())
 
 # Get API keys from environment
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-LANGFLOW_URL = os.getenv("LANGFLOW_URL", "https://api.langflow.tech/api/v1/predict")
-LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
+LANGFLOW_URL = "http://192.168.112.130/api/v1/run/b28b3af9-2779-4d13-a86a-e7235ce95b00"
 
-if not OPENAI_API_KEY:
-    raise ValueError(
-        "OPENAI_API_KEY environment variable is not set. Please set it in a .env file or in your environment."
-    )
+# LANGFLOW_URL = os.getenv("LANGFLOW_URL")
+LANGFLOW_API_KEY = "sk-on42NLb8OBdonaKWIy6me2NMjyWX3Z23YGuHST07rB0"
+# LANGFLOW_API_KEY = os.getenv("LANGFLOW_API_KEY")
 
 if not LANGFLOW_URL or not LANGFLOW_API_KEY:
     raise ValueError(
@@ -61,7 +58,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 def extract_url_from_text(text):
     """Extract URL from text using regex pattern."""
-    url_pattern = r"https?://\S+"
+    url_pattern = r"https?://\\S+"
     urls = re.findall(url_pattern, text)
     return urls[0] if urls else ""
 
@@ -70,53 +67,56 @@ def extract_data_from_response(response_json):
     """Extract relevant data from the API response."""
     result = {"scenario": "", "variable": "", "year_range": "", "file_path": ""}
 
-    # Check if outputs exists in the response
-    if "outputs" not in response_json:
+    if not isinstance(response_json, dict):
         return result
 
-    # Look for messages with specific sender_name values
-    for output_group in response_json["outputs"]:
-        if "outputs" not in output_group:
+    outputs_top_level = response_json.get("outputs")
+    if not isinstance(outputs_top_level, list) or not outputs_top_level:
+        return result
+
+    # Assuming the relevant data is always in the first item of the top-level "outputs" list
+    first_output_group = outputs_top_level[0]
+    if not isinstance(first_output_group, dict):
+        return result
+
+    detailed_outputs = first_output_group.get("outputs")
+    if not isinstance(detailed_outputs, list):
+        return result
+
+    for output_item in detailed_outputs:
+        if not isinstance(output_item, dict):
             continue
 
-        for output in output_group["outputs"]:
-            # Look for extracted_urls which contains the file path
-            if "results" in output and "extracted_urls" in output["results"]:
-                url_data = output["results"]["extracted_urls"]["raw"]
-                if isinstance(url_data, list) and len(url_data) > 0:
-                    if "data" in url_data[0] and "url" in url_data[0]["data"]:
-                        result["file_path"] = url_data[0]["data"]["url"]
+        results_field = output_item.get("results")
+        if not isinstance(results_field, dict):
+            continue
 
-            # Look for messages with specific sender_name values
-            if "results" in output and "message" in output["results"]:
-                message = output["results"]["message"]
-                if isinstance(message, dict) and "sender_name" in message:
-                    sender_name = message.get("sender_name", "")
-                    text = message.get("text", "")
+        message_data = results_field.get("message")
+        if not isinstance(message_data, dict):
+            continue
 
-                    if sender_name == "Experiment":
-                        result["scenario"] = text
-                    elif sender_name == "Variable":
-                        result["variable"] = text
-                    elif sender_name == "Date Range":
-                        result["year_range"] = text
+        sender_name = message_data.get("sender_name", "")
+        text = message_data.get("text", "")
 
-                    # If we found a URL in the text, save it
-                    if "http" in text:
-                        url = extract_url_from_text(text)
-                        if url and not result["file_path"]:
-                            result["file_path"] = url
+        if sender_name == "Experiment":
+            result["scenario"] = text
+        elif sender_name == "Variable":
+            result["variable"] = text
+        elif sender_name == "Date Range":
+            result["year_range"] = text
+        elif sender_name == "AI":
+            # Try to parse the structured URL from the AI message
+            url_match_ai = re.search(r"- URL: (https?://\\S+)", text)
+            if url_match_ai:
+                result["file_path"] = url_match_ai.group(1)
+            elif "- URL: No Match" in text and not result["file_path"]:
+                result["file_path"] = ""  # Explicitly no match from AI
 
-    # If we still don't have a file path, look for saved_data
-    if not result["file_path"]:
-        for output_group in response_json["outputs"]:
-            if (
-                "artifacts" in output_group
-                and "saved_data" in output_group["artifacts"]
-            ):
-                saved_data = output_group["artifacts"]["saved_data"]["raw"]
-                if isinstance(saved_data, dict) and "url" in saved_data:
-                    result["file_path"] = saved_data["url"]
+        # General fallback: if a URL is in any message\\'s text and file_path is not yet set
+        if not result["file_path"] and "http" in text:
+            url_from_text = extract_url_from_text(text)
+            if url_from_text:
+                result["file_path"] = url_from_text
 
     return result
 
@@ -160,7 +160,7 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
     # Prepare the API request payload
     payload = {
         "session_id": str(index) + "-" + UNIQUE_RUN_ID,
-        "output_type": "debug",
+        "output_type": "chat",
         "input_type": "chat",
         "input_value": row["query"],
     }
@@ -202,7 +202,7 @@ def process_query(row, index, debug_dir=None, max_retries=3, retry_delay=5):
                     headers=headers,
                     json=payload,
                     params={"stream": "false"},
-                    timeout=60,  # Add a timeout to prevent hanging requests
+                    timeout=600,  # Add a timeout to prevent hanging requests
                 )
                 response.raise_for_status()
                 break  # If successful, exit the retry loop
